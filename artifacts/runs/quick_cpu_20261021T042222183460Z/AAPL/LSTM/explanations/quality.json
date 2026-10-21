@@ -1,0 +1,95 @@
+{
+  "shap_reconstruction": {
+    "max_absolute_error": 0.0,
+    "mean_absolute_error": 0.0,
+    "rtol": 0.0001,
+    "atol": 0.001
+  },
+  "prediction_unchanged_max_abs": 0.0,
+  "shap_elapsed_seconds": 8.639412999968044,
+  "shap_samples": 1,
+  "test_indices": [
+    2432
+  ],
+  "target_dates": [
+    "2024-12-02"
+  ],
+  "feature_cutoffs": [
+    "2024-11-29"
+  ],
+  "background_indices": [
+    0,
+    720,
+    1440,
+    2161
+  ],
+  "background_max_target_date": "2023-11-02",
+  "shap_seed_stability": {
+    "top_10_overlap": 0.8,
+    "spearman_abs_attribution_rank": 0.8424876539886834,
+    "scope": "Same observation rerun with a different explainer seed; not human trust or robustness to all market shifts"
+  },
+  "lime_local": [
+    {
+      "model_prediction": 203.5125732421875,
+      "local_surrogate_prediction": 122.9553906539584,
+      "absolute_local_error": 80.5571825882291,
+      "weighted_neighborhood_r2": 0.5050295270608031,
+      "seed": 42,
+      "num_samples": 500,
+      "features": [
+        [
+          "lag_0__ema_12 > 137.55",
+          8.786535750400805
+        ],
+        [
+          "lag_0__sma_5 > 137.27",
+          8.102006231191488
+        ],
+        [
+          "lag_0__bollinger_lower > 125.64",
+          7.90260234473068
+        ],
+        [
+          "lag_0__open > 137.02",
+          7.269595637646408
+        ],
+        [
+          "lag_1__open > 136.87",
+          5.973509868672618
+        ],
+        [
+          "lag_0__bollinger_upper > 145.78",
+          5.973221408157476
+        ],
+        [
+          "lag_0__close > 137.32",
+          5.3317498709468945
+        ],
+        [
+          "lag_0__ema_26 > 138.21",
+          4.811063147916866
+        ],
+        [
+          "lag_9__ema_12 > 135.91",
+          2.6564549751886224
+        ],
+        [
+          "lag_20__macd_signal > 1.25",
+          2.385805484417534
+        ]
+      ],
+      "elapsed_seconds": 0.9118291999911889,
+      "target_date": "2024-12-02",
+      "feature_cutoff": "2024-11-29"
+    }
+  ],
+  "lime_seed_stability": {
+    "top_10_overlap": 0.5,
+    "spearman_abs_attribution_rank": 0.49965709411269565,
+    "scope": "Same observation rerun with a different explainer seed; not human trust or robustness to all market shifts"
+  },
+  "limitations": "Marginal masking and LIME neighborhoods can violate correlated technical-feature/time/OHLC constraints. Attributions are associations, not causality; global means cover only the declared subset.",
+  "inference_elapsed_seconds_same_subset": 0.006075099925510585,
+  "shap_overhead_ratio_same_subset": 1422.1022050500576
+}

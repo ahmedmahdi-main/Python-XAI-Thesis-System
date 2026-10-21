@@ -1,0 +1,49 @@
+{
+  "asset": "AAPL",
+  "target": "price_change",
+  "design": "walk_forward",
+  "fold": 3,
+  "configuration": {
+    "epochs": 30,
+    "patience": 8,
+    "hidden_size": 32,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_candidates": [
+      32,
+      64
+    ],
+    "amp": true,
+    "device": "auto",
+    "effective_lookback": 30,
+    "seed": 42,
+    "trees": 100,
+    "search": true
+  },
+  "split": {
+    "train": {
+      "n": 2343,
+      "origin_start": "2015-04-02",
+      "origin_end": "2024-07-24",
+      "target_start": "2015-04-06",
+      "target_end": "2024-07-25"
+    },
+    "validation": {
+      "n": 270,
+      "origin_start": "2024-07-25",
+      "origin_end": "2025-08-21",
+      "target_start": "2024-07-26",
+      "target_end": "2025-08-22"
+    },
+    "test": {
+      "n": 90,
+      "origin_start": "2025-08-22",
+      "origin_end": "2025-12-30",
+      "target_start": "2025-08-25",
+      "target_end": "2025-12-31"
+    }
+  },
+  "target_definition": "P[t+1]-P[t]",
+  "input_windows_source": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\artifacts\\runs\\full_20261021T040901084647Z\\AAPL\\windows.npz",
+  "input_windows_sha256": "dbcfce8bb3573339c1c39d56b2834876e2e5ba37668ee127cdfbe3f9520a4604"
+}

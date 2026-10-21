@@ -1,0 +1,55 @@
+{
+  "run_id": "full_20261021T040901084647Z",
+  "assets": [
+    {
+      "asset": "AAPL",
+      "rows": 2766,
+      "test_samples_per_model": 271,
+      "models": 5,
+      "explanation_models": 4,
+      "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+    },
+    {
+      "asset": "SP500",
+      "rows": 2766,
+      "test_samples_per_model": 271,
+      "models": 5,
+      "explanation_models": 4,
+      "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+    },
+    {
+      "asset": "NASDAQ",
+      "rows": 2766,
+      "test_samples_per_model": 271,
+      "models": 5,
+      "explanation_models": 4,
+      "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+    },
+    {
+      "asset": "GOLD",
+      "rows": 2766,
+      "test_samples_per_model": 271,
+      "models": 5,
+      "explanation_models": 4,
+      "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+    },
+    {
+      "asset": "OIL",
+      "rows": 2766,
+      "test_samples_per_model": 271,
+      "models": 5,
+      "explanation_models": 4,
+      "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+    },
+    {
+      "asset": "HOUSING",
+      "rows": 468,
+      "test_samples_per_model": 43,
+      "models": 5,
+      "explanation_models": 4,
+      "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+    }
+  ],
+  "status": "PASSED",
+  "checks": "snapshot hashes, original dates/targets, metrics recomputation, common rows, CPU model reload, scaler cutoff, SHAP reconstruction/background, paired LIME dates, real chart files"
+}

@@ -1,0 +1,24 @@
+{
+  "asset": "NASDAQ",
+  "model": "RandomForest",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 4686.824071870644,
+  "rmse": 5117.8327031171675,
+  "mape_percent": 22.11554775487829,
+  "mape_excluded_zero_targets": 0,
+  "r2": -5.125212852965079,
+  "direction_accuracy": 0.4354243542435424,
+  "up_down_confusion": [
+    [
+      116,
+      0
+    ],
+    [
+      153,
+      2
+    ]
+  ],
+  "up_precision": 1.0,
+  "up_recall": 0.012903225806451613,
+  "n": 271
+}

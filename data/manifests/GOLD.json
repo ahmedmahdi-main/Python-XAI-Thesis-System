@@ -1,0 +1,23 @@
+{
+  "symbol": "GC=F",
+  "provider": "yahoo",
+  "frequency": "daily",
+  "units": "USD per troy ounce (continuous futures proxy)",
+  "start": "2015-01-01",
+  "end": "2026-01-01",
+  "source_url": "https://finance.yahoo.com/quote/GC=F/history/",
+  "timezone": "America/New_York exchange session date",
+  "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+  "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+  "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+  "asset": "GOLD",
+  "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+  "retrieved_utc": "2026-10-21T03:54:41.231619+00:00",
+  "sha256": "e12ffae8fcdd2c903f0449085f3bfeb2979247169817c2d745127ce153d2ddf1",
+  "rows": 2766,
+  "rows_dropped_missing": 0,
+  "first_date": "2015-01-02",
+  "last_date": "2025-12-31",
+  "max_calendar_gap_days": 4,
+  "negative_close_count": 0
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "HARDWARE_DIAGNOSTICS_ONLY_RANDOM_TENSORS_NOT_FINANCIAL_RESULTS",
+  "recorded_at_utc": "2026-10-21T03:27:12.143569+00:00",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "executable": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch_version": "2.5.1+cu121",
+  "torch_cuda_version": "12.1",
+  "cuda_available": true,
+  "cudnn_version": 90100,
+  "seed": 42,
+  "deterministic_algorithms": true,
+  "cublas_workspace_config": ":4096:8",
+  "tf32_enabled": false,
+  "numpy_installed": false,
+  "gpu_query": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 6009 MiB, 536.40",
+  "checks": {
+    "cuda_available": true,
+    "cpu_lstm_forward_backward_finite": true,
+    "cuda_fp32_lstm_gradients_finite": true,
+    "cuda_optimizer_step_finite": true,
+    "checkpoint_reload_cpu_fallback_matches": true,
+    "checkpoint_reload_cuda_matches": true,
+    "cuda_matrix_operation_finite": true,
+    "cuda_amp_lstm_finite": true
+  },
+  "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "vram_bytes": 6441926656,
+  "compute_capability": [
+    8,
+    6
+  ],
+  "bf16_supported": true,
+  "cpu_cuda_reload_max_abs_error": 2.9802322387695312e-08,
+  "amp_dtype": "torch.bfloat16",
+  "amp_probe_loss_hardware_only": 1.2938940525054932,
+  "amp_supported_for_probe": true,
+  "peak_probe_allocated_bytes": 79419392,
+  "all_hardware_checks_passed": true
+}

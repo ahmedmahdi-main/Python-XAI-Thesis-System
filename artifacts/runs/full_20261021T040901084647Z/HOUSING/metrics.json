@@ -1,0 +1,122 @@
+[
+  {
+    "asset": "HOUSING",
+    "model": "LinearRegression",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 0.9150750673570246,
+    "rmse": 1.158773126385997,
+    "mape_percent": 0.29438586686100066,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9906407845047274,
+    "direction_accuracy": 0.8604651162790697,
+    "up_down_confusion": [
+      [
+        19,
+        2
+      ],
+      [
+        4,
+        18
+      ]
+    ],
+    "up_precision": 0.9,
+    "up_recall": 0.8181818181818182,
+    "n": 43
+  },
+  {
+    "asset": "HOUSING",
+    "model": "RandomForest",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 113.52500845391624,
+    "rmse": 114.18424898403686,
+    "mape_percent": 35.864111752889485,
+    "mape_excluded_zero_targets": 0,
+    "r2": -89.87721663147259,
+    "direction_accuracy": 0.4883720930232558,
+    "up_down_confusion": [
+      [
+        21,
+        0
+      ],
+      [
+        22,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 43
+  },
+  {
+    "asset": "HOUSING",
+    "model": "GradientBoosting",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 112.13368087526361,
+    "rmse": 112.78112762347813,
+    "mape_percent": 35.4249973579552,
+    "mape_excluded_zero_targets": 0,
+    "r2": -87.65750036477709,
+    "direction_accuracy": 0.4883720930232558,
+    "up_down_confusion": [
+      [
+        21,
+        0
+      ],
+      [
+        22,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 43
+  },
+  {
+    "asset": "HOUSING",
+    "model": "LSTM",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 99.06256149504905,
+    "rmse": 99.55761426241371,
+    "mape_percent": 31.305499292103406,
+    "mape_excluded_zero_targets": 0,
+    "r2": -68.08624355422701,
+    "direction_accuracy": 0.4883720930232558,
+    "up_down_confusion": [
+      [
+        21,
+        0
+      ],
+      [
+        22,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 43
+  },
+  {
+    "asset": "HOUSING",
+    "model": "Persistence",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 1.6126976744186035,
+    "rmse": 2.0182019974040224,
+    "mape_percent": 0.5177821960442728,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9716095758535916,
+    "direction_accuracy": 0.0,
+    "up_down_confusion": [
+      [
+        21,
+        0
+      ],
+      [
+        22,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 43
+  }
+]

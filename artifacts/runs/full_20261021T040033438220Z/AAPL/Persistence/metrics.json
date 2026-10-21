@@ -1,0 +1,24 @@
+{
+  "asset": "AAPL",
+  "model": "Persistence",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 2.7806627900073795,
+  "rmse": 4.189368602340614,
+  "mape_percent": 1.243199174010601,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9737689160017075,
+  "direction_accuracy": 0.0,
+  "up_down_confusion": [
+    [
+      125,
+      0
+    ],
+    [
+      146,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

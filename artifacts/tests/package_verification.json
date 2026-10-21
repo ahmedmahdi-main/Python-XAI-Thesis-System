@@ -1,0 +1,14 @@
+{
+  "status": "PASSED",
+  "checked_utc": "2026-10-21T05:38:20.094365+00:00",
+  "package": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\defense_package",
+  "run_id": "full_20261021T040901084647Z",
+  "manifest_files_verified": 1459,
+  "archive": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\backups\\defense_full_20261021T040901084647Z.zip",
+  "archive_bytes": 3131760990,
+  "archive_sha256": "99e58886fe9402b2de4b5f51cecdae66c690a4f39e322ed81f883ed96df64a92",
+  "zip_crc": "passed during archive generation",
+  "relocated_clean_env_dashboard": "PASSED; 6 datasets, 4 models, all 8 tabs; external Python sockets blocked",
+  "relocated_clean_env_model_audit": "PASSED; original source dates/targets, metrics, CPU forecasts, SHAP/LIME for all 6 assets",
+  "external_backup": "NOT_VERIFIED; package and ZIP are on the same physical disk"
+}

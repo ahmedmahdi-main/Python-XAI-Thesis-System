@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "run_id": "full_20261021T040901084647Z",
+  "assets": [
+    "AAPL",
+    "SP500",
+    "NASDAQ",
+    "GOLD",
+    "OIL",
+    "HOUSING"
+  ],
+  "models_per_asset": 4,
+  "tabs": 8,
+  "date_check": "first and last precomputed dates",
+  "external_socket_connections": "blocked",
+  "scope": "Saved-artifact viewing only; not retraining or a browser pixel screenshot"
+}

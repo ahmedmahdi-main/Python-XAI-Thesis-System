@@ -1,0 +1,122 @@
+[
+  {
+    "asset": "SP500",
+    "model": "LinearRegression",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 51.823706183067706,
+    "rmse": 74.59023653137234,
+    "mape_percent": 0.8614743231963644,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9721695074359417,
+    "direction_accuracy": 0.5313653136531366,
+    "up_down_confusion": [
+      [
+        65,
+        53
+      ],
+      [
+        74,
+        79
+      ]
+    ],
+    "up_precision": 0.5984848484848485,
+    "up_recall": 0.5163398692810458,
+    "n": 271
+  },
+  {
+    "asset": "SP500",
+    "model": "RandomForest",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 1502.5510097401407,
+    "rmse": 1567.6281364741603,
+    "mape_percent": 23.826761061083428,
+    "mape_excluded_zero_targets": 0,
+    "r2": -11.29257944515167,
+    "direction_accuracy": 0.4354243542435424,
+    "up_down_confusion": [
+      [
+        118,
+        0
+      ],
+      [
+        153,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "SP500",
+    "model": "GradientBoosting",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 1687.1223981114138,
+    "rmse": 1745.36412388883,
+    "mape_percent": 26.819030296094354,
+    "mape_excluded_zero_targets": 0,
+    "r2": -14.238036647273233,
+    "direction_accuracy": 0.4354243542435424,
+    "up_down_confusion": [
+      [
+        118,
+        0
+      ],
+      [
+        153,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "SP500",
+    "model": "LSTM",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 1308.3610236244697,
+    "rmse": 1359.112661461768,
+    "mape_percent": 20.783305344533197,
+    "mape_excluded_zero_targets": 0,
+    "r2": -8.239912124710687,
+    "direction_accuracy": 0.4354243542435424,
+    "up_down_confusion": [
+      [
+        118,
+        0
+      ],
+      [
+        153,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "SP500",
+    "model": "Persistence",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 43.549253344022176,
+    "rmse": 65.82169188531671,
+    "mape_percent": 0.7251043757813153,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9783281988751926,
+    "direction_accuracy": 0.0,
+    "up_down_confusion": [
+      [
+        118,
+        0
+      ],
+      [
+        153,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  }
+]

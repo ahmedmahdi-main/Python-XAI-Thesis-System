@@ -1,0 +1,24 @@
+{
+  "asset": "NASDAQ",
+  "model": "LinearRegression",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 231.99192752366022,
+  "rmse": 315.8815561202751,
+  "mape_percent": 1.175557074636424,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.976665550880071,
+  "direction_accuracy": 0.5424354243542435,
+  "up_down_confusion": [
+    [
+      66,
+      50
+    ],
+    [
+      74,
+      81
+    ]
+  ],
+  "up_precision": 0.6183206106870229,
+  "up_recall": 0.5225806451612903,
+  "n": 271
+}

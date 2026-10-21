@@ -1,0 +1,8 @@
+{
+  "original_predictions_sha256": "595317a4243415ee620851290dc41267dad274b787bb497f1d9c3c58cb26cb37",
+  "target_values_unchanged": true,
+  "models_retrained": false,
+  "algorithm": "Cast saved target prediction to float64 before 1+r and price reconstruction; as-executed files untouched",
+  "as_executed_lstm_target_dtype": "float32",
+  "reason": "Native float32 1+r rounds before multiplication by float64 current price; separate numerical sensitivity, not a replacement experiment"
+}

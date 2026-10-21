@@ -1,0 +1,24 @@
+{
+  "asset": "NASDAQ",
+  "model": "GradientBoosting",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 4780.185977045474,
+  "rmse": 5202.730175846335,
+  "mape_percent": 22.577692369877884,
+  "mape_excluded_zero_targets": 0,
+  "r2": -5.330115307665185,
+  "direction_accuracy": 0.4317343173431734,
+  "up_down_confusion": [
+    [
+      116,
+      0
+    ],
+    [
+      154,
+      1
+    ]
+  ],
+  "up_precision": 1.0,
+  "up_recall": 0.0064516129032258064,
+  "n": 271
+}

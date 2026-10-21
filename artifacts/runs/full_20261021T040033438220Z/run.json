@@ -1,0 +1,114 @@
+{
+  "run_id": "full_20261021T040033438220Z",
+  "status": "SUPERSEDED_DIAGNOSTIC_NOT_FINAL",
+  "provenance": "NEWLY_COMPUTED",
+  "created_utc": "2026-10-21T04:00:33.438220+00:00",
+  "configuration": {
+    "name": "full",
+    "assets": [
+      "AAPL",
+      "SP500",
+      "NASDAQ",
+      "GOLD",
+      "OIL",
+      "HOUSING"
+    ],
+    "seed": 42,
+    "lookback": 30,
+    "monthly_lookback": 12,
+    "device": "auto",
+    "epochs": 60,
+    "patience": 8,
+    "hidden_size": 32,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_candidates": [
+      32,
+      64
+    ],
+    "amp": true,
+    "trees": 100,
+    "search": true,
+    "explain_samples": 10,
+    "lstm_explain_samples": 10,
+    "background_samples": 8,
+    "lime_samples": 1000,
+    "permutation_cycles": 1,
+    "regime_threshold": 0.05,
+    "datasets": {
+      "AAPL": {
+        "symbol": "AAPL",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "USD per adjusted share",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "SP500": {
+        "symbol": "^GSPC",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "index points",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "NASDAQ": {
+        "symbol": "^IXIC",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "index points",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "GOLD": {
+        "symbol": "GC=F",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "USD per troy ounce (continuous futures proxy)",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "OIL": {
+        "symbol": "CL=F",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "USD per barrel (continuous futures proxy)",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "HOUSING": {
+        "symbol": "CSUSHPINSA",
+        "provider": "fred",
+        "frequency": "monthly",
+        "units": "index (January 2000=100)",
+        "start": "1987-01-01",
+        "end": "2026-01-01"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "executable": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "torch": "2.5.1+cu121",
+      "shap": "0.46.0",
+      "lime": "0.2.0.1",
+      "yfinance": "0.2.66",
+      "streamlit": "1.41.1"
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 536.40",
+    "pythonhashseed": "42"
+  },
+  "source_sha256": "a279ce433768fe7ecbf12d191a29d547874904e143e0141810a20b752c49f866",
+  "assets_completed": [
+    "AAPL",
+    "SP500",
+    "NASDAQ",
+    "GOLD"
+  ],
+  "superseded_reason": "Initial batch probe cuDNN mode failure or OLS ill-conditioning. Original outputs retained. Fresh run uses training-only QR dependence filtering, not test-score tuning."
+}

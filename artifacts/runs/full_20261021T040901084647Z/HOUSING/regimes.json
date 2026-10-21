@@ -1,0 +1,232 @@
+[
+  {
+    "model": "GradientBoosting",
+    "regime": "bull",
+    "mae": 111.50154019693578,
+    "rmse": 112.2139551529045,
+    "mape_percent": 35.28098571051841,
+    "mape_excluded_zero_targets": 0,
+    "r2": -79.06769662344126,
+    "direction_accuracy": 0.4864864864864865,
+    "up_down_confusion": [
+      [
+        18,
+        0
+      ],
+      [
+        19,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 37
+  },
+  {
+    "model": "GradientBoosting",
+    "regime": "sideways",
+    "mae": 116.03188172495202,
+    "rmse": 116.21754322236367,
+    "mape_percent": 36.31306918381543,
+    "mape_excluded_zero_targets": 0,
+    "r2": -311.3199274209839,
+    "direction_accuracy": 0.5,
+    "up_down_confusion": [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 6
+  },
+  {
+    "model": "LSTM",
+    "regime": "bull",
+    "mae": 98.63122183145057,
+    "rmse": 99.16586327506246,
+    "mape_percent": 31.22057991293643,
+    "mape_excluded_zero_targets": 0,
+    "r2": -61.52993666382714,
+    "direction_accuracy": 0.4864864864864865,
+    "up_down_confusion": [
+      [
+        18,
+        0
+      ],
+      [
+        19,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 37
+  },
+  {
+    "model": "LSTM",
+    "regime": "sideways",
+    "mae": 101.72248942057293,
+    "rmse": 101.94015052269894,
+    "mape_percent": 31.829168796966428,
+    "mape_excluded_zero_targets": 0,
+    "r2": -239.2961735618346,
+    "direction_accuracy": 0.5,
+    "up_down_confusion": [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 6
+  },
+  {
+    "model": "LinearRegression",
+    "regime": "bull",
+    "mae": 0.9535014241815063,
+    "rmse": 1.2093856887356658,
+    "mape_percent": 0.3074449234499367,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9906997795069282,
+    "direction_accuracy": 0.8378378378378378,
+    "up_down_confusion": [
+      [
+        16,
+        2
+      ],
+      [
+        4,
+        15
+      ]
+    ],
+    "up_precision": 0.8823529411764706,
+    "up_recall": 0.7894736842105263,
+    "n": 37
+  },
+  {
+    "model": "LinearRegression",
+    "regime": "sideways",
+    "mae": 0.6781125336060541,
+    "rmse": 0.7769344974844542,
+    "mape_percent": 0.21385501789589534,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9860419379363001,
+    "direction_accuracy": 1.0,
+    "up_down_confusion": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "up_precision": 1.0,
+    "up_recall": 1.0,
+    "n": 6
+  },
+  {
+    "model": "Persistence",
+    "regime": "bull",
+    "mae": 1.5667297297297296,
+    "rmse": 1.9286205895350146,
+    "mape_percent": 0.505190070653814,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9763485815041303,
+    "direction_accuracy": 0.0,
+    "up_down_confusion": [
+      [
+        18,
+        0
+      ],
+      [
+        19,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 37
+  },
+  {
+    "model": "Persistence",
+    "regime": "sideways",
+    "mae": 1.8961666666666588,
+    "rmse": 2.500687472143071,
+    "mape_percent": 0.5954336359521015,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.8553977165804139,
+    "direction_accuracy": 0.0,
+    "up_down_confusion": [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 6
+  },
+  {
+    "model": "RandomForest",
+    "regime": "bull",
+    "mae": 112.87354709161109,
+    "rmse": 113.5993032719443,
+    "mape_percent": 35.714600036931124,
+    "mape_excluded_zero_targets": 0,
+    "r2": -81.05686685768978,
+    "direction_accuracy": 0.4864864864864865,
+    "up_down_confusion": [
+      [
+        18,
+        0
+      ],
+      [
+        19,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 37
+  },
+  {
+    "model": "RandomForest",
+    "regime": "sideways",
+    "mae": 117.54235352146468,
+    "rmse": 117.72720851390095,
+    "mape_percent": 36.78610066796602,
+    "mape_excluded_zero_targets": 0,
+    "r2": -319.486696792079,
+    "direction_accuracy": 0.5,
+    "up_down_confusion": [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 6
+  }
+]

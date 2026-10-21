@@ -1,0 +1,24 @@
+{
+  "asset": "SP500",
+  "model": "Persistence",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 43.549253344022176,
+  "rmse": 65.82169188531671,
+  "mape_percent": 0.7251043757813153,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9783281988751926,
+  "direction_accuracy": 0.0,
+  "up_down_confusion": [
+    [
+      118,
+      0
+    ],
+    [
+      153,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

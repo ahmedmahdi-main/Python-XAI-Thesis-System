@@ -1,0 +1,24 @@
+{
+  "asset": "HOUSING",
+  "model": "RandomForest",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 113.52500845391624,
+  "rmse": 114.18424898403686,
+  "mape_percent": 35.864111752889485,
+  "mape_excluded_zero_targets": 0,
+  "r2": -89.87721663147259,
+  "direction_accuracy": 0.4883720930232558,
+  "up_down_confusion": [
+    [
+      21,
+      0
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 43
+}

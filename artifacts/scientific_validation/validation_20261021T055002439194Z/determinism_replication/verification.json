@@ -1,0 +1,43 @@
+{
+  "training_metadata": {
+    "device": "cuda",
+    "device_reason": "CUDA allocation verified",
+    "precision": {
+      "effective_precision": "torch.bfloat16",
+      "relative_loss_difference": 0.0010868859244510531,
+      "criterion": "finite training-fixture loss within 5% of FP32"
+    },
+    "batch_size": 64,
+    "batch_probes": [
+      {
+        "batch_size": 32,
+        "samples_per_second": 16893.08063317823,
+        "elapsed_seconds": 0.0056828000815585256,
+        "peak_allocated_bytes": 85255168,
+        "free_vram_before_probe": 4319084544,
+        "accepted": true
+      },
+      {
+        "batch_size": 64,
+        "samples_per_second": 37858.62108673856,
+        "elapsed_seconds": 0.0050715000834316015,
+        "peak_allocated_bytes": 89863168,
+        "free_vram_before_probe": 4319084544,
+        "accepted": true
+      }
+    ],
+    "selection": {
+      "best_validation_scaled_mse": 2.348477602005005,
+      "best_epoch": 2,
+      "epochs_executed": 10
+    },
+    "training_seconds": 8.014289899962023,
+    "scaler_origin_cutoff": "2023-11-01",
+    "scaler_target_cutoff": "2023-11-02"
+  },
+  "test_n": 271,
+  "predictions_bitwise_identical": true,
+  "max_abs_prediction_difference": 0.0,
+  "epoch_losses_identical": true,
+  "scope": "One AAPL price-change LSTM repeat on same hardware/software; not a multi-seed robustness study"
+}

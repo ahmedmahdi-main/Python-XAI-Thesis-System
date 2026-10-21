@@ -1,0 +1,24 @@
+{
+  "asset": "AAPL",
+  "model": "LinearRegression",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 3.3202386160654984,
+  "rmse": 4.59964113575362,
+  "mape_percent": 1.478757762960358,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9683796269182549,
+  "direction_accuracy": 0.5239852398523985,
+  "up_down_confusion": [
+    [
+      60,
+      65
+    ],
+    [
+      64,
+      82
+    ]
+  ],
+  "up_precision": 0.5578231292517006,
+  "up_recall": 0.5616438356164384,
+  "n": 271
+}

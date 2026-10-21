@@ -1,0 +1,24 @@
+{
+  "asset": "SP500",
+  "model": "RandomForest",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1502.5510097401407,
+  "rmse": 1567.6281364741603,
+  "mape_percent": 23.826761061083428,
+  "mape_excluded_zero_targets": 0,
+  "r2": -11.29257944515167,
+  "direction_accuracy": 0.4354243542435424,
+  "up_down_confusion": [
+    [
+      118,
+      0
+    ],
+    [
+      153,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

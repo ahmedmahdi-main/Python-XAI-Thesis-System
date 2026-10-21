@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xai-finance-thesis"
+version = "0.1.0"
+description = "Auditable reconstruction of Mohammad Saleh's XAI forecasting framework"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==1.26.4", "pandas==2.2.3", "scikit-learn==1.5.2", "scipy==1.14.1", "torch==2.5.1", "shap==0.46.0", "lime==0.2.0.1", "yfinance==0.2.66", "matplotlib==3.9.4", "plotly==5.24.1", "streamlit==1.41.1", "PyYAML==6.0.2", "joblib==1.4.2", "pyarrow==18.1.0", "requests==2.32.3"]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5", "ruff==0.9.10"]
+
+[project.scripts]
+xai-finance = "xai_finance.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["integration: saved real-data and model checks"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

@@ -1,0 +1,21 @@
+name: core
+assets: [AAPL, SP500]
+seed: 42
+lookback: 30
+monthly_lookback: 12
+device: auto
+epochs: 60
+patience: 8
+hidden_size: 32
+dropout: 0.1
+learning_rate: 0.001
+batch_candidates: [32, 64]
+amp: true
+trees: 100
+search: true
+explain_samples: 10
+lstm_explain_samples: 10
+background_samples: 8
+lime_samples: 1000
+permutation_cycles: 1
+regime_threshold: 0.05

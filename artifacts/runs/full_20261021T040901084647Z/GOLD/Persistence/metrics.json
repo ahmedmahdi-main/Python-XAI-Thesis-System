@@ -1,0 +1,24 @@
+{
+  "asset": "GOLD",
+  "model": "Persistence",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 33.43469463498155,
+  "rmse": 47.14980220474282,
+  "mape_percent": 0.9653234441704832,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9915190177028438,
+  "direction_accuracy": 0.0036900369003690036,
+  "up_down_confusion": [
+    [
+      113,
+      0
+    ],
+    [
+      158,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

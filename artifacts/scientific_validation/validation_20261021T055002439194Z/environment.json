@@ -1,0 +1,21 @@
+{
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "executable": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "shap": "0.46.0",
+    "lime": "0.2.0.1",
+    "yfinance": "0.2.66",
+    "streamlit": "1.41.1"
+  },
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 536.40",
+  "pythonhashseed": "42",
+  "torch_cuda_available": true,
+  "torch_cuda_version": "12.1",
+  "cudnn_version": 90100,
+  "protocol_sha256": "634aa749bc828b8a06589d09a40d271d627472faf8da9f30a03e3cfca37de07c"
+}

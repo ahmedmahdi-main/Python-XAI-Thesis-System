@@ -1,0 +1,24 @@
+{
+  "asset": "NASDAQ",
+  "model": "Persistence",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 193.1656552704797,
+  "rmse": 278.42118678062224,
+  "mape_percent": 0.9809900497857004,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9818718462638938,
+  "direction_accuracy": 0.0,
+  "up_down_confusion": [
+    [
+      116,
+      0
+    ],
+    [
+      155,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

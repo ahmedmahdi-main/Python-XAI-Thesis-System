@@ -1,0 +1,16 @@
+asset,target,design,fold,device,precision,batch_size,best_epoch,epochs_executed,training_seconds,training_label_cutoff
+AAPL,price_change,fixed_split,0,cuda,torch.bfloat16,64,2,10,8.702426699921489,2023-11-02
+GOLD,price_change,fixed_split,0,cuda,torch.bfloat16,64,2,10,2.2577765999594703,2023-11-07
+NASDAQ,price_change,fixed_split,0,cuda,torch.bfloat16,64,2,10,2.53960629994981,2023-11-02
+OIL,price_change,fixed_split,0,cuda,torch.bfloat16,64,15,23,3.0701217999449,2023-11-06
+SP500,price_change,fixed_split,0,cuda,torch.bfloat16,64,2,10,2.3971155000617728,2023-11-02
+AAPL,simple_return,fixed_split,0,cuda,torch.bfloat16,64,2,10,2.8923633999656886,2023-11-02
+GOLD,simple_return,fixed_split,0,cuda,torch.bfloat16,64,2,10,1.7314257000107318,2023-11-07
+NASDAQ,simple_return,fixed_split,0,cuda,torch.bfloat16,64,2,10,2.8016593999927863,2023-11-02
+SP500,simple_return,fixed_split,0,cuda,torch.bfloat16,64,2,10,1.6359411000739783,2023-11-02
+AAPL,price_change,walk_forward,1,cuda,torch.bfloat16,64,2,10,1.7421833000844344,2023-11-02
+AAPL,price_change,walk_forward,2,cuda,torch.bfloat16,64,5,13,2.4795400999719277,2024-03-15
+AAPL,price_change,walk_forward,3,cuda,torch.bfloat16,64,5,13,3.9169895000522956,2024-07-25
+SP500,price_change,walk_forward,1,cuda,torch.bfloat16,64,2,10,2.1533189999172464,2023-11-02
+SP500,price_change,walk_forward,2,cuda,torch.bfloat16,64,9,17,2.74694450001698,2024-03-15
+SP500,price_change,walk_forward,3,cuda,torch.bfloat16,64,2,10,2.6739099000114948,2024-07-25

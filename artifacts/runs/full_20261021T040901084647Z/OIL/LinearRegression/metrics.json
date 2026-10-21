@@ -1,0 +1,24 @@
+{
+  "asset": "OIL",
+  "model": "LinearRegression",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1.2760553545218785,
+  "rmse": 1.6917155427759125,
+  "mape_percent": 1.9584669226886817,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.8965766807290052,
+  "direction_accuracy": 0.5055350553505535,
+  "up_down_confusion": [
+    [
+      61,
+      76
+    ],
+    [
+      58,
+      76
+    ]
+  ],
+  "up_precision": 0.5,
+  "up_recall": 0.5671641791044776,
+  "n": 271
+}

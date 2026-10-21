@@ -1,0 +1,84 @@
+{
+  "LinearRegression": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 0,
+    "trials": [
+      {
+        "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('linearregression', LinearRegression())])",
+        "validation_rmse": 49.07410442828539,
+        "elapsed_seconds": 0.3343812000239268
+      }
+    ],
+    "training_seconds": 0.3343812000239268
+  },
+  "RandomForest": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 1,
+    "trials": [
+      {
+        "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+        "validation_rmse": 699.4139370959158,
+        "elapsed_seconds": 19.835228299954906
+      },
+      {
+        "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+        "validation_rmse": 677.7126145927639,
+        "elapsed_seconds": 31.92220049991738
+      }
+    ],
+    "training_seconds": 51.75742879987229
+  },
+  "GradientBoosting": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 1,
+    "trials": [
+      {
+        "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+        "validation_rmse": 857.483098940834,
+        "elapsed_seconds": 25.21868719998747
+      },
+      {
+        "parameters": "GradientBoostingRegressor(random_state=42)",
+        "validation_rmse": 698.4685773468531,
+        "elapsed_seconds": 36.29153909999877
+      }
+    ],
+    "training_seconds": 61.51022629998624
+  },
+  "LSTM": {
+    "device": "cuda",
+    "device_reason": "CUDA allocation verified",
+    "precision": {
+      "effective_precision": "torch.bfloat16",
+      "relative_loss_difference": 0.0003841799625661224,
+      "criterion": "finite training-fixture loss within 5% of FP32"
+    },
+    "batch_size": 64,
+    "batch_probes": [
+      {
+        "batch_size": 32,
+        "samples_per_second": 7262.383838156107,
+        "elapsed_seconds": 0.013218800071626902,
+        "peak_allocated_bytes": 85255168,
+        "free_vram_before_probe": 4191158272,
+        "accepted": true
+      },
+      {
+        "batch_size": 64,
+        "samples_per_second": 11958.295429223475,
+        "elapsed_seconds": 0.016055800020694733,
+        "peak_allocated_bytes": 89863168,
+        "free_vram_before_probe": 4191158272,
+        "accepted": true
+      }
+    ],
+    "selection": {
+      "best_validation_scaled_mse": 0.13988158106803894,
+      "best_epoch": 44,
+      "epochs_executed": 52
+    },
+    "training_seconds": 10.487085500033572,
+    "scaler_origin_cutoff": "2023-11-01",
+    "scaler_target_cutoff": "2023-11-02"
+  }
+}

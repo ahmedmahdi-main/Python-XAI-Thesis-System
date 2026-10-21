@@ -1,0 +1,24 @@
+{
+  "asset": "SP500",
+  "model": "GradientBoosting",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1687.1223981114138,
+  "rmse": 1745.36412388883,
+  "mape_percent": 26.819030296094354,
+  "mape_excluded_zero_targets": 0,
+  "r2": -14.238036647273233,
+  "direction_accuracy": 0.4354243542435424,
+  "up_down_confusion": [
+    [
+      118,
+      0
+    ],
+    [
+      153,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

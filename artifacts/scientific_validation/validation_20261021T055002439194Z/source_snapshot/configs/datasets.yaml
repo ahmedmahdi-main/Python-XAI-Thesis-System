@@ -1,0 +1,43 @@
+datasets:
+  AAPL:
+    symbol: AAPL
+    provider: yahoo
+    frequency: daily
+    units: USD per adjusted share
+    start: '2015-01-01'
+    end: '2026-01-01'
+  SP500:
+    symbol: ^GSPC
+    provider: yahoo
+    frequency: daily
+    units: index points
+    start: '2015-01-01'
+    end: '2026-01-01'
+  NASDAQ:
+    symbol: ^IXIC
+    provider: yahoo
+    frequency: daily
+    units: index points
+    start: '2015-01-01'
+    end: '2026-01-01'
+  GOLD:
+    symbol: GC=F
+    provider: yahoo
+    frequency: daily
+    units: USD per troy ounce (continuous futures proxy)
+    start: '2015-01-01'
+    end: '2026-01-01'
+  OIL:
+    symbol: CL=F
+    provider: yahoo
+    frequency: daily
+    units: USD per barrel (continuous futures proxy)
+    start: '2015-01-01'
+    end: '2026-01-01'
+  HOUSING:
+    symbol: CSUSHPINSA
+    provider: fred
+    frequency: monthly
+    units: index (January 2000=100)
+    start: '1987-01-01'
+    end: '2026-01-01'

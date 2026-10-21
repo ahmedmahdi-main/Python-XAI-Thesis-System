@@ -1,0 +1,24 @@
+{
+  "asset": "AAPL",
+  "model": "GradientBoosting",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 56.460956047596355,
+  "rmse": 62.053765457108874,
+  "mape_percent": 23.357545529094974,
+  "mape_excluded_zero_targets": 0,
+  "r2": -4.755133083619574,
+  "direction_accuracy": 0.4612546125461255,
+  "up_down_confusion": [
+    [
+      125,
+      0
+    ],
+    [
+      146,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

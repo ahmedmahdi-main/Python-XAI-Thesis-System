@@ -1,0 +1,14 @@
+{
+  "scope": "documentation/environment preparation only; not research tests",
+  "checks": {
+    "original_plan_archive_matches_preinstall_hash": true,
+    "active_plan_requires_pytorch_cuda": true,
+    "keras_only_implementation_removed": true,
+    "active_plan_records_cpu_fallback": true,
+    "active_plan_records_amp": true,
+    "active_plan_records_seeds": true,
+    "active_plan_preserves_four_models": true,
+    "source_audit_pending_explicit": true,
+    "no_empirical_results_claimed": true
+  }
+}

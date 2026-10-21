@@ -1,0 +1,10 @@
+{
+  "feature_cutoff": "2025-12-31",
+  "status": "UNVERIFIED_NEXT_OBSERVATION_AFTER_SNAPSHOT_NOT_A_CURRENT_LIVE_FORECAST",
+  "predictions": {
+    "LinearRegression": 4260.591338436502,
+    "RandomForest": 2017.900082354758,
+    "GradientBoosting": 2005.8435842793265,
+    "LSTM": 2199.682861328125
+  }
+}

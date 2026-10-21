@@ -1,0 +1,24 @@
+{
+  "asset": "GOLD",
+  "model": "LSTM",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1214.825590802343,
+  "rmse": 1315.5205592681377,
+  "mape_percent": 34.22532243100015,
+  "mape_excluded_zero_targets": 0,
+  "r2": -5.602093730532424,
+  "direction_accuracy": 0.4132841328413284,
+  "up_down_confusion": [
+    [
+      113,
+      0
+    ],
+    [
+      158,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

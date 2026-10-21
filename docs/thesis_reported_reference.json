@@ -1,0 +1,14 @@
+{
+  "provenance": "THESIS_REPORTED_NOT_REPRODUCED",
+  "source": "docs/original_thesis.docx, Chapter 4 section 4.2, Table 4, P1026-P1049; TOC page 101 (physical pagination unverified)",
+  "source_sha256": "a279ce433768fe7ecbf12d191a29d547874904e143e0141810a20b752c49f866",
+  "dataset": "NOT_SPECIFIED",
+  "units": "NOT_SPECIFIED",
+  "models": [
+    {"model": "LinearRegression", "mae": 1.23, "rmse": 1.67, "r2": 0.65},
+    {"model": "RandomForest", "mae": 0.85, "rmse": 1.10, "r2": 0.80},
+    {"model": "LSTM", "mae": 0.76, "rmse": 1.02, "r2": 0.85},
+    {"model": "GradientBoosting", "mae": 0.82, "rmse": 1.05, "r2": 0.82}
+  ],
+  "survey": {"status": "HISTORICAL_TEXT_VERIFIED_RAW_EVIDENCE_UNAVAILABLE", "source": "Chapter 4 section 4.3, P1053-P1059; TOC page 102", "trust_percent": 78, "preference_percent": 85, "decision_quality_percent": 70, "participant_count": null, "raw_records": null}
+}

@@ -1,0 +1,24 @@
+{
+  "asset": "HOUSING",
+  "model": "GradientBoosting",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 112.13368087526361,
+  "rmse": 112.78112762347813,
+  "mape_percent": 35.4249973579552,
+  "mape_excluded_zero_targets": 0,
+  "r2": -87.65750036477709,
+  "direction_accuracy": 0.4883720930232558,
+  "up_down_confusion": [
+    [
+      21,
+      0
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 43
+}

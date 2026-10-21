@@ -1,0 +1,21 @@
+name: quick
+assets: [AAPL, SP500]
+seed: 42
+lookback: 30
+monthly_lookback: 12
+device: auto
+epochs: 8
+patience: 3
+hidden_size: 32
+dropout: 0.1
+learning_rate: 0.001
+batch_candidates: [32, 64]
+amp: true
+trees: 100
+search: false
+explain_samples: 3
+lstm_explain_samples: 1
+background_samples: 4
+lime_samples: 500
+permutation_cycles: 1
+regime_threshold: 0.05

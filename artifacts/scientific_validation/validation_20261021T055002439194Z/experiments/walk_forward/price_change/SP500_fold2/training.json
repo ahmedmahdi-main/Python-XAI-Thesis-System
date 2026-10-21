@@ -1,0 +1,87 @@
+{
+  "LinearRegression": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 0,
+    "trials": [
+      {
+        "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+        "validation_rmse": 70.60122158489919,
+        "elapsed_seconds": 1.0103979000123218
+      }
+    ],
+    "training_seconds": 1.0103979000123218,
+    "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+  },
+  "RandomForest": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 0,
+    "trials": [
+      {
+        "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+        "validation_rmse": 62.581745086215804,
+        "elapsed_seconds": 17.903773199999705
+      },
+      {
+        "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+        "validation_rmse": 62.73491311890492,
+        "elapsed_seconds": 37.13083400006872
+      }
+    ],
+    "training_seconds": 55.03460720006842,
+    "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+  },
+  "GradientBoosting": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 0,
+    "trials": [
+      {
+        "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+        "validation_rmse": 62.90799582285693,
+        "elapsed_seconds": 37.783350600046106
+      },
+      {
+        "parameters": "GradientBoostingRegressor(random_state=42)",
+        "validation_rmse": 64.42798940516022,
+        "elapsed_seconds": 47.96620779996738
+      }
+    ],
+    "training_seconds": 85.74955840001348,
+    "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+  },
+  "LSTM": {
+    "device": "cuda",
+    "device_reason": "CUDA allocation verified",
+    "precision": {
+      "effective_precision": "torch.bfloat16",
+      "relative_loss_difference": 0.0003646999830380082,
+      "criterion": "finite training-fixture loss within 5% of FP32"
+    },
+    "batch_size": 64,
+    "batch_probes": [
+      {
+        "batch_size": 32,
+        "samples_per_second": 7684.3031996191585,
+        "elapsed_seconds": 0.01249300001654774,
+        "peak_allocated_bytes": 85473792,
+        "free_vram_before_probe": 4275044352,
+        "accepted": true
+      },
+      {
+        "batch_size": 64,
+        "samples_per_second": 12061.362250322387,
+        "elapsed_seconds": 0.015918599907308817,
+        "peak_allocated_bytes": 89863680,
+        "free_vram_before_probe": 4275044352,
+        "accepted": true
+      }
+    ],
+    "selection": {
+      "best_validation_scaled_mse": 2.9152848720550537,
+      "best_epoch": 9,
+      "epochs_executed": 17
+    },
+    "training_seconds": 2.74694450001698,
+    "scaler_origin_cutoff": "2024-03-14",
+    "scaler_target_cutoff": "2024-03-15"
+  }
+}

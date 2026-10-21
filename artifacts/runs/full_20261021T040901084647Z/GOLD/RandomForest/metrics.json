@@ -1,0 +1,24 @@
+{
+  "asset": "GOLD",
+  "model": "RandomForest",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1396.5141209387211,
+  "rmse": 1487.1791582444505,
+  "mape_percent": 39.64057981252367,
+  "mape_excluded_zero_targets": 0,
+  "r2": -7.437484484983122,
+  "direction_accuracy": 0.4132841328413284,
+  "up_down_confusion": [
+    [
+      113,
+      0
+    ],
+    [
+      158,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

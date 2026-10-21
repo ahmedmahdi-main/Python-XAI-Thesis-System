@@ -1,0 +1,84 @@
+{
+  "LinearRegression": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 0,
+    "trials": [
+      {
+        "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+        "validation_rmse": 25.645552254577797,
+        "elapsed_seconds": 7.75345419999212
+      }
+    ],
+    "training_seconds": 7.75345419999212
+  },
+  "RandomForest": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 0,
+    "trials": [
+      {
+        "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+        "validation_rmse": 402.172213646527,
+        "elapsed_seconds": 36.72983970004134
+      },
+      {
+        "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+        "validation_rmse": 403.7344177026706,
+        "elapsed_seconds": 48.28547359991353
+      }
+    ],
+    "training_seconds": 85.01531329995487
+  },
+  "GradientBoosting": {
+    "selection": "validation RMSE only; no test access; no refit",
+    "selected_trial": 1,
+    "trials": [
+      {
+        "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+        "validation_rmse": 449.15462321042037,
+        "elapsed_seconds": 45.541069399914704
+      },
+      {
+        "parameters": "GradientBoostingRegressor(random_state=42)",
+        "validation_rmse": 408.19928699068936,
+        "elapsed_seconds": 70.42194989998825
+      }
+    ],
+    "training_seconds": 115.96301929990295
+  },
+  "LSTM": {
+    "device": "cuda",
+    "device_reason": "CUDA allocation verified",
+    "precision": {
+      "effective_precision": "torch.bfloat16",
+      "relative_loss_difference": 0.0005342707736417651,
+      "criterion": "finite training-fixture loss within 5% of FP32"
+    },
+    "batch_size": 64,
+    "batch_probes": [
+      {
+        "batch_size": 32,
+        "samples_per_second": 6357.363249268287,
+        "elapsed_seconds": 0.01510060008149594,
+        "peak_allocated_bytes": 85255168,
+        "free_vram_before_probe": 4191158272,
+        "accepted": true
+      },
+      {
+        "batch_size": 64,
+        "samples_per_second": 11065.644639287786,
+        "elapsed_seconds": 0.01735099998768419,
+        "peak_allocated_bytes": 89863168,
+        "free_vram_before_probe": 4191158272,
+        "accepted": true
+      }
+    ],
+    "selection": {
+      "best_validation_scaled_mse": 0.9397367835044861,
+      "best_epoch": 32,
+      "epochs_executed": 40
+    },
+    "training_seconds": 17.914790299953893,
+    "scaler_origin_cutoff": "2023-11-06",
+    "scaler_target_cutoff": "2023-11-07"
+  }
+}

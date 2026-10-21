@@ -1,0 +1,53 @@
+{
+  "model_prediction": 3298.8001174021465,
+  "local_surrogate_prediction": 3298.6833812386953,
+  "absolute_local_error": 0.11673616345115079,
+  "weighted_neighborhood_r2": 0.5853208951920164,
+  "seed": 42,
+  "num_samples": 1000,
+  "features": [
+    [
+      "lag_21__bollinger_upper > 1850.41",
+      2198.1510894983617
+    ],
+    [
+      "lag_21__bollinger_lower > 1749.02",
+      1962.4703265651824
+    ],
+    [
+      "lag_24__bollinger_lower > 1748.07",
+      1599.851787881628
+    ],
+    [
+      "lag_22__bollinger_upper > 1849.42",
+      -1447.5301664502626
+    ],
+    [
+      "lag_24__bollinger_upper > 1848.02",
+      1404.8617705381541
+    ],
+    [
+      "lag_23__bollinger_lower > 1748.64",
+      -1375.6227064533457
+    ],
+    [
+      "lag_23__bollinger_upper > 1848.91",
+      -1077.7229694954715
+    ],
+    [
+      "lag_22__bollinger_lower > 1748.83",
+      -839.7137696206674
+    ],
+    [
+      "lag_25__bollinger_lower > 1747.94",
+      -702.4753275702585
+    ],
+    [
+      "lag_26__bollinger_lower > 1747.80",
+      675.0767931732415
+    ]
+  ],
+  "elapsed_seconds": 1.1249254000140354,
+  "target_date": "2025-05-29",
+  "feature_cutoff": "2025-05-28"
+}

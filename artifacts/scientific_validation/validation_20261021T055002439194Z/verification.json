@@ -1,0 +1,225 @@
+{
+  "verified_utc": "2026-10-21T06:33:32.017435+00:00",
+  "jobs": [
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\price_change\\AAPL_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 9.618972285352356e-13,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.1920928955078125e-07,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\price_change\\GOLD_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 7.37543359718984e-12,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 9.5367431640625e-07,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\price_change\\NASDAQ_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 2.092406248266343e-10,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 7.62939453125e-06,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\price_change\\OIL_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 1.8074430840897548e-13,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.4901161193847656e-07,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\price_change\\SP500_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 2.1965540497603797e-11,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.6689300537109375e-06,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\simple_return\\AAPL_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 1.0371044301127341e-14,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.1641532182693481e-09,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\simple_return\\GOLD_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 3.344546861683284e-15,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 4.656612873077393e-10,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\simple_return\\NASDAQ_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 1.0054457266761574e-14,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 6.402842700481415e-10,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\fixed_split\\simple_return\\SP500_fold0",
+      "rows_replayed": 2168,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 4.616966531312272e-15,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 6.984919309616089e-10,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\walk_forward\\price_change\\AAPL_fold1",
+      "rows_replayed": 728,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 9.334755191048316e-13,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.1920928955078125e-07,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\walk_forward\\price_change\\AAPL_fold2",
+      "rows_replayed": 720,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 5.646594303243546e-13,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.1920928955078125e-07,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\walk_forward\\price_change\\AAPL_fold3",
+      "rows_replayed": 720,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 7.407408020299044e-13,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 8.940696716308594e-08,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\walk_forward\\price_change\\SP500_fold1",
+      "rows_replayed": 728,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 1.070388222501606e-11,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.430511474609375e-06,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\walk_forward\\price_change\\SP500_fold2",
+      "rows_replayed": 720,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 1.3844925206285552e-11,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.9073486328125e-06,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    },
+    {
+      "job": "artifacts\\scientific_validation\\validation_20261021T055002439194Z\\experiments\\walk_forward\\price_change\\SP500_fold3",
+      "rows_replayed": 720,
+      "cpu_target_prediction_max_abs_error": {
+        "LinearRegression": 9.092282482470182e-12,
+        "RandomForest": 0.0,
+        "GradientBoosting": 0.0,
+        "LSTM": 1.6689300537109375e-06,
+        "Zero": 0.0,
+        "TrainMean": 0.0,
+        "LastObservedChangeOrReturn": 0.0,
+        "TrainMajorityDirectionMedianMagnitude": 0.0
+      }
+    }
+  ],
+  "cpu_lstm_tolerance_training_std_units": 9.5367431640625e-07,
+  "aggregate_rows": 23848,
+  "aggregate_metric_rows": 88,
+  "all_metrics_recomputed_from_serialized_predictions": true,
+  "preservation": {
+    "protected_files": 3351,
+    "mismatches": [],
+    "before_inventory_sha256": "c01f393ee07a84831e77be7d9d6282562d0c44e9a5c5d9f744e611aa5755a7c1",
+    "offline_zip_sha256": "99e58886fe9402b2de4b5f51cecdae66c690a4f39e322ed81f883ed96df64a92"
+  }
+}

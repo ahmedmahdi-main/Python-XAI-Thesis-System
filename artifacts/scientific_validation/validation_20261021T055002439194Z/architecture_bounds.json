@@ -1,0 +1,38 @@
+{
+  "AAPL": {
+    "price_lower_bound": -105.07035867747831,
+    "price_upper_bound": 251.8991026802248,
+    "derivation": "At inference dropout is disabled; each LSTM hidden coordinate is o*tanh(c) in [-1,1]; affine head is within bias +/- L1 norm of weights; then inverse training-target scaler. Bounds need not be attainable jointly.",
+    "random_forest_unavoidable_rmse_from_training_target_bounds": 46.646615807278074
+  },
+  "SP500": {
+    "price_lower_bound": -566.9811685785894,
+    "price_upper_bound": 6635.210640062174,
+    "derivation": "At inference dropout is disabled; each LSTM hidden coordinate is o*tanh(c) in [-1,1]; affine head is within bias +/- L1 norm of weights; then inverse training-target scaler. Bounds need not be attainable jointly.",
+    "random_forest_unavoidable_rmse_from_training_target_bounds": 1473.804925912823
+  },
+  "NASDAQ": {
+    "price_lower_bound": -5131.014916556975,
+    "price_upper_bound": 22421.782505370604,
+    "derivation": "At inference dropout is disabled; each LSTM hidden coordinate is o*tanh(c) in [-1,1]; affine head is within bias +/- L1 norm of weights; then inverse training-target scaler. Bounds need not be attainable jointly.",
+    "random_forest_unavoidable_rmse_from_training_target_bounds": 4847.450941489446
+  },
+  "GOLD": {
+    "price_lower_bound": 293.09566175373607,
+    "price_upper_bound": 2672.0029625333,
+    "derivation": "At inference dropout is disabled; each LSTM hidden coordinate is o*tanh(c) in [-1,1]; affine head is within bias +/- L1 norm of weights; then inverse training-target scaler. Bounds need not be attainable jointly.",
+    "random_forest_unavoidable_rmse_from_training_target_bounds": 1434.7693611810605
+  },
+  "OIL": {
+    "price_lower_bound": -28.438340682208903,
+    "price_upper_bound": 144.85249671334896,
+    "derivation": "At inference dropout is disabled; each LSTM hidden coordinate is o*tanh(c) in [-1,1]; affine head is within bias +/- L1 norm of weights; then inverse training-target scaler. Bounds need not be attainable jointly.",
+    "random_forest_unavoidable_rmse_from_training_target_bounds": 0.0
+  },
+  "HOUSING": {
+    "price_lower_bound": -19.159792937869298,
+    "price_upper_bound": 278.3903786331581,
+    "derivation": "At inference dropout is disabled; each LSTM hidden coordinate is o*tanh(c) in [-1,1]; affine head is within bias +/- L1 norm of weights; then inverse training-target scaler. Bounds need not be attainable jointly.",
+    "random_forest_unavoidable_rmse_from_training_target_bounds": 110.99605494864576
+  }
+}

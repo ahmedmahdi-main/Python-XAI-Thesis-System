@@ -1,0 +1,7 @@
+asset,symbol,frequency,units,snapshot_start,snapshot_end,raw_n,train_n,validation_n,test_n,train_last_label,test_first_label,test_last_label,snapshot_sha256
+AAPL,AAPL,daily,USD per adjusted share,2015-01-02,2025-12-31,2766,2162,270,271,2023-11-02,2024-12-02,2025-12-31,87e5bef4aec197b26bd182f3ee796c9c19b91ec8f50ceb70ee9d0fb89ab64755
+SP500,^GSPC,daily,index points,2015-01-02,2025-12-31,2766,2162,270,271,2023-11-02,2024-12-02,2025-12-31,c10fcd903ed9e96d29b554b0848a446be1995ecd671a2ef3a4536737d0b2ba1d
+NASDAQ,^IXIC,daily,index points,2015-01-02,2025-12-31,2766,2162,270,271,2023-11-02,2024-12-02,2025-12-31,3fb57868cff90c6fc494b339fac3fd319e8463e39ba150092f5fcf1f5883faf1
+GOLD,GC=F,daily,USD per troy ounce (continuous futures proxy),2015-01-02,2025-12-31,2766,2162,270,271,2023-11-07,2024-12-04,2025-12-31,e12ffae8fcdd2c903f0449085f3bfeb2979247169817c2d745127ce153d2ddf1
+OIL,CL=F,daily,USD per barrel (continuous futures proxy),2015-01-02,2025-12-31,2766,2162,270,271,2023-11-06,2024-12-04,2025-12-31,2776e2290dcf9b2c9ea58adee99541f13039439106ee34c78bf5ccccf9fdb1bc
+HOUSING,CSUSHPINSA,monthly,index (January 2000=100),1987-01-01,2025-12-01,468,338,42,43,2018-11-01,2022-06-01,2025-12-01,a92e44e17dde0464bb82ab7f2621425b07adea1267f2da2d9f2870fa4addd3b6

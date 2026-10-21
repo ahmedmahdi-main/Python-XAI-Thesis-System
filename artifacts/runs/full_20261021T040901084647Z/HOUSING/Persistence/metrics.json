@@ -1,0 +1,24 @@
+{
+  "asset": "HOUSING",
+  "model": "Persistence",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1.6126976744186035,
+  "rmse": 2.0182019974040224,
+  "mape_percent": 0.5177821960442728,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9716095758535916,
+  "direction_accuracy": 0.0,
+  "up_down_confusion": [
+    [
+      21,
+      0
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 43
+}

@@ -1,0 +1,6 @@
+{
+  "audit_boundary_flag_scope": "Target observation date <= subsequent origin date; not an independent verification of publication timestamps or historical vintages",
+  "daily_assumption": "Forecast after origin session closes; historical Yahoo adjusted snapshot, not point-in-time corporate-action vintages",
+  "housing_status": "RETROSPECTIVE_OBSERVATION_INDEX_ONLY_NOT_REAL_TIME; release lags and revision vintages unavailable",
+  "new_experiments": "Daily assets only; inherit retrospective snapshot limitations"
+}

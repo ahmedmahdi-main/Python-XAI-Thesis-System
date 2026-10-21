@@ -1,0 +1,24 @@
+{
+  "asset": "OIL",
+  "model": "GradientBoosting",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1.0166874791010656,
+  "rmse": 1.3822983356119258,
+  "mape_percent": 1.5622137909003875,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9309494148511711,
+  "direction_accuracy": 0.5092250922509225,
+  "up_down_confusion": [
+    [
+      65,
+      72
+    ],
+    [
+      61,
+      73
+    ]
+  ],
+  "up_precision": 0.503448275862069,
+  "up_recall": 0.5447761194029851,
+  "n": 271
+}

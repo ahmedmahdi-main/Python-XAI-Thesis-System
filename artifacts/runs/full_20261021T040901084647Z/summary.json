@@ -1,0 +1,1441 @@
+{
+  "run_id": "full_20261021T040901084647Z",
+  "provenance": "NEWLY_COMPUTED",
+  "generated_utc": "2026-10-21T05:15:08.427548+00:00",
+  "assets": [
+    {
+      "asset": "AAPL",
+      "units": "USD per adjusted share",
+      "frequency": "daily",
+      "snapshot_sha256": "87e5bef4aec197b26bd182f3ee796c9c19b91ec8f50ceb70ee9d0fb89ab64755",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "AAPL",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 3.3007355056998637,
+          "rmse": 4.571582252277096,
+          "mape_percent": 1.4687791518034803,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9687642335323479,
+          "direction_accuracy": 0.5129151291512916,
+          "up_down_confusion": [
+            [
+              61,
+              64
+            ],
+            [
+              68,
+              78
+            ]
+          ],
+          "up_precision": 0.5492957746478874,
+          "up_recall": 0.5342465753424658,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 45.33721071041708,
+          "rmse": 51.403975865921154,
+          "mape_percent": 18.59007019926556,
+          "mape_excluded_zero_targets": 0,
+          "r2": -2.949230779450696,
+          "direction_accuracy": 0.4612546125461255,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 45.95751664931915,
+          "rmse": 52.54810369658114,
+          "mape_percent": 18.799971696212506,
+          "mape_excluded_zero_targets": 0,
+          "r2": -3.126987824763537,
+          "direction_accuracy": 0.4612546125461255,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 57.53031532876591,
+          "rmse": 61.414866257066755,
+          "mape_percent": 24.102079525212176,
+          "mape_excluded_zero_targets": 0,
+          "r2": -4.637234640332287,
+          "direction_accuracy": 0.4612546125461255,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 2.7806627900073795,
+          "rmse": 4.189368602340614,
+          "mape_percent": 1.243199174010601,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9737689160017075,
+          "direction_accuracy": 0.0,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 3.1965321090289427,
+              "elapsed_seconds": 0.17548819992225617
+            }
+          ],
+          "training_seconds": 0.17548819992225617
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 24.169034864561734,
+              "elapsed_seconds": 13.27388420002535
+            },
+            {
+              "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 24.0423470363955,
+              "elapsed_seconds": 20.102206100011244
+            }
+          ],
+          "training_seconds": 33.376090300036594
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 32.1358044186595,
+              "elapsed_seconds": 25.98832899995614
+            },
+            {
+              "parameters": "GradientBoostingRegressor(random_state=42)",
+              "validation_rmse": 24.337916240391376,
+              "elapsed_seconds": 38.33323430002201
+            }
+          ],
+          "training_seconds": 64.32156329997815
+        },
+        "LSTM": {
+          "device": "cuda",
+          "device_reason": "CUDA allocation verified",
+          "precision": {
+            "effective_precision": "torch.bfloat16",
+            "relative_loss_difference": 0.0005140884313732386,
+            "criterion": "finite training-fixture loss within 5% of FP32"
+          },
+          "batch_size": 64,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "samples_per_second": 24781.867652146888,
+              "elapsed_seconds": 0.0038738000439479947,
+              "peak_allocated_bytes": 85255168,
+              "free_vram_before_probe": 4293918720,
+              "accepted": true
+            },
+            {
+              "batch_size": 64,
+              "samples_per_second": 51302.605546439685,
+              "elapsed_seconds": 0.00374249997548759,
+              "peak_allocated_bytes": 89863168,
+              "free_vram_before_probe": 4293918720,
+              "accepted": true
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.34953898191452026,
+            "best_epoch": 2,
+            "epochs_executed": 10
+          },
+          "training_seconds": 7.329726399970241,
+          "scaler_origin_cutoff": "2023-11-01",
+          "scaler_target_cutoff": "2023-11-02"
+        }
+      },
+      "explanations_available": true
+    },
+    {
+      "asset": "SP500",
+      "units": "index points",
+      "frequency": "daily",
+      "snapshot_sha256": "c10fcd903ed9e96d29b554b0848a446be1995ecd671a2ef3a4536737d0b2ba1d",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "SP500",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 51.823706183067706,
+          "rmse": 74.59023653137234,
+          "mape_percent": 0.8614743231963644,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9721695074359417,
+          "direction_accuracy": 0.5313653136531366,
+          "up_down_confusion": [
+            [
+              65,
+              53
+            ],
+            [
+              74,
+              79
+            ]
+          ],
+          "up_precision": 0.5984848484848485,
+          "up_recall": 0.5163398692810458,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1475.7665163879901,
+          "rmse": 1542.689376039659,
+          "mape_percent": 23.38939815325349,
+          "mape_excluded_zero_targets": 0,
+          "r2": -10.904575167885143,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1506.9319503369802,
+          "rmse": 1570.2810332394308,
+          "mape_percent": 23.904193302859415,
+          "mape_excluded_zero_targets": 0,
+          "r2": -11.334220108819936,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 916.7484054279752,
+          "rmse": 980.4702013296284,
+          "mape_percent": 14.460139690680343,
+          "mape_excluded_zero_targets": 0,
+          "r2": -3.8086782828198356,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 43.549253344022176,
+          "rmse": 65.82169188531671,
+          "mape_percent": 0.7251043757813153,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9783281988751926,
+          "direction_accuracy": 0.0,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 48.73996237215592,
+              "elapsed_seconds": 0.18210229999385774
+            }
+          ],
+          "training_seconds": 0.18210229999385774
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 699.4139370959157,
+              "elapsed_seconds": 10.307837300002575
+            },
+            {
+              "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 677.7126145927635,
+              "elapsed_seconds": 17.4151031000074
+            }
+          ],
+          "training_seconds": 27.722940400009975
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 857.483098940834,
+              "elapsed_seconds": 26.804273099987768
+            },
+            {
+              "parameters": "GradientBoostingRegressor(random_state=42)",
+              "validation_rmse": 698.4685773468531,
+              "elapsed_seconds": 41.41055120003875
+            }
+          ],
+          "training_seconds": 68.21482430002652
+        },
+        "LSTM": {
+          "device": "cuda",
+          "device_reason": "CUDA allocation verified",
+          "precision": {
+            "effective_precision": "torch.bfloat16",
+            "relative_loss_difference": 0.0003841799625661224,
+            "criterion": "finite training-fixture loss within 5% of FP32"
+          },
+          "batch_size": 64,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "samples_per_second": 18451.957514259127,
+              "elapsed_seconds": 0.005202700034715235,
+              "peak_allocated_bytes": 85255168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            },
+            {
+              "batch_size": 64,
+              "samples_per_second": 33849.30009015917,
+              "elapsed_seconds": 0.005672200000844896,
+              "peak_allocated_bytes": 89863168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.13988158106803894,
+            "best_epoch": 44,
+            "epochs_executed": 52
+          },
+          "training_seconds": 6.916753199999221,
+          "scaler_origin_cutoff": "2023-11-01",
+          "scaler_target_cutoff": "2023-11-02"
+        }
+      },
+      "explanations_available": true
+    },
+    {
+      "asset": "NASDAQ",
+      "units": "index points",
+      "frequency": "daily",
+      "snapshot_sha256": "3fb57868cff90c6fc494b339fac3fd319e8463e39ba150092f5fcf1f5883faf1",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "NASDAQ",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 226.25455355733766,
+          "rmse": 311.6952462928974,
+          "mape_percent": 1.1447032900886782,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9772799453020811,
+          "direction_accuracy": 0.5129151291512916,
+          "up_down_confusion": [
+            [
+              62,
+              54
+            ],
+            [
+              78,
+              77
+            ]
+          ],
+          "up_precision": 0.5877862595419847,
+          "up_recall": 0.4967741935483871,
+          "n": 271
+        },
+        {
+          "asset": "NASDAQ",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 4686.824071870644,
+          "rmse": 5117.8327031171675,
+          "mape_percent": 22.115547754878286,
+          "mape_excluded_zero_targets": 0,
+          "r2": -5.125212852965079,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              116,
+              0
+            ],
+            [
+              153,
+              2
+            ]
+          ],
+          "up_precision": 1.0,
+          "up_recall": 0.012903225806451613,
+          "n": 271
+        },
+        {
+          "asset": "NASDAQ",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 4780.185977045474,
+          "rmse": 5202.730175846335,
+          "mape_percent": 22.577692369877884,
+          "mape_excluded_zero_targets": 0,
+          "r2": -5.330115307665185,
+          "direction_accuracy": 0.4317343173431734,
+          "up_down_confusion": [
+            [
+              116,
+              0
+            ],
+            [
+              154,
+              1
+            ]
+          ],
+          "up_precision": 1.0,
+          "up_recall": 0.0064516129032258064,
+          "n": 271
+        },
+        {
+          "asset": "NASDAQ",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 3224.2738483048893,
+          "rmse": 3597.9004397079725,
+          "mape_percent": 15.147228170940503,
+          "mape_excluded_zero_targets": 0,
+          "r2": -2.0272430991700334,
+          "direction_accuracy": 0.4280442804428044,
+          "up_down_confusion": [
+            [
+              116,
+              0
+            ],
+            [
+              155,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "NASDAQ",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 193.1656552704797,
+          "rmse": 278.42118678062224,
+          "mape_percent": 0.9809900497857004,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9818718462638938,
+          "direction_accuracy": 0.0,
+          "up_down_confusion": [
+            [
+              116,
+              0
+            ],
+            [
+              155,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 216.88676710464043,
+              "elapsed_seconds": 0.23430309991817921
+            }
+          ],
+          "training_seconds": 0.23430309991817921
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 1591.5960467940204,
+              "elapsed_seconds": 11.467199000064284
+            },
+            {
+              "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 1668.1535470769345,
+              "elapsed_seconds": 27.09325929998886
+            }
+          ],
+          "training_seconds": 38.56045830005314
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 2224.826670024875,
+              "elapsed_seconds": 31.613371000043117
+            },
+            {
+              "parameters": "GradientBoostingRegressor(random_state=42)",
+              "validation_rmse": 1620.2402763375032,
+              "elapsed_seconds": 87.9157811999321
+            }
+          ],
+          "training_seconds": 119.52915219997521
+        },
+        "LSTM": {
+          "device": "cuda",
+          "device_reason": "CUDA allocation verified",
+          "precision": {
+            "effective_precision": "torch.bfloat16",
+            "relative_loss_difference": 0.0005672529805451632,
+            "criterion": "finite training-fixture loss within 5% of FP32"
+          },
+          "batch_size": 64,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "samples_per_second": 4996.590846785904,
+              "elapsed_seconds": 0.019213100080378354,
+              "peak_allocated_bytes": 85255168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            },
+            {
+              "batch_size": 64,
+              "samples_per_second": 9580.933954634089,
+              "elapsed_seconds": 0.020039799972437322,
+              "peak_allocated_bytes": 89863168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.05956867337226868,
+            "best_epoch": 22,
+            "epochs_executed": 30
+          },
+          "training_seconds": 18.353317000088282,
+          "scaler_origin_cutoff": "2023-11-01",
+          "scaler_target_cutoff": "2023-11-02"
+        }
+      },
+      "explanations_available": true
+    },
+    {
+      "asset": "GOLD",
+      "units": "USD per troy ounce (continuous futures proxy)",
+      "frequency": "daily",
+      "snapshot_sha256": "e12ffae8fcdd2c903f0449085f3bfeb2979247169817c2d745127ce153d2ddf1",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-06",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-07"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-07",
+          "origin_end": "2024-12-02",
+          "target_start": "2023-11-08",
+          "target_end": "2024-12-03"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-12-03",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-04",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "GOLD",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 42.99029742117031,
+          "rmse": 55.78930869799073,
+          "mape_percent": 1.2398004740766166,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9881262372716486,
+          "direction_accuracy": 0.4575645756457565,
+          "up_down_confusion": [
+            [
+              77,
+              36
+            ],
+            [
+              110,
+              48
+            ]
+          ],
+          "up_precision": 0.5714285714285714,
+          "up_recall": 0.3037974683544304,
+          "n": 271
+        },
+        {
+          "asset": "GOLD",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1396.5141209387211,
+          "rmse": 1487.1791582444505,
+          "mape_percent": 39.64057981252367,
+          "mape_excluded_zero_targets": 0,
+          "r2": -7.437484484983122,
+          "direction_accuracy": 0.4132841328413284,
+          "up_down_confusion": [
+            [
+              113,
+              0
+            ],
+            [
+              158,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "GOLD",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1405.1203404160326,
+          "rmse": 1495.319590338443,
+          "mape_percent": 39.89838378687517,
+          "mape_excluded_zero_targets": 0,
+          "r2": -7.530106480656629,
+          "direction_accuracy": 0.4132841328413284,
+          "up_down_confusion": [
+            [
+              113,
+              0
+            ],
+            [
+              158,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "GOLD",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1214.825590802343,
+          "rmse": 1315.5205592681377,
+          "mape_percent": 34.22532243100015,
+          "mape_excluded_zero_targets": 0,
+          "r2": -5.602093730532424,
+          "direction_accuracy": 0.4132841328413284,
+          "up_down_confusion": [
+            [
+              113,
+              0
+            ],
+            [
+              158,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "GOLD",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 33.43469463498155,
+          "rmse": 47.14980220474282,
+          "mape_percent": 0.9653234441704832,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9915190177028438,
+          "direction_accuracy": 0.0036900369003690036,
+          "up_down_confusion": [
+            [
+              113,
+              0
+            ],
+            [
+              158,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 25.645552254577797,
+              "elapsed_seconds": 7.75345419999212
+            }
+          ],
+          "training_seconds": 7.75345419999212
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 402.172213646527,
+              "elapsed_seconds": 36.72983970004134
+            },
+            {
+              "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 403.7344177026706,
+              "elapsed_seconds": 48.28547359991353
+            }
+          ],
+          "training_seconds": 85.01531329995487
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 449.15462321042037,
+              "elapsed_seconds": 45.541069399914704
+            },
+            {
+              "parameters": "GradientBoostingRegressor(random_state=42)",
+              "validation_rmse": 408.19928699068936,
+              "elapsed_seconds": 70.42194989998825
+            }
+          ],
+          "training_seconds": 115.96301929990295
+        },
+        "LSTM": {
+          "device": "cuda",
+          "device_reason": "CUDA allocation verified",
+          "precision": {
+            "effective_precision": "torch.bfloat16",
+            "relative_loss_difference": 0.0005342707736417651,
+            "criterion": "finite training-fixture loss within 5% of FP32"
+          },
+          "batch_size": 64,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "samples_per_second": 6357.363249268287,
+              "elapsed_seconds": 0.01510060008149594,
+              "peak_allocated_bytes": 85255168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            },
+            {
+              "batch_size": 64,
+              "samples_per_second": 11065.644639287786,
+              "elapsed_seconds": 0.01735099998768419,
+              "peak_allocated_bytes": 89863168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.9397367835044861,
+            "best_epoch": 32,
+            "epochs_executed": 40
+          },
+          "training_seconds": 17.914790299953893,
+          "scaler_origin_cutoff": "2023-11-06",
+          "scaler_target_cutoff": "2023-11-07"
+        }
+      },
+      "explanations_available": true
+    },
+    {
+      "asset": "OIL",
+      "units": "USD per barrel (continuous futures proxy)",
+      "frequency": "daily",
+      "snapshot_sha256": "2776e2290dcf9b2c9ea58adee99541f13039439106ee34c78bf5ccccf9fdb1bc",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-03",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-06"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-06",
+          "origin_end": "2024-12-02",
+          "target_start": "2023-11-07",
+          "target_end": "2024-12-03"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-12-03",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-04",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "OIL",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1.2760553545218785,
+          "rmse": 1.6917155427759125,
+          "mape_percent": 1.9584669226886817,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.8965766807290052,
+          "direction_accuracy": 0.5055350553505535,
+          "up_down_confusion": [
+            [
+              61,
+              76
+            ],
+            [
+              58,
+              76
+            ]
+          ],
+          "up_precision": 0.5,
+          "up_recall": 0.5671641791044776,
+          "n": 271
+        },
+        {
+          "asset": "OIL",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 0.9849217547479228,
+          "rmse": 1.3247144318372779,
+          "mape_percent": 1.5078602305116136,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.936582615241613,
+          "direction_accuracy": 0.5055350553505535,
+          "up_down_confusion": [
+            [
+              71,
+              66
+            ],
+            [
+              68,
+              66
+            ]
+          ],
+          "up_precision": 0.5,
+          "up_recall": 0.4925373134328358,
+          "n": 271
+        },
+        {
+          "asset": "OIL",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1.0166874791010656,
+          "rmse": 1.3822983356119258,
+          "mape_percent": 1.5622137909003875,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9309494148511711,
+          "direction_accuracy": 0.5092250922509225,
+          "up_down_confusion": [
+            [
+              65,
+              72
+            ],
+            [
+              61,
+              73
+            ]
+          ],
+          "up_precision": 0.503448275862069,
+          "up_recall": 0.5447761194029851,
+          "n": 271
+        },
+        {
+          "asset": "OIL",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1.0335664362045236,
+          "rmse": 1.3836315878021,
+          "mape_percent": 1.5913905911577833,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9308161494927732,
+          "direction_accuracy": 0.47601476014760147,
+          "up_down_confusion": [
+            [
+              52,
+              85
+            ],
+            [
+              56,
+              78
+            ]
+          ],
+          "up_precision": 0.4785276073619632,
+          "up_recall": 0.582089552238806,
+          "n": 271
+        },
+        {
+          "asset": "OIL",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 0.9444278843701113,
+          "rmse": 1.2820348859714072,
+          "mape_percent": 1.4487970172252502,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9406031410219275,
+          "direction_accuracy": 0.0036900369003690036,
+          "up_down_confusion": [
+            [
+              137,
+              0
+            ],
+            [
+              134,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 1.5867659273116022,
+              "elapsed_seconds": 13.849205699982122
+            }
+          ],
+          "training_seconds": 13.849205699982122
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 1.510515674189742,
+              "elapsed_seconds": 38.03184030007105
+            },
+            {
+              "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 1.5227124657494664,
+              "elapsed_seconds": 33.97978089994285
+            }
+          ],
+          "training_seconds": 72.0116212000139
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 1.7339568799475706,
+              "elapsed_seconds": 40.22004539996851
+            },
+            {
+              "parameters": "GradientBoostingRegressor(random_state=42)",
+              "validation_rmse": 1.4781715203896464,
+              "elapsed_seconds": 60.81163310003467
+            }
+          ],
+          "training_seconds": 101.03167850000318
+        },
+        "LSTM": {
+          "device": "cuda",
+          "device_reason": "CUDA allocation verified",
+          "precision": {
+            "effective_precision": "torch.bfloat16",
+            "relative_loss_difference": 0.00022215922945179045,
+            "criterion": "finite training-fixture loss within 5% of FP32"
+          },
+          "batch_size": 64,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "samples_per_second": 6356.395136737958,
+              "elapsed_seconds": 0.015102899982593954,
+              "peak_allocated_bytes": 85255168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            },
+            {
+              "batch_size": 64,
+              "samples_per_second": 11667.476878895608,
+              "elapsed_seconds": 0.016456000041216612,
+              "peak_allocated_bytes": 89863168,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.006701718550175428,
+            "best_epoch": 15,
+            "epochs_executed": 23
+          },
+          "training_seconds": 13.702166400034912,
+          "scaler_origin_cutoff": "2023-11-03",
+          "scaler_target_cutoff": "2023-11-06"
+        }
+      },
+      "explanations_available": true
+    },
+    {
+      "asset": "HOUSING",
+      "units": "index (January 2000=100)",
+      "frequency": "monthly",
+      "snapshot_sha256": "a92e44e17dde0464bb82ab7f2621425b07adea1267f2da2d9f2870fa4addd3b6",
+      "raw_observations": 468,
+      "split": {
+        "train": {
+          "n": 338,
+          "origin_start": "1990-09-01",
+          "origin_end": "2018-10-01",
+          "target_start": "1990-10-01",
+          "target_end": "2018-11-01"
+        },
+        "validation": {
+          "n": 42,
+          "origin_start": "2018-11-01",
+          "origin_end": "2022-04-01",
+          "target_start": "2018-12-01",
+          "target_end": "2022-05-01"
+        },
+        "test": {
+          "n": 43,
+          "origin_start": "2022-05-01",
+          "origin_end": "2025-11-01",
+          "target_start": "2022-06-01",
+          "target_end": "2025-12-01"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "HOUSING",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 0.9150750673570246,
+          "rmse": 1.158773126385997,
+          "mape_percent": 0.29438586686100066,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9906407845047274,
+          "direction_accuracy": 0.8604651162790697,
+          "up_down_confusion": [
+            [
+              19,
+              2
+            ],
+            [
+              4,
+              18
+            ]
+          ],
+          "up_precision": 0.9,
+          "up_recall": 0.8181818181818182,
+          "n": 43
+        },
+        {
+          "asset": "HOUSING",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 113.52500845391624,
+          "rmse": 114.18424898403686,
+          "mape_percent": 35.864111752889485,
+          "mape_excluded_zero_targets": 0,
+          "r2": -89.87721663147259,
+          "direction_accuracy": 0.4883720930232558,
+          "up_down_confusion": [
+            [
+              21,
+              0
+            ],
+            [
+              22,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 43
+        },
+        {
+          "asset": "HOUSING",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 112.13368087526361,
+          "rmse": 112.78112762347813,
+          "mape_percent": 35.4249973579552,
+          "mape_excluded_zero_targets": 0,
+          "r2": -87.65750036477709,
+          "direction_accuracy": 0.4883720930232558,
+          "up_down_confusion": [
+            [
+              21,
+              0
+            ],
+            [
+              22,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 43
+        },
+        {
+          "asset": "HOUSING",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 99.06256149504905,
+          "rmse": 99.55761426241371,
+          "mape_percent": 31.305499292103406,
+          "mape_excluded_zero_targets": 0,
+          "r2": -68.08624355422701,
+          "direction_accuracy": 0.4883720930232558,
+          "up_down_confusion": [
+            [
+              21,
+              0
+            ],
+            [
+              22,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 43
+        },
+        {
+          "asset": "HOUSING",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1.6126976744186035,
+          "rmse": 2.0182019974040224,
+          "mape_percent": 0.5177821960442728,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9716095758535916,
+          "direction_accuracy": 0.0,
+          "up_down_confusion": [
+            [
+              21,
+              0
+            ],
+            [
+              22,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 43
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 0.8186932932088159,
+              "elapsed_seconds": 1.9994226999115199
+            }
+          ],
+          "training_seconds": 1.9994226999115199
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 46.15227832276547,
+              "elapsed_seconds": 1.939671800006181
+            },
+            {
+              "parameters": "RandomForestRegressor(max_depth=10, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 46.37778351516388,
+              "elapsed_seconds": 2.2636466999538243
+            }
+          ],
+          "training_seconds": 4.203318499960005
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 1,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 51.60585956387225,
+              "elapsed_seconds": 3.8097918999847025
+            },
+            {
+              "parameters": "GradientBoostingRegressor(random_state=42)",
+              "validation_rmse": 44.57058004144969,
+              "elapsed_seconds": 5.209429500042461
+            }
+          ],
+          "training_seconds": 9.019221400027163
+        },
+        "LSTM": {
+          "device": "cuda",
+          "device_reason": "CUDA allocation verified",
+          "precision": {
+            "effective_precision": "torch.bfloat16",
+            "relative_loss_difference": 0.0006968008819967508,
+            "criterion": "finite training-fixture loss within 5% of FP32"
+          },
+          "batch_size": 64,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "samples_per_second": 3638.9274332931036,
+              "elapsed_seconds": 0.02638139994814992,
+              "peak_allocated_bytes": 77402624,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            },
+            {
+              "batch_size": 64,
+              "samples_per_second": 10127.009635463008,
+              "elapsed_seconds": 0.018959199893288314,
+              "peak_allocated_bytes": 78959104,
+              "free_vram_before_probe": 4191158272,
+              "accepted": true
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.871829092502594,
+            "best_epoch": 54,
+            "epochs_executed": 60
+          },
+          "training_seconds": 7.896437200019136,
+          "scaler_origin_cutoff": "2018-10-01",
+          "scaler_target_cutoff": "2018-11-01"
+        }
+      },
+      "explanations_available": true
+    }
+  ],
+  "limitations": [
+    "Reconstruction, not exact replication: thesis omits instrument/date/sample/units and narrative hyperparameters; appendix implements different models and split.",
+    "Retrospectively adjusted/revised provider snapshots are not point-in-time historical vintages.",
+    "House-price experiment is monthly, retrospective next-observation regression, not publication-time forecasting or daily trading.",
+    "All four models use identical full windows; flattening increases collinearity and dimensionality for tabular models.",
+    "High price-level R2 does not establish trading skill. Compare with persistence and directional accuracy; no transaction-cost backtest or investment-return claim.",
+    "Bounded SHAP subset and permutation budgets are approximate; correlated-feature marginal masking and LIME neighborhoods may be off-manifold. Attributions are not causal.",
+    "Explanation seed stability is a bounded numerical check, not proof of market robustness or human trust.",
+    "Historical survey claims have no participant count/raw responses; no new human study was conducted.",
+    "Seeded deterministic settings improve repeatability; cross-version/hardware bitwise equality is not guaranteed. Runtime batch probing may choose a different batch on another machine.",
+    "Held-out results are descriptive for one fixed chronological split; no claim of universal model superiority or statistical significance."
+  ]
+}

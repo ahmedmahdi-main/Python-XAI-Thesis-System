@@ -1,0 +1,23 @@
+{
+  "symbol": "^IXIC",
+  "provider": "yahoo",
+  "frequency": "daily",
+  "units": "index points",
+  "start": "2015-01-01",
+  "end": "2026-01-01",
+  "source_url": "https://finance.yahoo.com/quote/^IXIC/history/",
+  "timezone": "America/New_York exchange session date",
+  "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+  "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+  "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+  "asset": "NASDAQ",
+  "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+  "retrieved_utc": "2026-10-21T03:54:40.589537+00:00",
+  "sha256": "3fb57868cff90c6fc494b339fac3fd319e8463e39ba150092f5fcf1f5883faf1",
+  "rows": 2766,
+  "rows_dropped_missing": 0,
+  "first_date": "2015-01-02",
+  "last_date": "2025-12-31",
+  "max_calendar_gap_days": 4,
+  "negative_close_count": 0
+}

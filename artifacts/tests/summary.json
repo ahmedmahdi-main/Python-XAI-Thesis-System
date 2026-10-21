@@ -1,0 +1,87 @@
+{
+  "checked_utc": "2026-10-21T05:34:32.787639+00:00",
+  "status": "PASSED",
+  "pytest": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "clean_venv_dashboard": {
+    "status": "PASSED",
+    "run_id": "full_20261021T040901084647Z",
+    "assets": [
+      "AAPL",
+      "SP500",
+      "NASDAQ",
+      "GOLD",
+      "OIL",
+      "HOUSING"
+    ],
+    "models_per_asset": 4,
+    "tabs": 8,
+    "date_check": "first and last precomputed dates",
+    "external_socket_connections": "blocked",
+    "scope": "Saved-artifact viewing only; not retraining or a browser pixel screenshot"
+  },
+  "clean_venv_model_audit": {
+    "run_id": "full_20261021T040901084647Z",
+    "assets": [
+      {
+        "asset": "AAPL",
+        "rows": 2766,
+        "test_samples_per_model": 271,
+        "models": 5,
+        "explanation_models": 4,
+        "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+      },
+      {
+        "asset": "SP500",
+        "rows": 2766,
+        "test_samples_per_model": 271,
+        "models": 5,
+        "explanation_models": 4,
+        "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+      },
+      {
+        "asset": "NASDAQ",
+        "rows": 2766,
+        "test_samples_per_model": 271,
+        "models": 5,
+        "explanation_models": 4,
+        "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+      },
+      {
+        "asset": "GOLD",
+        "rows": 2766,
+        "test_samples_per_model": 271,
+        "models": 5,
+        "explanation_models": 4,
+        "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+      },
+      {
+        "asset": "OIL",
+        "rows": 2766,
+        "test_samples_per_model": 271,
+        "models": 5,
+        "explanation_models": 4,
+        "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+      },
+      {
+        "asset": "HOUSING",
+        "rows": 468,
+        "test_samples_per_model": 43,
+        "models": 5,
+        "explanation_models": 4,
+        "status": "VERIFIED_FROM_ORIGINAL_SNAPSHOT_AND_RELOADED_CPU_MODELS"
+      }
+    ],
+    "status": "PASSED",
+    "checks": "snapshot hashes, original dates/targets, metrics recomputation, common rows, CPU model reload, scaler cutoff, SHAP reconstruction/background, paired LIME dates, real chart files"
+  },
+  "source_and_lock_hashes_match": true,
+  "upstream_deprecation_warnings": 923,
+  "dashboard_http_health": 200,
+  "dashboard_http_page": 200,
+  "scope": "No claim of human trust improvement, trading profitability, exact Table4 reproduction or independent external backup."
+}

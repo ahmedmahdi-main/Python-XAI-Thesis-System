@@ -1,0 +1,24 @@
+{
+  "asset": "OIL",
+  "model": "RandomForest",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 0.9849217547479228,
+  "rmse": 1.3247144318372779,
+  "mape_percent": 1.5078602305116136,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.936582615241613,
+  "direction_accuracy": 0.5055350553505535,
+  "up_down_confusion": [
+    [
+      71,
+      66
+    ],
+    [
+      68,
+      66
+    ]
+  ],
+  "up_precision": 0.5,
+  "up_recall": 0.4925373134328358,
+  "n": 271
+}

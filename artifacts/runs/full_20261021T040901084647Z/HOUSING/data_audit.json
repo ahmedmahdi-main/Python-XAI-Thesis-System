@@ -1,0 +1,71 @@
+{
+  "snapshot": {
+    "symbol": "CSUSHPINSA",
+    "provider": "fred",
+    "frequency": "monthly",
+    "units": "index (January 2000=100)",
+    "start": "1987-01-01",
+    "end": "2026-01-01",
+    "source_url": "https://fred.stlouisfed.org/graph/?g=0&id=CSUSHPINSA&cosd=1987-01-01&coed=2026-01-01",
+    "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CSUSHPINSA",
+    "timezone": "monthly observation period",
+    "adjustment": "Latest revised non-seasonally-adjusted index; no OHLCV invented",
+    "license": "S&P Dow Jones Indices copyright; FRED series notes/terms apply",
+    "revision_caution": "Exploratory retrospective next-observation experiment, NOT a real-time publication-date forecast. Release vintages and availability dates absent.",
+    "asset": "HOUSING",
+    "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+    "retrieved_utc": "2026-10-21T03:57:34.223790+00:00",
+    "sha256": "a92e44e17dde0464bb82ab7f2621425b07adea1267f2da2d9f2870fa4addd3b6",
+    "rows": 468,
+    "rows_dropped_missing": 0,
+    "first_date": "1987-01-01",
+    "last_date": "2025-12-01",
+    "max_calendar_gap_days": 31,
+    "negative_close_count": 0
+  },
+  "split": {
+    "train": {
+      "n": 338,
+      "origin_start": "1990-09-01",
+      "origin_end": "2018-10-01",
+      "target_start": "1990-10-01",
+      "target_end": "2018-11-01"
+    },
+    "validation": {
+      "n": 42,
+      "origin_start": "2018-11-01",
+      "origin_end": "2022-04-01",
+      "target_start": "2018-12-01",
+      "target_end": "2022-05-01"
+    },
+    "test": {
+      "n": 43,
+      "origin_start": "2022-05-01",
+      "origin_end": "2025-11-01",
+      "target_start": "2022-06-01",
+      "target_end": "2025-12-01"
+    }
+  },
+  "lookback": 12,
+  "features": [
+    "close",
+    "sma_5",
+    "sma_20",
+    "ema_12",
+    "ema_26",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "bollinger_upper",
+    "bollinger_lower",
+    "return_1",
+    "return_lag_1",
+    "return_lag_5",
+    "volatility_20",
+    "momentum_10",
+    "trailing_return_20"
+  ],
+  "information_set": "All four models use identical flattened or recurrent full historical windows",
+  "feature_rows_dropped_warmup": 33,
+  "target": "next monthly observed index; retrospective/revised series, not publication-time forecast"
+}

@@ -1,0 +1,24 @@
+{
+  "asset": "OIL",
+  "model": "LSTM",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1.0335664362045236,
+  "rmse": 1.3836315878021,
+  "mape_percent": 1.5913905911577833,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9308161494927732,
+  "direction_accuracy": 0.47601476014760147,
+  "up_down_confusion": [
+    [
+      52,
+      85
+    ],
+    [
+      56,
+      78
+    ]
+  ],
+  "up_precision": 0.4785276073619632,
+  "up_recall": 0.582089552238806,
+  "n": 271
+}

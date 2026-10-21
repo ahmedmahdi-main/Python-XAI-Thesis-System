@@ -1,0 +1,122 @@
+[
+  {
+    "asset": "NASDAQ",
+    "model": "LinearRegression",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 226.25455355733766,
+    "rmse": 311.6952462928974,
+    "mape_percent": 1.1447032900886782,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9772799453020811,
+    "direction_accuracy": 0.5129151291512916,
+    "up_down_confusion": [
+      [
+        62,
+        54
+      ],
+      [
+        78,
+        77
+      ]
+    ],
+    "up_precision": 0.5877862595419847,
+    "up_recall": 0.4967741935483871,
+    "n": 271
+  },
+  {
+    "asset": "NASDAQ",
+    "model": "RandomForest",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 4686.824071870644,
+    "rmse": 5117.8327031171675,
+    "mape_percent": 22.115547754878286,
+    "mape_excluded_zero_targets": 0,
+    "r2": -5.125212852965079,
+    "direction_accuracy": 0.4354243542435424,
+    "up_down_confusion": [
+      [
+        116,
+        0
+      ],
+      [
+        153,
+        2
+      ]
+    ],
+    "up_precision": 1.0,
+    "up_recall": 0.012903225806451613,
+    "n": 271
+  },
+  {
+    "asset": "NASDAQ",
+    "model": "GradientBoosting",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 4780.185977045474,
+    "rmse": 5202.730175846335,
+    "mape_percent": 22.577692369877884,
+    "mape_excluded_zero_targets": 0,
+    "r2": -5.330115307665185,
+    "direction_accuracy": 0.4317343173431734,
+    "up_down_confusion": [
+      [
+        116,
+        0
+      ],
+      [
+        154,
+        1
+      ]
+    ],
+    "up_precision": 1.0,
+    "up_recall": 0.0064516129032258064,
+    "n": 271
+  },
+  {
+    "asset": "NASDAQ",
+    "model": "LSTM",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 3224.2738483048893,
+    "rmse": 3597.9004397079725,
+    "mape_percent": 15.147228170940503,
+    "mape_excluded_zero_targets": 0,
+    "r2": -2.0272430991700334,
+    "direction_accuracy": 0.4280442804428044,
+    "up_down_confusion": [
+      [
+        116,
+        0
+      ],
+      [
+        155,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "NASDAQ",
+    "model": "Persistence",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 193.1656552704797,
+    "rmse": 278.42118678062224,
+    "mape_percent": 0.9809900497857004,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9818718462638938,
+    "direction_accuracy": 0.0,
+    "up_down_confusion": [
+      [
+        116,
+        0
+      ],
+      [
+        155,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  }
+]

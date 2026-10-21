@@ -1,0 +1,10 @@
+{
+  "cpu_reload_max_abs_error": {
+    "LinearRegression": 0.0,
+    "RandomForest": 2.842170943040401e-14,
+    "GradientBoosting": 0.0,
+    "LSTM": 7.62939453125e-06
+  },
+  "rtol": 1e-05,
+  "atol": 0.0001
+}

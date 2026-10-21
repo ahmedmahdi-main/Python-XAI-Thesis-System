@@ -1,0 +1,19 @@
+{
+  "status": "PREINSTALL_GPU_DETECTED_TORCH_NOT_INSTALLED",
+  "recorded_at_utc": "2026-10-21T03:14:57.747233+00:00",
+  "client_date": "2026-10-21",
+  "client_timezone": "Asia/Baghdad",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "executable": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu_query": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 6009 MiB, 536.40",
+  "nvidia_smi": "Wed Oct 21 06:14:59 2026       \n+---------------------------------------------------------------------------------------+\n| NVIDIA-SMI 536.40                 Driver Version: 536.40       CUDA Version: 12.2     |\n|-----------------------------------------+----------------------+----------------------+\n| GPU  Name                     TCC/WDDM  | Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |\n|                                         |                      |               MIG M. |\n|=========================================+======================+======================|\n|   0  NVIDIA GeForce RTX 3060 ...  WDDM  | 00000000:01:00.0 Off |                  N/A |\n| N/A   52C    P0              23W /  80W |      0MiB /  6144MiB |      0%      Default |\n|                                         |                      |                  N/A |\n+-----------------------------------------+----------------------+----------------------+\n                                                                                         \n+---------------------------------------------------------------------------------------+\n| Processes:                                                                            |\n|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |\n|        ID   ID                                                             Usage      |\n|=======================================================================================|\n|  No running processes found                                                           |\n+---------------------------------------------------------------------------------------+\n",
+  "torch_installed": false,
+  "torch_cuda_available": null,
+  "torch_cuda_check_status": "NOT_RUN_TORCH_NOT_INSTALLED",
+  "planned_torch_version": "2.5.1+cu121",
+  "planned_cuda_runtime": "12.1",
+  "original_plan_sha256": "4e195e89ee7833ac9f6b1a7f30250c34f69959cf3e7cfa0bf7a2db234d4c581a",
+  "original_thesis_status": "MISSING_NOT_INSPECTED",
+  "empirical_results_generated": false
+}

@@ -1,0 +1,144 @@
+{
+  "run_id": "quick_cpu_20261021T042222183460Z",
+  "status": "REPORT_GENERATED",
+  "provenance": "NEWLY_COMPUTED",
+  "created_utc": "2026-10-21T04:22:22.184444+00:00",
+  "configuration": {
+    "name": "quick_cpu",
+    "assets": [
+      "AAPL",
+      "SP500"
+    ],
+    "seed": 42,
+    "lookback": 30,
+    "monthly_lookback": 12,
+    "device": "cpu",
+    "epochs": 8,
+    "patience": 3,
+    "hidden_size": 32,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "batch_candidates": [
+      32,
+      64
+    ],
+    "amp": true,
+    "trees": 100,
+    "search": false,
+    "explain_samples": 3,
+    "lstm_explain_samples": 1,
+    "background_samples": 4,
+    "lime_samples": 500,
+    "permutation_cycles": 1,
+    "regime_threshold": 0.05,
+    "datasets": {
+      "AAPL": {
+        "symbol": "AAPL",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "USD per adjusted share",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "SP500": {
+        "symbol": "^GSPC",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "index points",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "NASDAQ": {
+        "symbol": "^IXIC",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "index points",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "GOLD": {
+        "symbol": "GC=F",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "USD per troy ounce (continuous futures proxy)",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "OIL": {
+        "symbol": "CL=F",
+        "provider": "yahoo",
+        "frequency": "daily",
+        "units": "USD per barrel (continuous futures proxy)",
+        "start": "2015-01-01",
+        "end": "2026-01-01"
+      },
+      "HOUSING": {
+        "symbol": "CSUSHPINSA",
+        "provider": "fred",
+        "frequency": "monthly",
+        "units": "index (January 2000=100)",
+        "start": "1987-01-01",
+        "end": "2026-01-01"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "executable": "C:\\Users\\MSI\\PycharmProjects\\Python XAI Thesis System\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "torch": "2.5.1+cu121",
+      "shap": "0.46.0",
+      "lime": "0.2.0.1",
+      "yfinance": "0.2.66",
+      "streamlit": "1.41.1"
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 536.40",
+    "pythonhashseed": "42"
+  },
+  "source_sha256": "a279ce433768fe7ecbf12d191a29d547874904e143e0141810a20b752c49f866",
+  "assets_completed": [
+    "AAPL",
+    "SP500"
+  ],
+  "reproducibility": {
+    "requirements_lock_sha256": "dc0c3582768008fd7db292cf05a93d0a6cf4bfc2fa57a5681188ab24b3d9cd7a",
+    "code_sha256": {
+      "src/xai_finance/__init__.py": "af0160d330be7d2d7a04164d4a8515ecf43e1a1e90bb3e70f83b312a911b823d",
+      "src/xai_finance/cli.py": "e12c6e9c5a95dd90752fb2d1dbf4ccbd42e598afa7b0d66cff13758bae1fa252",
+      "src/xai_finance/config.py": "78f524281d09d82929a3a592c7bc5d6c78b7edeb560add5f4b586ec941dc9fa6",
+      "src/xai_finance/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/data/features.py": "85827b78c0cfc481b5343b993cf188775fbdc3c55fac79c9f8a68b80f5032807",
+      "src/xai_finance/data/preprocess.py": "854a694910e70bad4bea82a99ef0b1106149c585e3937e4456ee3e41f73cfb2f",
+      "src/xai_finance/data/split.py": "defeb6dbc1dff3ce898ac1b73670e4a4ab40bd36718366ce887125fa6143c475",
+      "src/xai_finance/data/validate.py": "3424ea3021be3d8c6c81db9ca525e710b1ab47f008c8e3f0c3046bccf5555312",
+      "src/xai_finance/data/windows.py": "560de6268d5654859f19146dde8e949fcd398c96095ea40743e4439776ee7e2e",
+      "src/xai_finance/environment.py": "614573e5aba95717fc9938012411b20f9b2d05cba18ad8bb61e23cd4aa21830e",
+      "src/xai_finance/evaluate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/evaluate/metrics.py": "7e2525930aaa61cc512e37ad8a55c371c0286b758a989016955e6eb490f85922",
+      "src/xai_finance/evaluate/regimes.py": "c3dbd689ca3c7b75e12ace01d2dd68755fdedcda90b08738a18f27c4c77c0e34",
+      "src/xai_finance/explain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/explain/lime_explain.py": "4ef4147ddcbec0b462571a6e9a6c54054d27891364fd14360ce02a4bf95a8b84",
+      "src/xai_finance/explain/quality.py": "7504b1e95a7086c7fe73856013439d2e9d2564a63c2bdab34984f1f2f4e5eff2",
+      "src/xai_finance/explain/shap_explain.py": "90c4395588bc347dfaede573857376f87c78f0da3159e240b78d06f1c032e457",
+      "src/xai_finance/io/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/io/data_sources.py": "b084bc00edf2db3f7c2c3ff2d3441f5d422a9112ba45697b3836a298a79c6155",
+      "src/xai_finance/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/models/baselines.py": "d939eaaffc17567715c4cd78ad9baecea310cb22bb853a5709ebdb60401414ff",
+      "src/xai_finance/models/linear_preprocess.py": "2dad9f30b6ba6e3fae7c5970cd9771dd73cd6cb46876a4bea02568bcdf36cbc6",
+      "src/xai_finance/models/lstm_model.py": "c32047ebbe9588307a1fd18928b78fa6dcb3ed855a63f2ab85ac80af075d75a7",
+      "src/xai_finance/models/sklearn_models.py": "f2586519bee594de55a779e97411805eeecd68fd5133afc905b701f128f360e9",
+      "src/xai_finance/pipelines/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/pipelines/explain.py": "50831af7694e473432481a0b8ff0dd3ab88943c029fcd12cf3ea35596742be7b",
+      "src/xai_finance/pipelines/report.py": "ec8a86d58642a6d87d020f0eadc5b5d8220b3fa39b858597d7fc2cd9eba24a55",
+      "src/xai_finance/pipelines/train.py": "017ee735d027f0526ef6e04804b0b94b25aaa722234ff3609c7c0e76837799f1",
+      "src/xai_finance/reports/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/xai_finance/reports/plots.py": "97506d8af85f08abb3b463fc5148f2985dd00c57f7d8403fc486c09a7eeb1a09",
+      "src/xai_finance/seed.py": "d8c417bd45d0dbb7fec8c41a2d4f08796dd1c24715fe843e210ae80f3e057050",
+      "src/xai_finance/storage.py": "3844937b0c9c575a4f867be2c09011a0275f6ea36c1a2597136ca6befe745659"
+    }
+  }
+}

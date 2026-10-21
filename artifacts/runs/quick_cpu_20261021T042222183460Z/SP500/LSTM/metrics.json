@@ -1,0 +1,24 @@
+{
+  "asset": "SP500",
+  "model": "LSTM",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 1308.3610236244697,
+  "rmse": 1359.112661461768,
+  "mape_percent": 20.783305344533197,
+  "mape_excluded_zero_targets": 0,
+  "r2": -8.239912124710687,
+  "direction_accuracy": 0.4354243542435424,
+  "up_down_confusion": [
+    [
+      118,
+      0
+    ],
+    [
+      153,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

@@ -1,0 +1,24 @@
+{
+  "asset": "NASDAQ",
+  "model": "LSTM",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 3224.2738483048893,
+  "rmse": 3597.9004397079725,
+  "mape_percent": 15.147228170940503,
+  "mape_excluded_zero_targets": 0,
+  "r2": -2.0272430991700334,
+  "direction_accuracy": 0.4280442804428044,
+  "up_down_confusion": [
+    [
+      116,
+      0
+    ],
+    [
+      155,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

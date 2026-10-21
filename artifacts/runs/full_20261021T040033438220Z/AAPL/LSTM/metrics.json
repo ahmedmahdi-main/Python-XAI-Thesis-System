@@ -1,0 +1,24 @@
+{
+  "asset": "AAPL",
+  "model": "LSTM",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 57.53031532876591,
+  "rmse": 61.414866257066755,
+  "mape_percent": 24.102079525212176,
+  "mape_excluded_zero_targets": 0,
+  "r2": -4.637234640332287,
+  "direction_accuracy": 0.4612546125461255,
+  "up_down_confusion": [
+    [
+      125,
+      0
+    ],
+    [
+      146,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

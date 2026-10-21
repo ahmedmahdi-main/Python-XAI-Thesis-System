@@ -1,0 +1,74 @@
+{
+  "snapshot": {
+    "symbol": "AAPL",
+    "provider": "yahoo",
+    "frequency": "daily",
+    "units": "USD per adjusted share",
+    "start": "2015-01-01",
+    "end": "2026-01-01",
+    "source_url": "https://finance.yahoo.com/quote/AAPL/history/",
+    "timezone": "America/New_York exchange session date",
+    "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+    "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+    "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+    "asset": "AAPL",
+    "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+    "retrieved_utc": "2026-10-21T03:54:39.267009+00:00",
+    "sha256": "87e5bef4aec197b26bd182f3ee796c9c19b91ec8f50ceb70ee9d0fb89ab64755",
+    "rows": 2766,
+    "rows_dropped_missing": 0,
+    "first_date": "2015-01-02",
+    "last_date": "2025-12-31",
+    "max_calendar_gap_days": 4,
+    "negative_close_count": 0
+  },
+  "split": {
+    "train": {
+      "n": 2162,
+      "origin_start": "2015-04-02",
+      "origin_end": "2023-11-01",
+      "target_start": "2015-04-06",
+      "target_end": "2023-11-02"
+    },
+    "validation": {
+      "n": 270,
+      "origin_start": "2023-11-02",
+      "origin_end": "2024-11-27",
+      "target_start": "2023-11-03",
+      "target_end": "2024-11-29"
+    },
+    "test": {
+      "n": 271,
+      "origin_start": "2024-11-29",
+      "origin_end": "2025-12-30",
+      "target_start": "2024-12-02",
+      "target_end": "2025-12-31"
+    }
+  },
+  "lookback": 30,
+  "features": [
+    "close",
+    "open",
+    "high",
+    "low",
+    "log_volume",
+    "sma_5",
+    "sma_20",
+    "ema_12",
+    "ema_26",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "bollinger_upper",
+    "bollinger_lower",
+    "return_1",
+    "return_lag_1",
+    "return_lag_5",
+    "volatility_20",
+    "momentum_10",
+    "trailing_return_20"
+  ],
+  "information_set": "All four models use identical flattened or recurrent full historical windows",
+  "feature_rows_dropped_warmup": 33,
+  "target": "next observed adjusted close"
+}

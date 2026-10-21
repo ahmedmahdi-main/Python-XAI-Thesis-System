@@ -1,0 +1,4 @@
+# Environment bootstrap only; full research dependency lock remains pending.
+# Official CUDA 12.1 build compatible with the detected NVIDIA driver 536.40.
+--index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121

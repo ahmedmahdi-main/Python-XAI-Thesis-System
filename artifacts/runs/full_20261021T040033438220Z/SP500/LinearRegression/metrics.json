@@ -1,0 +1,24 @@
+{
+  "asset": "SP500",
+  "model": "LinearRegression",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 52.68929412070668,
+  "rmse": 74.88102304373004,
+  "mape_percent": 0.8747791097236801,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9719520927496944,
+  "direction_accuracy": 0.5276752767527675,
+  "up_down_confusion": [
+    [
+      68,
+      50
+    ],
+    [
+      78,
+      75
+    ]
+  ],
+  "up_precision": 0.6,
+  "up_recall": 0.49019607843137253,
+  "n": 271
+}

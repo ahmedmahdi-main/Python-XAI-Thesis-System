@@ -1,0 +1,7 @@
+{
+  "wheel_path": "C:\\Users\\MSI\\AppData\\Local\\Temp\\pip-unpack-3yl4nf48\\torch-2.5.1+cu121-cp312-cp312-win_amd64.whl",
+  "sha256": "473d76257636c66b22cbfac6f616d6b522ef3d3473c13decb1afda22a7b059eb",
+  "size_bytes": 2449331371,
+  "official_index": "https://download.pytorch.org/whl/cu121/torch/",
+  "status": "SHA256_VERIFIED"
+}

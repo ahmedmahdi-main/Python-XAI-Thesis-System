@@ -1,0 +1,24 @@
+{
+  "asset": "AAPL",
+  "model": "RandomForest",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 45.55916688774605,
+  "rmse": 51.6614738069525,
+  "mape_percent": 18.68049304986827,
+  "mape_excluded_zero_targets": 0,
+  "r2": -2.9888956420570576,
+  "direction_accuracy": 0.4612546125461255,
+  "up_down_confusion": [
+    [
+      125,
+      0
+    ],
+    [
+      146,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

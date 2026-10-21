@@ -1,0 +1,453 @@
+{
+  "run_id": "quick_cpu_20261021T042222183460Z",
+  "provenance": "NEWLY_COMPUTED",
+  "generated_utc": "2026-10-21T04:28:42.507072+00:00",
+  "assets": [
+    {
+      "asset": "AAPL",
+      "units": "USD per adjusted share",
+      "frequency": "daily",
+      "snapshot_sha256": "87e5bef4aec197b26bd182f3ee796c9c19b91ec8f50ceb70ee9d0fb89ab64755",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "AAPL",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 3.3007355056998637,
+          "rmse": 4.571582252277096,
+          "mape_percent": 1.4687791518034803,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9687642335323479,
+          "direction_accuracy": 0.5129151291512916,
+          "up_down_confusion": [
+            [
+              61,
+              64
+            ],
+            [
+              68,
+              78
+            ]
+          ],
+          "up_precision": 0.5492957746478874,
+          "up_recall": 0.5342465753424658,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 45.55916688774605,
+          "rmse": 51.6614738069525,
+          "mape_percent": 18.68049304986827,
+          "mape_excluded_zero_targets": 0,
+          "r2": -2.9888956420570576,
+          "direction_accuracy": 0.4612546125461255,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 56.460956047596355,
+          "rmse": 62.053765457108874,
+          "mape_percent": 23.357545529094974,
+          "mape_excluded_zero_targets": 0,
+          "r2": -4.755133083619574,
+          "direction_accuracy": 0.4612546125461255,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 34.5803080203127,
+          "rmse": 39.23497858904406,
+          "mape_percent": 14.235785057584376,
+          "mape_excluded_zero_targets": 0,
+          "r2": -1.3007314598866238,
+          "direction_accuracy": 0.4612546125461255,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "AAPL",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 2.7806627900073795,
+          "rmse": 4.189368602340614,
+          "mape_percent": 1.243199174010601,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9737689160017075,
+          "direction_accuracy": 0.0,
+          "up_down_confusion": [
+            [
+              125,
+              0
+            ],
+            [
+              146,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 3.1965321090289427,
+              "elapsed_seconds": 6.906798199983314
+            }
+          ],
+          "training_seconds": 6.906798199983314,
+          "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 24.169034864561766,
+              "elapsed_seconds": 33.36724460008554
+            }
+          ],
+          "training_seconds": 33.36724460008554,
+          "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 32.1358044186595,
+              "elapsed_seconds": 46.98196190001909
+            }
+          ],
+          "training_seconds": 46.98196190001909,
+          "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+        },
+        "LSTM": {
+          "device": "cpu",
+          "device_reason": "CPU explicitly requested",
+          "precision": {
+            "effective_precision": "fp32",
+            "reason": "CPU or AMP disabled"
+          },
+          "batch_size": 32,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "reason": "bounded CPU default"
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.08671604841947556,
+            "best_epoch": 7,
+            "epochs_executed": 8
+          },
+          "training_seconds": 14.67359900008887,
+          "scaler_origin_cutoff": "2023-11-01",
+          "scaler_target_cutoff": "2023-11-02"
+        }
+      },
+      "explanations_available": true
+    },
+    {
+      "asset": "SP500",
+      "units": "index points",
+      "frequency": "daily",
+      "snapshot_sha256": "c10fcd903ed9e96d29b554b0848a446be1995ecd671a2ef3a4536737d0b2ba1d",
+      "raw_observations": 2766,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      },
+      "metrics": [
+        {
+          "asset": "SP500",
+          "model": "LinearRegression",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 51.823706183067706,
+          "rmse": 74.59023653137234,
+          "mape_percent": 0.8614743231963644,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9721695074359417,
+          "direction_accuracy": 0.5313653136531366,
+          "up_down_confusion": [
+            [
+              65,
+              53
+            ],
+            [
+              74,
+              79
+            ]
+          ],
+          "up_precision": 0.5984848484848485,
+          "up_recall": 0.5163398692810458,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "RandomForest",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1502.5510097401407,
+          "rmse": 1567.6281364741603,
+          "mape_percent": 23.826761061083428,
+          "mape_excluded_zero_targets": 0,
+          "r2": -11.29257944515167,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "GradientBoosting",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1687.1223981114138,
+          "rmse": 1745.36412388883,
+          "mape_percent": 26.819030296094354,
+          "mape_excluded_zero_targets": 0,
+          "r2": -14.238036647273233,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "LSTM",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 1308.3610236244697,
+          "rmse": 1359.112661461768,
+          "mape_percent": 20.783305344533197,
+          "mape_excluded_zero_targets": 0,
+          "r2": -8.239912124710687,
+          "direction_accuracy": 0.4354243542435424,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        },
+        {
+          "asset": "SP500",
+          "model": "Persistence",
+          "provenance": "NEWLY_COMPUTED",
+          "mae": 43.549253344022176,
+          "rmse": 65.82169188531671,
+          "mape_percent": 0.7251043757813153,
+          "mape_excluded_zero_targets": 0,
+          "r2": 0.9783281988751926,
+          "direction_accuracy": 0.0,
+          "up_down_confusion": [
+            [
+              118,
+              0
+            ],
+            [
+              153,
+              0
+            ]
+          ],
+          "up_precision": null,
+          "up_recall": 0.0,
+          "n": 271
+        }
+      ],
+      "training": {
+        "LinearRegression": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('independentcolumns', IndependentColumns()),\n                ('linearregression', LinearRegression())])",
+              "validation_rmse": 48.73996237215592,
+              "elapsed_seconds": 4.734419699991122
+            }
+          ],
+          "training_seconds": 4.734419699991122,
+          "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+        },
+        "RandomForest": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "RandomForestRegressor(max_depth=5, min_samples_leaf=3, n_jobs=4,\n                      random_state=42)",
+              "validation_rmse": 699.4139370959158,
+              "elapsed_seconds": 24.365766499890015
+            }
+          ],
+          "training_seconds": 24.365766499890015,
+          "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+        },
+        "GradientBoosting": {
+          "selection": "validation RMSE only; no test access; no refit",
+          "selected_trial": 0,
+          "trials": [
+            {
+              "parameters": "GradientBoostingRegressor(learning_rate=0.03, max_depth=2, random_state=42)",
+              "validation_rmse": 857.483098940834,
+              "elapsed_seconds": 38.398806399898604
+            }
+          ],
+          "training_seconds": 38.398806399898604,
+          "inference": "Forest predictions sum trees serially for deterministic floating-point accumulation"
+        },
+        "LSTM": {
+          "device": "cpu",
+          "device_reason": "CPU explicitly requested",
+          "precision": {
+            "effective_precision": "fp32",
+            "reason": "CPU or AMP disabled"
+          },
+          "batch_size": 32,
+          "batch_probes": [
+            {
+              "batch_size": 32,
+              "reason": "bounded CPU default"
+            }
+          ],
+          "selection": {
+            "best_validation_scaled_mse": 0.4912893772125244,
+            "best_epoch": 8,
+            "epochs_executed": 8
+          },
+          "training_seconds": 7.562620099983178,
+          "scaler_origin_cutoff": "2023-11-01",
+          "scaler_target_cutoff": "2023-11-02"
+        }
+      },
+      "explanations_available": true
+    }
+  ],
+  "limitations": [
+    "Reconstruction, not exact replication: thesis omits instrument/date/sample/units and narrative hyperparameters; appendix implements different models and split.",
+    "Retrospectively adjusted/revised provider snapshots are not point-in-time historical vintages.",
+    "House-price experiment is monthly, retrospective next-observation regression, not publication-time forecasting or daily trading.",
+    "All four models use identical full windows; flattening increases collinearity and dimensionality for tabular models.",
+    "High price-level R2 does not establish trading skill. Compare with persistence and directional accuracy; no transaction-cost backtest or investment-return claim.",
+    "Bounded SHAP subset and permutation budgets are approximate; correlated-feature marginal masking and LIME neighborhoods may be off-manifold. Attributions are not causal.",
+    "Explanation seed stability is a bounded numerical check, not proof of market robustness or human trust.",
+    "Historical survey claims have no participant count/raw responses; no new human study was conducted.",
+    "Seeded deterministic settings improve repeatability; cross-version/hardware bitwise equality is not guaranteed. Runtime batch probing may choose a different batch on another machine.",
+    "Held-out results are descriptive for one fixed chronological split; no claim of universal model superiority or statistical significance."
+  ]
+}

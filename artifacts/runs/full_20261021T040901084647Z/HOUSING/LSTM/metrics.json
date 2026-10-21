@@ -1,0 +1,24 @@
+{
+  "asset": "HOUSING",
+  "model": "LSTM",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 99.06256149504905,
+  "rmse": 99.55761426241371,
+  "mape_percent": 31.305499292103406,
+  "mape_excluded_zero_targets": 0,
+  "r2": -68.08624355422701,
+  "direction_accuracy": 0.4883720930232558,
+  "up_down_confusion": [
+    [
+      21,
+      0
+    ],
+    [
+      22,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 43
+}

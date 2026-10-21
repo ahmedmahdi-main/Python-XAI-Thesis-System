@@ -1,0 +1,24 @@
+{
+  "asset": "OIL",
+  "model": "Persistence",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 0.9444278843701113,
+  "rmse": 1.2820348859714072,
+  "mape_percent": 1.4487970172252502,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9406031410219275,
+  "direction_accuracy": 0.0036900369003690036,
+  "up_down_confusion": [
+    [
+      137,
+      0
+    ],
+    [
+      134,
+      0
+    ]
+  ],
+  "up_precision": null,
+  "up_recall": 0.0,
+  "n": 271
+}

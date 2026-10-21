@@ -1,0 +1,525 @@
+{
+  "AAPL": {
+    "dataset": {
+      "symbol": "AAPL",
+      "provider": "yahoo",
+      "frequency": "daily",
+      "units": "USD per adjusted share",
+      "start": "2015-01-01",
+      "end": "2026-01-01",
+      "source_url": "https://finance.yahoo.com/quote/AAPL/history/",
+      "timezone": "America/New_York exchange session date",
+      "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+      "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+      "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+      "asset": "AAPL",
+      "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+      "retrieved_utc": "2026-10-21T03:54:39.267009+00:00",
+      "sha256": "87e5bef4aec197b26bd182f3ee796c9c19b91ec8f50ceb70ee9d0fb89ab64755",
+      "rows": 2766,
+      "rows_dropped_missing": 0,
+      "first_date": "2015-01-02",
+      "last_date": "2025-12-31",
+      "max_calendar_gap_days": 4,
+      "negative_close_count": 0
+    },
+    "alignment": {
+      "all_labels_equal_next_raw_observation": true,
+      "partition_label_availability_verified": true,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      }
+    },
+    "causality": {
+      "prefix_rows": 2179,
+      "future_deletion_max_feature_error": 0.0
+    },
+    "scaling": {
+      "saved_scalers_match_training_only_recalculation": true,
+      "inverse_max_abs_error": 2.842170943040401e-14,
+      "test_standardized_target_min": 1.6615423401037275,
+      "test_standardized_target_max": 3.754432024338515
+    },
+    "shift": {
+      "train_price_min": 20.5481452942,
+      "train_price_max": 193.567077637,
+      "test_price_min": 171.365951538,
+      "test_price_max": 285.413116455,
+      "test_price_outside_train_fraction": 0.977859778597786,
+      "test_feature_cells_outside_train_fraction": 0.5031057810578106,
+      "RandomForest": {
+        "prediction_min": 171.18418921653137,
+        "prediction_max": 191.10036954773204,
+        "mean_price_error": -45.25062359141361,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "GradientBoosting": {
+        "prediction_min": 170.26995628928293,
+        "prediction_max": 190.37196186962433,
+        "mean_price_error": -45.92605407493601,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "LSTM": {
+        "prediction_min": 136.35618591308594,
+        "prediction_max": 186.51722717285156,
+        "mean_price_error": -57.53031696162525
+      }
+    }
+  },
+  "SP500": {
+    "dataset": {
+      "symbol": "^GSPC",
+      "provider": "yahoo",
+      "frequency": "daily",
+      "units": "index points",
+      "start": "2015-01-01",
+      "end": "2026-01-01",
+      "source_url": "https://finance.yahoo.com/quote/^GSPC/history/",
+      "timezone": "America/New_York exchange session date",
+      "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+      "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+      "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+      "asset": "SP500",
+      "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+      "retrieved_utc": "2026-10-21T03:54:39.928208+00:00",
+      "sha256": "c10fcd903ed9e96d29b554b0848a446be1995ecd671a2ef3a4536737d0b2ba1d",
+      "rows": 2766,
+      "rows_dropped_missing": 0,
+      "first_date": "2015-01-02",
+      "last_date": "2025-12-31",
+      "max_calendar_gap_days": 4,
+      "negative_close_count": 0
+    },
+    "alignment": {
+      "all_labels_equal_next_raw_observation": true,
+      "partition_label_availability_verified": true,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      }
+    },
+    "causality": {
+      "prefix_rows": 2179,
+      "future_deletion_max_feature_error": 0.0
+    },
+    "scaling": {
+      "saved_scalers_match_training_only_recalculation": true,
+      "inverse_max_abs_error": 9.094947017729282e-13,
+      "test_standardized_target_min": 2.1786578338953233,
+      "test_standardized_target_max": 4.47092478524871
+    },
+    "shift": {
+      "train_price_min": 1829.07995605,
+      "train_price_max": 4796.56005859,
+      "test_price_min": 4982.77001953,
+      "test_price_max": 6932.04980469,
+      "test_price_outside_train_fraction": 1.0,
+      "test_feature_cells_outside_train_fraction": 0.511070110701107,
+      "RandomForest": {
+        "prediction_min": 4715.268541604973,
+        "prediction_max": 4740.04363206069,
+        "mean_price_error": -1475.7665163879906,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "GradientBoosting": {
+        "prediction_min": 4616.049732611655,
+        "prediction_max": 4749.772880104323,
+        "mean_price_error": -1506.9319503369802,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "LSTM": {
+        "prediction_min": 4772.16552734375,
+        "prediction_max": 5419.541015625,
+        "mean_price_error": -916.7484126350785
+      }
+    }
+  },
+  "NASDAQ": {
+    "dataset": {
+      "symbol": "^IXIC",
+      "provider": "yahoo",
+      "frequency": "daily",
+      "units": "index points",
+      "start": "2015-01-01",
+      "end": "2026-01-01",
+      "source_url": "https://finance.yahoo.com/quote/^IXIC/history/",
+      "timezone": "America/New_York exchange session date",
+      "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+      "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+      "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+      "asset": "NASDAQ",
+      "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+      "retrieved_utc": "2026-10-21T03:54:40.589537+00:00",
+      "sha256": "3fb57868cff90c6fc494b339fac3fd319e8463e39ba150092f5fcf1f5883faf1",
+      "rows": 2766,
+      "rows_dropped_missing": 0,
+      "first_date": "2015-01-02",
+      "last_date": "2025-12-31",
+      "max_calendar_gap_days": 4,
+      "negative_close_count": 0
+    },
+    "alignment": {
+      "all_labels_equal_next_raw_observation": true,
+      "partition_label_availability_verified": true,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-01",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-02"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-02",
+          "origin_end": "2024-11-27",
+          "target_start": "2023-11-03",
+          "target_end": "2024-11-29"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-11-29",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-02",
+          "target_end": "2025-12-31"
+        }
+      }
+    },
+    "causality": {
+      "prefix_rows": 2179,
+      "future_deletion_max_feature_error": 0.0
+    },
+    "scaling": {
+      "saved_scalers_match_training_only_recalculation": true,
+      "inverse_max_abs_error": 9.094947017729282e-13,
+      "test_standardized_target_min": 1.839106499592265,
+      "test_standardized_target_max": 4.413127184848291
+    },
+    "shift": {
+      "train_price_min": 4266.83984375,
+      "train_price_max": 16057.4404297,
+      "test_price_min": 15267.9101562,
+      "test_price_max": 23958.4707031,
+      "test_price_outside_train_fraction": 0.985239852398524,
+      "test_feature_cells_outside_train_fraction": 0.5153567035670357,
+      "RandomForest": {
+        "prediction_min": 15327.876086226282,
+        "prediction_max": 15774.149813481305,
+        "mean_price_error": -4684.392384037471,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "GradientBoosting": {
+        "prediction_min": 15315.782639000146,
+        "prediction_max": 15859.444889042747,
+        "mean_price_error": -4778.044779555417,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "LSTM": {
+        "prediction_min": 14856.390625,
+        "prediction_max": 17810.662109375,
+        "mean_price_error": -3221.435712638653
+      }
+    }
+  },
+  "GOLD": {
+    "dataset": {
+      "symbol": "GC=F",
+      "provider": "yahoo",
+      "frequency": "daily",
+      "units": "USD per troy ounce (continuous futures proxy)",
+      "start": "2015-01-01",
+      "end": "2026-01-01",
+      "source_url": "https://finance.yahoo.com/quote/GC=F/history/",
+      "timezone": "America/New_York exchange session date",
+      "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+      "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+      "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+      "asset": "GOLD",
+      "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+      "retrieved_utc": "2026-10-21T03:54:41.231619+00:00",
+      "sha256": "e12ffae8fcdd2c903f0449085f3bfeb2979247169817c2d745127ce153d2ddf1",
+      "rows": 2766,
+      "rows_dropped_missing": 0,
+      "first_date": "2015-01-02",
+      "last_date": "2025-12-31",
+      "max_calendar_gap_days": 4,
+      "negative_close_count": 0
+    },
+    "alignment": {
+      "all_labels_equal_next_raw_observation": true,
+      "partition_label_availability_verified": true,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-06",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-07"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-07",
+          "origin_end": "2024-12-02",
+          "target_start": "2023-11-08",
+          "target_end": "2024-12-03"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-12-03",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-04",
+          "target_end": "2025-12-31"
+        }
+      }
+    },
+    "causality": {
+      "prefix_rows": 2179,
+      "future_deletion_max_feature_error": 0.0
+    },
+    "scaling": {
+      "saved_scalers_match_training_only_recalculation": true,
+      "inverse_max_abs_error": 9.094947017729282e-13,
+      "test_standardized_target_min": 3.6630037994067397,
+      "test_standardized_target_max": 10.200760107289815
+    },
+    "shift": {
+      "train_price_min": 1050.80004883,
+      "train_price_max": 2069.39990234,
+      "test_price_min": 2608.10009766,
+      "test_price_max": 4552.70019531,
+      "test_price_outside_train_fraction": 1.0,
+      "test_feature_cells_outside_train_fraction": 0.5285055350553506,
+      "RandomForest": {
+        "prediction_min": 2007.309071236059,
+        "prediction_max": 2018.587104939944,
+        "mean_price_error": -1396.5141209387211,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "GradientBoosting": {
+        "prediction_min": 1981.736326272693,
+        "prediction_max": 2019.289103462668,
+        "mean_price_error": -1405.1203404160326,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "LSTM": {
+        "prediction_min": 2130.19970703125,
+        "prediction_max": 2225.239013671875,
+        "mean_price_error": -1214.8255917032309
+      }
+    }
+  },
+  "OIL": {
+    "dataset": {
+      "symbol": "CL=F",
+      "provider": "yahoo",
+      "frequency": "daily",
+      "units": "USD per barrel (continuous futures proxy)",
+      "start": "2015-01-01",
+      "end": "2026-01-01",
+      "source_url": "https://finance.yahoo.com/quote/CL=F/history/",
+      "timezone": "America/New_York exchange session date",
+      "adjustment": "Yahoo Adj Close; OHLC multiplied by Adj Close/Close during feature extraction; volume unadjusted",
+      "license": "Yahoo personal/research use; redistribution subject to Yahoo terms",
+      "revision_caution": "Retrospectively adjusted snapshot, not point-in-time corporate-action vintages; continuous futures roll conventions provider-defined",
+      "asset": "OIL",
+      "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+      "retrieved_utc": "2026-10-21T03:54:41.865831+00:00",
+      "sha256": "2776e2290dcf9b2c9ea58adee99541f13039439106ee34c78bf5ccccf9fdb1bc",
+      "rows": 2766,
+      "rows_dropped_missing": 0,
+      "first_date": "2015-01-02",
+      "last_date": "2025-12-31",
+      "max_calendar_gap_days": 4,
+      "negative_close_count": 1
+    },
+    "alignment": {
+      "all_labels_equal_next_raw_observation": true,
+      "partition_label_availability_verified": true,
+      "split": {
+        "train": {
+          "n": 2162,
+          "origin_start": "2015-04-02",
+          "origin_end": "2023-11-03",
+          "target_start": "2015-04-06",
+          "target_end": "2023-11-06"
+        },
+        "validation": {
+          "n": 270,
+          "origin_start": "2023-11-06",
+          "origin_end": "2024-12-02",
+          "target_start": "2023-11-07",
+          "target_end": "2024-12-03"
+        },
+        "test": {
+          "n": 271,
+          "origin_start": "2024-12-03",
+          "origin_end": "2025-12-30",
+          "target_start": "2024-12-04",
+          "target_end": "2025-12-31"
+        }
+      }
+    },
+    "causality": {
+      "prefix_rows": 2179,
+      "future_deletion_max_feature_error": 0.0
+    },
+    "scaling": {
+      "saved_scalers_match_training_only_recalculation": true,
+      "inverse_max_abs_error": 1.4210854715202004e-14,
+      "test_standardized_target_min": -0.2854096689595456,
+      "test_standardized_target_max": 1.0458232781517023
+    },
+    "shift": {
+      "train_price_min": -37.6300010681,
+      "train_price_max": 123.699996948,
+      "test_price_min": 55.2700004578,
+      "test_price_max": 80.0400009155,
+      "test_price_outside_train_fraction": 0.0,
+      "test_feature_cells_outside_train_fraction": 0.0,
+      "RandomForest": {
+        "prediction_min": 55.92757566552903,
+        "prediction_max": 79.65404838440095,
+        "mean_price_error": 0.06779688953041427,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "GradientBoosting": {
+        "prediction_min": 55.53437648285279,
+        "prediction_max": 79.89925627719676,
+        "mean_price_error": 0.10361785069638318,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "LSTM": {
+        "prediction_min": 54.83004379272461,
+        "prediction_max": 79.7392807006836,
+        "mean_price_error": 0.15005424189980254
+      }
+    }
+  },
+  "HOUSING": {
+    "dataset": {
+      "symbol": "CSUSHPINSA",
+      "provider": "fred",
+      "frequency": "monthly",
+      "units": "index (January 2000=100)",
+      "start": "1987-01-01",
+      "end": "2026-01-01",
+      "source_url": "https://fred.stlouisfed.org/graph/?g=0&id=CSUSHPINSA&cosd=1987-01-01&coed=2026-01-01",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CSUSHPINSA",
+      "timezone": "monthly observation period",
+      "adjustment": "Latest revised non-seasonally-adjusted index; no OHLCV invented",
+      "license": "S&P Dow Jones Indices copyright; FRED series notes/terms apply",
+      "revision_caution": "Exploratory retrospective next-observation experiment, NOT a real-time publication-date forecast. Release vintages and availability dates absent.",
+      "asset": "HOUSING",
+      "status": "AUTHENTIC_PROVIDER_SNAPSHOT",
+      "retrieved_utc": "2026-10-21T03:57:34.223790+00:00",
+      "sha256": "a92e44e17dde0464bb82ab7f2621425b07adea1267f2da2d9f2870fa4addd3b6",
+      "rows": 468,
+      "rows_dropped_missing": 0,
+      "first_date": "1987-01-01",
+      "last_date": "2025-12-01",
+      "max_calendar_gap_days": 31,
+      "negative_close_count": 0
+    },
+    "alignment": {
+      "all_labels_equal_next_raw_observation": true,
+      "partition_label_availability_verified": true,
+      "split": {
+        "train": {
+          "n": 338,
+          "origin_start": "1990-09-01",
+          "origin_end": "2018-10-01",
+          "target_start": "1990-10-01",
+          "target_end": "2018-11-01"
+        },
+        "validation": {
+          "n": 42,
+          "origin_start": "2018-11-01",
+          "origin_end": "2022-04-01",
+          "target_start": "2018-12-01",
+          "target_end": "2022-05-01"
+        },
+        "test": {
+          "n": 43,
+          "origin_start": "2022-05-01",
+          "origin_end": "2025-11-01",
+          "target_start": "2022-06-01",
+          "target_end": "2025-12-01"
+        }
+      }
+    },
+    "causality": {
+      "prefix_rows": 341,
+      "future_deletion_max_feature_error": 0.0
+    },
+    "scaling": {
+      "saved_scalers_match_training_only_recalculation": true,
+      "inverse_max_abs_error": 5.684341886080802e-14,
+      "test_standardized_target_min": 3.959158772556798,
+      "test_standardized_target_max": 4.9158292627420295
+    },
+    "shift": {
+      "train_price_min": 75.132,
+      "train_price_max": 205.339,
+      "test_price_min": 292.671,
+      "test_price_max": 331.564,
+      "test_price_outside_train_fraction": 1.0,
+      "test_feature_cells_outside_train_fraction": 0.5857558139534884,
+      "RandomForest": {
+        "prediction_min": 201.70607310425686,
+        "prediction_max": 203.4729193690476,
+        "mean_price_error": -113.52500845391626,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "GradientBoosting": {
+        "prediction_min": 202.84440486069428,
+        "prediction_max": 204.64363159768703,
+        "mean_price_error": -112.13368087526361,
+        "clip_to_training_feature_box_max_prediction_change": 0.0
+      },
+      "LSTM": {
+        "prediction_min": 212.2869415283203,
+        "prediction_max": 219.5858917236328,
+        "mean_price_error": -99.06256149504905
+      }
+    }
+  }
+}

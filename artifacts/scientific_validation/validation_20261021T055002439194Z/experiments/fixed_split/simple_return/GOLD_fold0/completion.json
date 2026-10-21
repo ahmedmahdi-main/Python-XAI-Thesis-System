@@ -1,0 +1,18 @@
+{
+  "files": {
+    "design.json": "c0e9f06b637fc6e65e9d0d09b9c200f12c385b25a6f8f55826e14c61c7dffa72",
+    "GradientBoosting.joblib": "a3d2c3b766530a0de9a353d76d17d267f1d08fe912ab528dac824f15bfef8283",
+    "LinearRegression.joblib": "29cb4cd491346b9fcc16ff3d5a8e18c47553dbfd922273d8a0e846310f8fa3c2",
+    "metrics.json": "6b0b2994f2168fa4db2c740382f927773ceff90a2fbadda8edf9ac5712049075",
+    "predictions.csv": "e0d840bd65f1e9fafdcc452ae5747bdefc5cdbd7440c5c25f2d566066238886a",
+    "RandomForest.joblib": "620aad712c03d950bf430dfa4934f0bb1c6b492879c061a816dafc0a79be02b1",
+    "reload_check.json": "c67b02c15d1928dcd7d167e42f134158cad0a2bf07f5f9dbf7eb1117f6b6c1cc",
+    "target_and_partitions.npz": "cda1b9446f6825b45e43a383ba7908251885011f01febeaad3303d487516218b",
+    "training.json": "c4d4c5e4a5610d9a85a44138bbdecd992e69607a92d8e5373f9c089497847b4e",
+    "LSTM\\best.pt": "c5f7de6eff8c68f706ec65b83c7269c908d287f34d658258b578f644a2c56855",
+    "LSTM\\history.json": "46f042141bc943e7c7bb700e5a939af98cd2f9631eacfc5a63a764b751f7e191",
+    "LSTM\\last.pt": "4916506082f2a8feefd83822f678aa9044e31cb372def33442b1ab252b741b4d",
+    "LSTM\\scalers.joblib": "625722f0d52eeeed13319089683d147553552b5a8689bab8df6cc4d9af6b7cde"
+  },
+  "status": "EXECUTED_AND_CPU_RELOAD_VERIFIED"
+}

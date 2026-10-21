@@ -1,0 +1,152 @@
+[
+  {
+    "asset": "AAPL",
+    "target": "price_change",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.1920928955078125e-07,
+    "training_target_scale": 1.8016391817728363,
+    "cpu_max_error_training_std_units": 6.616712755629447e-08
+  },
+  {
+    "asset": "GOLD",
+    "target": "price_change",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 9.5367431640625e-07,
+    "training_target_scale": 14.807806162808308,
+    "cpu_max_error_training_std_units": 6.440348461621037e-08
+  },
+  {
+    "asset": "NASDAQ",
+    "target": "price_change",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 7.62939453125e-06,
+    "training_target_scale": 137.72520319929495,
+    "cpu_max_error_training_std_units": 5.539577618346223e-08
+  },
+  {
+    "asset": "OIL",
+    "target": "price_change",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.4901161193847656e-07,
+    "training_target_scale": 2.2538117035527856,
+    "cpu_max_error_training_std_units": 6.6115377652704e-08
+  },
+  {
+    "asset": "SP500",
+    "target": "price_change",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.6689300537109375e-06,
+    "training_target_scale": 37.13080315257007,
+    "cpu_max_error_training_std_units": 4.494731899154785e-08
+  },
+  {
+    "asset": "AAPL",
+    "target": "simple_return",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.1641532182693481e-09,
+    "training_target_scale": 0.018444804076623425,
+    "cpu_max_error_training_std_units": 6.311551011511001e-08
+  },
+  {
+    "asset": "GOLD",
+    "target": "simple_return",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 4.656612873077393e-10,
+    "training_target_scale": 0.009260244304972942,
+    "cpu_max_error_training_std_units": 5.028606934891227e-08
+  },
+  {
+    "asset": "NASDAQ",
+    "target": "simple_return",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 6.402842700481415e-10,
+    "training_target_scale": 0.013838797070320258,
+    "cpu_max_error_training_std_units": 4.626733572250612e-08
+  },
+  {
+    "asset": "SP500",
+    "target": "simple_return",
+    "design": "fixed_split",
+    "fold": 0,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 6.984919309616089e-10,
+    "training_target_scale": 0.011675183555122799,
+    "cpu_max_error_training_std_units": 5.982706204692832e-08
+  },
+  {
+    "asset": "AAPL",
+    "target": "price_change",
+    "design": "walk_forward",
+    "fold": 1,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.1920928955078125e-07,
+    "training_target_scale": 1.8016391817728363,
+    "cpu_max_error_training_std_units": 6.616712755629447e-08
+  },
+  {
+    "asset": "AAPL",
+    "target": "price_change",
+    "design": "walk_forward",
+    "fold": 2,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.1920928955078125e-07,
+    "training_target_scale": 1.8111323948494498,
+    "cpu_max_error_training_std_units": 6.582030661579024e-08
+  },
+  {
+    "asset": "AAPL",
+    "target": "price_change",
+    "design": "walk_forward",
+    "fold": 3,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 8.940696716308594e-08,
+    "training_target_scale": 1.8892066737030562,
+    "cpu_max_error_training_std_units": 4.7325138327951324e-08
+  },
+  {
+    "asset": "SP500",
+    "target": "price_change",
+    "design": "walk_forward",
+    "fold": 1,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.430511474609375e-06,
+    "training_target_scale": 37.13080315257007,
+    "cpu_max_error_training_std_units": 3.852627342132673e-08
+  },
+  {
+    "asset": "SP500",
+    "target": "price_change",
+    "design": "walk_forward",
+    "fold": 2,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.9073486328125e-06,
+    "training_target_scale": 36.977782361796635,
+    "cpu_max_error_training_std_units": 5.158093619976155e-08
+  },
+  {
+    "asset": "SP500",
+    "target": "price_change",
+    "design": "walk_forward",
+    "fold": 3,
+    "cuda_replay_bitwise_equal": true,
+    "cpu_max_abs_error_target_units": 1.6689300537109375e-06,
+    "training_target_scale": 36.9690215537264,
+    "cpu_max_error_training_std_units": 4.514401473367403e-08
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "asset": "GOLD",
+  "model": "LinearRegression",
+  "provenance": "NEWLY_COMPUTED",
+  "mae": 42.99029742117031,
+  "rmse": 55.78930869799073,
+  "mape_percent": 1.2398004740766166,
+  "mape_excluded_zero_targets": 0,
+  "r2": 0.9881262372716486,
+  "direction_accuracy": 0.4575645756457565,
+  "up_down_confusion": [
+    [
+      77,
+      36
+    ],
+    [
+      110,
+      48
+    ]
+  ],
+  "up_precision": 0.5714285714285714,
+  "up_recall": 0.3037974683544304,
+  "n": 271
+}

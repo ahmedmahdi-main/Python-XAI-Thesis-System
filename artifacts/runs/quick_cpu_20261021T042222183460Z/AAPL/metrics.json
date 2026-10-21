@@ -1,0 +1,122 @@
+[
+  {
+    "asset": "AAPL",
+    "model": "LinearRegression",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 3.3007355056998637,
+    "rmse": 4.571582252277096,
+    "mape_percent": 1.4687791518034803,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9687642335323479,
+    "direction_accuracy": 0.5129151291512916,
+    "up_down_confusion": [
+      [
+        61,
+        64
+      ],
+      [
+        68,
+        78
+      ]
+    ],
+    "up_precision": 0.5492957746478874,
+    "up_recall": 0.5342465753424658,
+    "n": 271
+  },
+  {
+    "asset": "AAPL",
+    "model": "RandomForest",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 45.55916688774605,
+    "rmse": 51.6614738069525,
+    "mape_percent": 18.68049304986827,
+    "mape_excluded_zero_targets": 0,
+    "r2": -2.9888956420570576,
+    "direction_accuracy": 0.4612546125461255,
+    "up_down_confusion": [
+      [
+        125,
+        0
+      ],
+      [
+        146,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "AAPL",
+    "model": "GradientBoosting",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 56.460956047596355,
+    "rmse": 62.053765457108874,
+    "mape_percent": 23.357545529094974,
+    "mape_excluded_zero_targets": 0,
+    "r2": -4.755133083619574,
+    "direction_accuracy": 0.4612546125461255,
+    "up_down_confusion": [
+      [
+        125,
+        0
+      ],
+      [
+        146,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "AAPL",
+    "model": "LSTM",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 34.5803080203127,
+    "rmse": 39.23497858904406,
+    "mape_percent": 14.235785057584376,
+    "mape_excluded_zero_targets": 0,
+    "r2": -1.3007314598866238,
+    "direction_accuracy": 0.4612546125461255,
+    "up_down_confusion": [
+      [
+        125,
+        0
+      ],
+      [
+        146,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  },
+  {
+    "asset": "AAPL",
+    "model": "Persistence",
+    "provenance": "NEWLY_COMPUTED",
+    "mae": 2.7806627900073795,
+    "rmse": 4.189368602340614,
+    "mape_percent": 1.243199174010601,
+    "mape_excluded_zero_targets": 0,
+    "r2": 0.9737689160017075,
+    "direction_accuracy": 0.0,
+    "up_down_confusion": [
+      [
+        125,
+        0
+      ],
+      [
+        146,
+        0
+      ]
+    ],
+    "up_precision": null,
+    "up_recall": 0.0,
+    "n": 271
+  }
+]
