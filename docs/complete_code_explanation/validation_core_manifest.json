@@ -1,0 +1,118 @@
+{
+  "src/xai_finance/validation/audit.py": {
+    "document": "line_by_line/src_xai_finance_validation_audit.py.md",
+    "ranges": [
+      [
+        1,
+        11
+      ],
+      [
+        14,
+        19
+      ],
+      [
+        22,
+        30
+      ],
+      [
+        33,
+        42
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        53,
+        61
+      ],
+      [
+        64,
+        75
+      ],
+      [
+        78,
+        92
+      ]
+    ],
+    "sha256": "326bd2c60ea2d6853a41ed016821143a263a96f9d7524a3954907297aaa5a4d2",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/validation/diagnostics.py": {
+    "document": "line_by_line/src_xai_finance_validation_diagnostics.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        19
+      ],
+      [
+        22,
+        29
+      ],
+      [
+        32,
+        43
+      ],
+      [
+        44,
+        51
+      ],
+      [
+        54,
+        60
+      ]
+    ],
+    "sha256": "8f047fe994c63b1dc661ca8f5a885b6076a0fbfce9142833527d41d7b4e575a9",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/validation/experiments.py": {
+    "document": "line_by_line/src_xai_finance_validation_experiments.py.md",
+    "ranges": [
+      [
+        1,
+        17
+      ],
+      [
+        20,
+        28
+      ],
+      [
+        31,
+        39
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        49,
+        56
+      ],
+      [
+        57,
+        65
+      ],
+      [
+        66,
+        75
+      ],
+      [
+        78,
+        89
+      ],
+      [
+        92,
+        102
+      ]
+    ],
+    "sha256": "ceb4c3e23ea536f71e455a295c9c0f9bed84d65e74897c505d0b3895fedb01ec",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

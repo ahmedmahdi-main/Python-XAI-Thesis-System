@@ -1,0 +1,102 @@
+[
+  {
+    "number": 1,
+    "title": "البنية العامة",
+    "caption": "الشكل (1): البنية العامة",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_01.mmd",
+    "svg": "mermaid_rendered/diagram_01.svg",
+    "sha256": "51e44722bdaddb3e6b6690e90579c30db4391b486391bb4603ab869701e0f6ce",
+    "pdf_page": 5
+  },
+  {
+    "number": 2,
+    "title": "معالجة البيانات",
+    "caption": "الشكل (2): معالجة البيانات",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_02.mmd",
+    "svg": "mermaid_rendered/diagram_02.svg",
+    "sha256": "c8b6d08e2298d0e4d8b7445e1bc0dbdab3e9b1f7ed95b1af7c1f1ced3e12ad7c",
+    "pdf_page": 6
+  },
+  {
+    "number": 3,
+    "title": "هندسة السمات",
+    "caption": "الشكل (3): هندسة السمات",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_03.mmd",
+    "svg": "mermaid_rendered/diagram_03.svg",
+    "sha256": "3ae390dbb570180d0f5cd031c13206d83bf5166aca78d18b31909c93dc50c91e",
+    "pdf_page": 7
+  },
+  {
+    "number": 4,
+    "title": "التدريب",
+    "caption": "الشكل (4): التدريب",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_04.mmd",
+    "svg": "mermaid_rendered/diagram_04.svg",
+    "sha256": "b1b20f852ea2a6f306e4f1866b178902db25e4e21dd6f154350a431487212ec6",
+    "pdf_page": 8
+  },
+  {
+    "number": 5,
+    "title": "LSTM المنفذ",
+    "caption": "الشكل (5): LSTM المنفذ",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_05.mmd",
+    "svg": "mermaid_rendered/diagram_05.svg",
+    "sha256": "22e02c49780f74a77e85bd3a36035deecbd8e71519b164a165a535c06c0502a6",
+    "pdf_page": 9
+  },
+  {
+    "number": 6,
+    "title": "التنبؤ والتقييم",
+    "caption": "الشكل (6): التنبؤ والتقييم",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_06.mmd",
+    "svg": "mermaid_rendered/diagram_06.svg",
+    "sha256": "7d39b2c46f6513de9d5560dea2ae3d3b71ee7cbeabbc8a9079b0fde57101f590",
+    "pdf_page": 10
+  },
+  {
+    "number": 7,
+    "title": "SHAP وLIME",
+    "caption": "الشكل (7): SHAP وLIME",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_07.mmd",
+    "svg": "mermaid_rendered/diagram_07.svg",
+    "sha256": "6d5fad1deec99d5c971e906a343bee21d4c8e42e3e38c9efc85cbbe396cfcee4",
+    "pdf_page": 10
+  },
+  {
+    "number": 8,
+    "title": "Streamlit",
+    "caption": "الشكل (8): Streamlit",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_08.mmd",
+    "svg": "mermaid_rendered/diagram_08.svg",
+    "sha256": "9cc3322ca571f2a5a192d6121c87ca63763b081b096c61ea5f20c5c4158fa115",
+    "pdf_page": 11
+  },
+  {
+    "number": 9,
+    "title": "التحقق العلمي",
+    "caption": "الشكل (9): التحقق العلمي",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_09.mmd",
+    "svg": "mermaid_rendered/diagram_09.svg",
+    "sha256": "f8dde554f5b36a6a09f549dafead91110f01a06656fcce071f8a1ac2bc36d1bd",
+    "pdf_page": 12
+  },
+  {
+    "number": 10,
+    "title": "النشر المحلي CPU",
+    "caption": "الشكل (10): النشر المحلي CPU",
+    "source_markdown": "02_PROJECT_ARCHITECTURE_AR.md",
+    "mermaid_source": "mermaid_rendered/diagram_10.mmd",
+    "svg": "mermaid_rendered/diagram_10.svg",
+    "sha256": "51ca1a52f7a08bbc21a5abf2f5b7ac69e0496ce7d92c09ba6cac0ab9ab488377",
+    "pdf_page": 13
+  }
+]

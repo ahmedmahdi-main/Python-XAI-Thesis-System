@@ -1,0 +1,122 @@
+{
+  "scripts/verify_artifacts.py": {
+    "document": "line_by_line/scripts_verify_artifacts.py.md",
+    "ranges": [
+      [
+        1,
+        14
+      ],
+      [
+        17,
+        24
+      ],
+      [
+        25,
+        30
+      ],
+      [
+        31,
+        39
+      ],
+      [
+        42,
+        50
+      ],
+      [
+        51,
+        56
+      ],
+      [
+        59,
+        71
+      ],
+      [
+        74,
+        75
+      ]
+    ],
+    "sha256": "a5debefd13f188f1fcc126b3b69427a7e98b275242a004e18a6c781e624392ff",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/verify_cpu_replay.py": {
+    "document": "line_by_line/scripts_verify_cpu_replay.py.md",
+    "ranges": [
+      [
+        1,
+        15
+      ],
+      [
+        18,
+        27
+      ],
+      [
+        29,
+        40
+      ],
+      [
+        42,
+        53
+      ],
+      [
+        54,
+        65
+      ],
+      [
+        66,
+        74
+      ],
+      [
+        75,
+        86
+      ],
+      [
+        89,
+        90
+      ]
+    ],
+    "sha256": "c6e074eff31470057e4f6fe73801aa4ceed9453b236686c9538a5dbd6e531578",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/verify_scientific_validation.py": {
+    "document": "line_by_line/scripts_verify_scientific_validation.py.md",
+    "ranges": [
+      [
+        1,
+        15
+      ],
+      [
+        18,
+        28
+      ],
+      [
+        29,
+        39
+      ],
+      [
+        40,
+        46
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        66,
+        74
+      ],
+      [
+        77,
+        89
+      ],
+      [
+        92,
+        93
+      ]
+    ],
+    "sha256": "3e2f23a91b3db309dfaef515c7df378810965f9069d868c9e894abbd97eca36f",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

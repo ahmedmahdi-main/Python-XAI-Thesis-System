@@ -1,0 +1,19 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.1
+2 info using node@v24.11.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\XAI-Thesis\Python-XAI-Thesis-System\.npmrc
+5 silly config load:file:C:\Users\acer\.npmrc
+6 silly config load:file:C:\Users\acer\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm view mermaid version
+8 verbose argv "view" "mermaid" "version" "--fetch-retries" "0" "--fetch-timeout" "8000" "--cache" "C:\\XAI-Thesis\\Python-XAI-Thesis-System\\docs\\complete_code_explanation\\.npm-cache"
+9 verbose logfile logs-max:10 dir:C:\XAI-Thesis\Python-XAI-Thesis-System\docs\complete_code_explanation\.npm-cache\_logs\2026-11-04T19_01_08_953Z-
+10 verbose logfile C:\XAI-Thesis\Python-XAI-Thesis-System\docs\complete_code_explanation\.npm-cache\_logs\2026-11-04T19_01_08_953Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/mermaid 144ms (cache miss)
+13 verbose cwd C:\XAI-Thesis\Python-XAI-Thesis-System
+14 verbose os Windows_NT 10.0.26200
+15 verbose node v24.11.0
+16 verbose npm  v11.6.1
+17 verbose exit 0
+18 info ok

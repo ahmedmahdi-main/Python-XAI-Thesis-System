@@ -1,0 +1,1212 @@
+[
+  {
+    "number": 1,
+    "question": "ما المقصود بإعادة بناء الرسالة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../ASSUMPTIONS_AND_DEVIATIONS.md"
+    ],
+    "inspected_evidence": "docs/ASSUMPTIONS_AND_DEVIATIONS.md:3–11؛ docs/RESULTS_AUDIT.md:3–15؛ docs/THESIS_TRACEABILITY.md:25–33",
+    "finding": "الجواب يميز نتيجة NEWLY_COMPUTED من الجدول التاريخي غير المعاد إنتاجه. السؤال 17 يعالج ترتيب LSTM لا تعريف إعادة البناء.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الاستنتاج يعتمد السجل المتاح؛ ليس إثباتاً لاستحالة إعادة إنتاج الأصل مطلقاً."
+  },
+  {
+    "number": 2,
+    "question": "ما هدف التنبؤ في البيانات اليومية؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/windows.py",
+      "../../src/xai_finance/data/features.py",
+      "../../src/xai_finance/validation/audit.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/windows.py:29–37؛ data/features.py:14–32؛ validation/audit.py:22–30",
+    "finding": "الهدف من الصف التالي بعد حذف الصفوف الناقصة؛ كود النوافذ لا يضمن تتابع البيانات الخام. السؤال 38 يعالج فرق الأيام التقويمية. إعادة فحص 2026-11-05: windows.py:29–37 وfeatures.py:32 يثبتان فهرسة جدول السمات بعد الحذف، وoriginal_audit.json يحفظ نجاح محاذاة AAPL. القيد التاريخي باقٍ.",
+    "correction": "حُدد جدول السمات وشرط إثبات المحاذاة؛ أضيفت مصادر مباشرة.",
+    "remaining_uncertainty": "تاريخ الصف لا يثبت تاريخ إتاحة الأسعار المعدلة."
+  },
+  {
+    "number": 3,
+    "question": "لماذا تُراجع بيانات الإسكان على نحو مختلف؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../RESULTS_AUDIT.md"
+    ],
+    "inspected_evidence": "docs/ASSUMPTIONS_AND_DEVIATIONS.md:11؛ docs/RESULTS_AUDIT.md:24–29؛ src/xai_finance/io/data_sources.py:23–31",
+    "finding": "سلسلة الإسكان شهرية منقحة دون vintages، ولا تثبت تنبؤاً آنياً. السؤال 42 عن طريقة نمذجتها وليس الإتاحة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "لم يُتحقق هنا من تاريخ نشر كل مشاهدة خارج اللقطة المحفوظة."
+  },
+  {
+    "number": 4,
+    "question": "كيف يحسب المتوسط البسيط في المشروع؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/features.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/features.py:14–15,22–23,32",
+    "finding": "متوسط متحرك من 5 و20 صفاً مع حذف القيم الناقصة؛ الوصف صحيح ولا يكرر شرح MACD أو Bollinger في 35–36.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "النافذة عدد رصود لا أيام تقويمية."
+  },
+  {
+    "number": 5,
+    "question": "كيف تصنع النوافذ وما أبعاد AAPL؟",
+    "status": "PASS",
+    "evidence_links": [
+      "03_DATA_PIPELINE_AR.md"
+    ],
+    "inspected_evidence": "configs/full_experiment.yaml:3–5؛ src/xai_finance/data/windows.py:29–37؛ artifacts/runs/full_20261021T040901084647Z/AAPL/windows.npz؛ 03_DATA_PIPELINE_AR.md:11–15",
+    "finding": "الشكل المحفوظ (2703,30,20)، والهدف الصف التالي في جدول السمات. السؤال 39 يقدم مثال محاذاة بتاريخ محدد. إعادة فحص 2026-11-05: قُرئ windows.npz دون تنبؤ أو تجربة؛ الشكل المحفوظ (2703,30,20)، وتثبت windows.py:29–37 موضع الهدف.",
+    "correction": "أزيل افتراض الإتاحة عند الأصل ووُضح نطاق مطابقة الرصد الخام.",
+    "remaining_uncertainty": "شكل الملف ووصف عينة واحدة لا يثبتان إتاحة اللقطة المعدلة تاريخياً."
+  },
+  {
+    "number": 6,
+    "question": "هل تداخل النوافذ بين الأقسام تسرب تلقائياً؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/audit.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/windows.py:33–37؛ data/preprocess.py:24–27؛ validation/audit.py:22–30؛ docs/ASSUMPTIONS_AND_DEVIATIONS.md:11",
+    "finding": "تداخل السياق ليس تسرباً تلقائياً؛ الجواب يشترط وقت الإتاحة وتقييس التدريب ويذكر النسخ المنقحة. السؤال 40 يختص بفحص scaler.",
+    "correction": "أُكملت الإجابة المختصرة بشرط الإتاحة والتقييس.",
+    "remaining_uncertainty": "حد الفاصل يعتمد تعريف وقت القرار؛ المقارنة الزمنية لا تثبت تاريخ إصدار النسخ."
+  },
+  {
+    "number": 7,
+    "question": "كيف يحدد التقسيم الزمني؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/split.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/split.py:4–9؛ configs/full_experiment.yaml",
+    "finding": "لعدد n موجب يحسب int(0.8n) ثم int(0.1n)، والباقي اختبار، ويرفض أقل من 30. السؤال 41 عن أدوار المجموعتين.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الكسور المقربة ليست نسباً دقيقة بالضرورة."
+  },
+  {
+    "number": 8,
+    "question": "كيف يمنع LSTM تسرب التقييس؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/preprocess.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/preprocess.py:16–27؛ models/lstm_model.py:167–175,189–195",
+    "finding": "يلائم معيارا المدخل والهدف على التدريب وحده، وتكرار صفوف النوافذ يؤثر في الوزن؛ لا يدعي منع بقية مصادر التسرب. السؤال 40 عن التحقق المحفوظ.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الحكم يخص تقييس مسار LSTM وليس توفر النسخ التاريخية."
+  },
+  {
+    "number": 9,
+    "question": "ما دور IndependentColumns قبل OLS؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/linear_preprocess.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/linear_preprocess.py:9–22؛ models/sklearn_models.py:14–21",
+    "finding": "QR مع pivoting يختار أعمدة بالرتبة والسماح، ويحتفظ بتحويلها؛ لا يعني استقلالاً إحصائياً. السؤال 57 يتناول إسناد SHAP للأعمدة المحذوفة.",
+    "correction": "أزيلت فاصلة منقوطة من نهاية إجابة مكتملة.",
+    "remaining_uncertainty": "الاختيار عددي ويتأثر بالسماح وليس دليلاً سببياً."
+  },
+  {
+    "number": 10,
+    "question": "كيف يختار النظام الغابة والتعزيز؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/sklearn_models.py",
+      "../../src/xai_finance/pipelines/train.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:14–38؛ pipelines/train.py:66–84,89–100؛ configs/full_experiment.yaml",
+    "finding": "يلائم المرشحين على التدريب ويختار تحقق RMSE دون refit، ثم يحفظ ويقيم الاختبار؛ السؤال 48 يركز على نتيجة غياب refit. إعادة فحص 2026-11-05: sklearn_models.py:24–38 وtrain.py:76–99 يؤكدان الاختيار دون refit والحفظ؛ training.json المحفوظ يسجل validation RMSE للمرشحين.",
+    "correction": "أضيف مرجع pipeline للحفظ والتقييم.",
+    "remaining_uncertainty": "الأداء النهائي خاص باللقطة والإعدادات المحفوظة."
+  },
+  {
+    "number": 11,
+    "question": "لماذا تعجز الغابة عادة عن استقراء مستوى خارج أهداف التدريب؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/diagnostics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:14–20؛ validation/audit.py:45–60؛ .demo_venv/Lib/site-packages/sklearn/ensemble/_forest.py:1560–1590؛ artifacts/runs/full_20261021T040901084647Z/run.json",
+    "finding": "الغابة الافتراضية squared_error تستخدم متوسطات الأوراق والأشجار؛ تدقيق المصدر يفحص حدود المدى. السؤال 45 عن تكوين الغابة، و46 عن boosting.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "مقارنة القيد ببيانات الاختبار لا تثبت سبباً وحيداً للأداء؛ وثائق المكتبة المحلية 1.5.2 توافق إصدار التشغيل المسجل."
+  },
+  {
+    "number": 12,
+    "question": "ما بنية LSTM الفعلية؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:16–25,167–175؛ configs/full_experiment.yaml؛ artifacts/runs/full_20261021T040901084647Z/AAPL/windows.npz",
+    "finding": "الطبقة الواحدة تليها Dropout ورأس خطي؛ 32 وحدة في الإعداد و20 سمة في النوافذ اليومية المحفوظة. الأسئلة 68 و73 عن dropout والحدود.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "قيم الإعداد تخص تشغيل إعادة البناء، لا بنية الرسالة الأصلية بالضرورة."
+  },
+  {
+    "number": 13,
+    "question": "ما دور بوابة النسيان؟",
+    "status": "PASS",
+    "evidence_links": [
+      "05_LSTM_DEEP_EXPLANATION_AR.md"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:16–25؛ .demo_venv/Lib/site-packages/torch/nn/modules/rnn.py:795–815؛ artifacts/runs/full_20261021T040901084647Z/run.json",
+    "finding": "معادلة الخلية تحتوي f_t مضروبة عنصرياً في c_(t-1)، وتستخدم دالة sigmoid؛ المشروع يستدعي nn.LSTM. السؤال 69 عن قص التدرجات.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "المعادلة موثقة في PyTorch المحلي 2.5.1+cpu؛ التشغيل يسجل 2.5.1+cu121 ولا يدعي الجواب تطابق التنفيذ منخفض المستوى."
+  },
+  {
+    "number": 14,
+    "question": "كيف تُختار epoch الشبكة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:68–72,140–164,189–195؛ configs/full_experiment.yaml",
+    "finding": "اختيار أقل MSE للتحقق المعياري في eval وno_grad مع patience وتحميل أفضل حالة؛ السؤال 67 عن ملفات best وlast.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "خسارة التحقق ليست اختباراً مستقلاً ولا تضمن تعميماً."
+  },
+  {
+    "number": 15,
+    "question": "كيف يختبر النظام الدقة المختلطة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:48–65,167–182؛ artifacts/runs/full_20261021T040901084647Z/AAPL/training.json",
+    "finding": "يرفض الخسارة المختلطة غير المنتهية أو فرقاً أكبر من 0.05؛ لا يفحص استقلالاً أن difference منتهٍ. العينة المحفوظة تسجل BF16 وفارقاً منتهياً. السؤال 70 عن دلالات أنواع الدقة. إعادة فحص 2026-11-05: lstm_model.py:48–65 يرفض mixed_loss غير المنتهية أو difference>0.05 ولا يختبر انتهاء difference منفرداً؛ سجل AAPL يحفظ فرقاً منتهياً.",
+    "correction": "استبدل ضمان قبول فرق منتهٍ بوصف شرط الرفض الفعلي ونطاق فحصه.",
+    "remaining_uncertainty": "لا يوجد دليل هنا على وقوع فرق غير منتهٍ في التشغيل المحفوظ أو أثره على نتيجته."
+  },
+  {
+    "number": 16,
+    "question": "ما معنى Persistence ولماذا يصعب تجاوزه؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/baselines.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/baselines.py:4–5؛ pipelines/train.py:89–99؛ docs/RECONSTRUCTED_RESULTS.md:5–14",
+    "finding": "يتنبأ بالسعر الحالي وقد تكون الفروق صغيرة؛ نتيجة AAPL المحفوظة RMSE نحو 4.189 مقابل LSTM نحو 61.415. السؤال 79 عن Zero في صياغة التغير.",
+    "correction": "أُكملت الإجابة المختصرة بكون تقارب الأسعار حالة محتملة.",
+    "remaining_uncertainty": "المقارنة تخص الاختبار المحفوظ وليست ضماناً عاماً أو عائداً استثمارياً."
+  },
+  {
+    "number": 17,
+    "question": "لماذا لم يستعد LSTM ترتيب الرسالة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../RESULTS_AUDIT.md"
+    ],
+    "inspected_evidence": "docs/thesis_reported_reference.json؛ docs/RECONSTRUCTED_RESULTS.md:5–14,75–87؛ docs/ASSUMPTIONS_AND_DEVIATIONS.md:3–11",
+    "finding": "الجدول المنسوب للرسالة يضع LSTM أولاً وفق RMSE ويترك بياناته ووحداته غير محددة؛ نتائج AAPL المعاد بناؤها مختلفة. لا يثبت السبب. السؤال 1 عن معنى إعادة البناء.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "أسباب الفجوة والتطابق الكامل مع بروتوكول تاريخي مجهول غير مثبتة."
+  },
+  {
+    "number": 18,
+    "question": "كيف تحسب MAE وRMSE؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/evaluate/metrics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/evaluate/metrics.py:5–14؛ models/lstm_model.py:36–45؛ pipelines/train.py:89–100",
+    "finding": "المصدر يحسب المتوسط المطلق وجذر متوسط المربعات في وحدات المدخلات الأصلية، ويعكس LSTM التقييس قبل التقييم. السؤال 19 عن MAPE و55 عن الوحدات.",
+    "correction": "صيغت إجابة MAE وRMSE جملة مكتملة.",
+    "remaining_uncertainty": "المقارنة بين أصول مختلفة الوحدات غير مباشرة؛ الصياغة تخص مسار توقع السعر."
+  },
+  {
+    "number": 19,
+    "question": "لماذا يمكن أن تكون MAPE مضللة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/evaluate/metrics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/evaluate/metrics.py:5–14",
+    "finding": "يستبعد abs(actual)<=1e-12 ويسجل العدد ويعيد None عند انعدام المقامات، وتبقى النسب قرب الصفر غير مستقرة. السؤال 18 لمقاييس الخطأ المطلقة.",
+    "correction": "أُكملت إجابة MAPE بالتمييز بين الخطأ والمقام.",
+    "remaining_uncertainty": "الاستبعاد لا يعالج قيم المقام الصغيرة الواقعة فوق العتبة."
+  },
+  {
+    "number": 20,
+    "question": "ما الفرق بين الدقة الاتجاهية ومصفوفة الصعود؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/evaluate/metrics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/evaluate/metrics.py:11–14؛ validation/statistics.py:6–10",
+    "finding": "دقة sign ثلاثية بينما المصفوفة تقارن أكبر من الحالي وتضع التعادل مع غير الصعود؛ السؤال 53 عن تغطية الاتجاه وليس مصفوفة الالتباس.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "التعادل يجعل المقياسين مختلفين في المعنى، ولا يكفي أي منهما وحده لتقييم قرار مالي."
+  },
+  {
+    "number": 21,
+    "question": "ماذا تعني قيمة SHAP المحلية؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/explain/shap_explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/shap_explain.py:5–27؛ pipelines/explain.py؛ docs/RECONSTRUCTED_RESULTS.md:80–85",
+    "finding": "الخلفية وآلية التفسير مرتبطتان بالنموذج، ويُفحص مجموع الإسهامات والقيمة الأساسية؛ لا تستلزم الإضافة سببية أو جودة توقع. السؤال 56 يركز على فحص الإضافة.",
+    "correction": "أُكملت إجابة SHAP بالتنبيه إلى عدم إثبات السببية.",
+    "remaining_uncertainty": "التوزيع يعتمد الخلفية وافتراض إخفاء السمات وقد يتأثر بالارتباط."
+  },
+  {
+    "number": 22,
+    "question": "كيف يعمل LIME في هذا التنفيذ؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/explain/lime_explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/lime_explain.py:5–10؛ .demo_venv/Lib/site-packages/lime/lime_base.py:180–198؛ artifacts/runs/full_20261021T040901084647Z/run.json؛ artifacts/deployment/wheels_build.log:386",
+    "finding": "نسخة LIME المحلية والتشغيل المسجل كلاهما 0.2.0.1؛ ملفات Python المحلية تطابق عجلةً تطابق بصمتها سجل بنائها اللاحق. لا يثبت ذلك هوية تثبيت التجربة أو التطابق العددي. إعادة فحص 2026-11-05: lime_explain.py:5–10 وlime_base.py المحلي:180–198 وسجل التشغيل والقفل والعجلة يدعمون الوصف المقيد للنسخة المحلية، دون إثبات هوية التثبيت التاريخي.",
+    "correction": "قُيد شرح score بالنسخة المحلية مع التصريح بأن تطابق الإصدار لا يثبت هوية التثبيت التاريخي.",
+    "remaining_uncertainty": "هوية ملفات تثبيت التشغيل التاريخي والتماثل العددي غير مثبتين."
+  },
+  {
+    "number": 23,
+    "question": "لماذا بلغ خطأ LIME المحفوظ لـ AAPL نحو 502.8627؟",
+    "status": "PASS",
+    "evidence_links": [
+      "06_SHAP_LIME_EXPLANATION_AR.md",
+      "../../artifacts/runs/full_20261021T040901084647Z/AAPL/LinearRegression/explanations/lime_2432.json",
+      "../../src/xai_finance/explain/lime_explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/lime_explain.py:5–10؛ artifacts/runs/full_20261021T040901084647Z/AAPL/LinearRegression/explanations/lime_2432.json؛ 06_SHAP_LIME_EXPLANATION_AR.md",
+    "finding": "الخطأ المحفوظ 502.8627378276089 هو الفرق المطلق عند الأصل بين 236.6785570794911 و−266.1841807481178، وليس MSE أو RMSE؛ يختلف عن score في 83. إعادة فحص 2026-11-05: lime_2432.json يسجل القيمتين والخطأ المطلق، وlime_explain.py:8–10 يعرّف الفرق عند الأصل؛ تؤكد data_audit.json وحدة الدولار المعدل.",
+    "correction": "أضيف السجل والشيفرة إلى الإسناد وبيان عدم إثبات سبب كبر الخطأ.",
+    "remaining_uncertainty": "هذه حالة واحدة ولا تثبت سبباً أو فشلاً عاماً ولا تعتمد على إعادة تجربة."
+  },
+  {
+    "number": 24,
+    "question": "لماذا قد يختلف SHAP وLIME؟",
+    "status": "PASS",
+    "evidence_links": [
+      "06_SHAP_LIME_EXPLANATION_AR.md"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/shap_explain.py:5–21؛ explain/lime_explain.py:5–10؛ docs/RECONSTRUCTED_RESULTS.md:80–85",
+    "finding": "SHAP يستعمل خلفية وآليات بحسب النموذج؛ LIME يقرب جواراً محدود السمات. السؤال 21 تعريف إسهام و22 وصف التنفيذ، و24 مقارنة تفسيرية.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الارتباط قد يؤثر في الإسناد ولا يحدد وحده سبب الاختلاف في كل حالة."
+  },
+  {
+    "number": 25,
+    "question": "ما الذي يقيسه bootstrap المزدوج؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/statistics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/statistics.py:13–20,23–28؛ src/xai_finance/validation/report.py",
+    "finding": "فرق خسائر مقترن وكتل دائرية 10 و2000 سحب ويستخدم السعر الحالي عند الاستدعاء؛ السؤال 76 يعالج لماذا يقترن التاريخ، و77 التعدد.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الفاصل مشروط بأخطاء النماذج المحفوظة وفرضية بلوكات ملائمة، ولا يشمل إعادة التدريب أو تصحيح التعدد."
+  },
+  {
+    "number": 26,
+    "question": "ما دور `__main__` في نقطة الدخول؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../main.py"
+    ],
+    "inspected_evidence": "main.py:6–11؛ dashboard/app.py الحارس الأخير",
+    "finding": "عند تنفيذ الحارس يشغل run_path الملف الآخر بالاسم __main__؛ السؤال 61 يتعلق بتوليد تفسير في الواجهة. إعادة فحص 2026-11-05: main.py:10–11 ينفذ run_path باسم __main__، وحارس dashboard/app.py:208–209 يستدعي main؛ عزل الاسم لا يغير المعنى.",
+    "correction": "عُزلت أسماء __main__ وrunpy كشيفرة مضمنة حتى لا يمحو Markdown الشرطات.",
+    "remaining_uncertainty": "الاستيراد العادي للملف لا يشغل الحارس؛ لا يلزم استنتاج تغيير مجلد العمل."
+  },
+  {
+    "number": 27,
+    "question": "لماذا يستخدم المشروع pathlib؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/config.py"
+    ],
+    "inspected_evidence": "src/xai_finance/config.py:5–10؛ main.py:6–11",
+    "finding": "يُبحث عن الجذر بدءاً من cwd ثم آباء ملف الإعداد، وتبنى المسارات بـPath؛ السؤال 30 خاص بتوثيق بصمة البيانات.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الجذر المختار قد يكون cwd إذا احتوى علامتي المشروع المطلوبتين."
+  },
+  {
+    "number": 28,
+    "question": "ما أثر decorator ‏dataclass على WindowDataset؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/windows.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/windows.py:9–18",
+    "finding": "dataclass تحمل حقول البيانات ولا يتضمن تعريفها فحص أبعاد؛ السؤال 29 خاص بخاصية التسطيح.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تلميحات الأنواع وحدها لا تثبت صحة القيم وقت التشغيل."
+  },
+  {
+    "number": 29,
+    "question": "ما معنى property في flat؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/windows.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/windows.py:20–26",
+    "finding": "reshape يدمج الزمن والسمات وflat_names يصنع lag من الأقدم إلى lag_0؛ السؤال 5 عن أبعاد عينة AAPL.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "شكل flat لا يثبت وحده أي ادعاء عن إتاحة البيانات تاريخياً."
+  },
+  {
+    "number": 30,
+    "question": "لماذا يحافظ تحميل snapshot على SHA-256؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/io/data_sources.py"
+    ],
+    "inspected_evidence": "src/xai_finance/io/data_sources.py:52–61؛ data/validate.py:5–28؛ storage.py",
+    "finding": "load_snapshot يقارن SHA-256 ويفحص الأسعار والعدد؛ السؤال 89 عن حدود إثبات البحث بالهاش وحده.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تطابق البصمة مشروط بموثوقية البيان ولا يثبت المنشأ أو سلامة المنهج."
+  },
+  {
+    "number": 31,
+    "question": "كيف يتعامل التنزيل مع لقطة موجودة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/io/data_sources.py"
+    ],
+    "inspected_evidence": "src/xai_finance/io/data_sources.py:34–48,52–61",
+    "finding": "اللقطة الموجودة تخضع للتحقق ثم return؛ لا يعاد تنزيلها في هذا الفرع. السؤال 30 عن فحص البصمة تحديداً.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "غياب البيان أو خطأ البصمة يؤدي لفشل التحميل ولا يثبت الاسترجاع."
+  },
+  {
+    "number": 32,
+    "question": "كيف يعالج المشروع القيم المفقودة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/io/data_sources.py"
+    ],
+    "inspected_evidence": "src/xai_finance/io/data_sources.py:34–44,52–61؛ data/features.py:32؛ data/validate.py:5–14",
+    "finding": "تنظيف تنزيل جديد يحذف القيم الناقصة والسمات تحذف غير المكتمل، بينما التحقق من لقطة موجودة يرفض القيم المطلوبة غير المنتهية. إعادة فحص 2026-11-05: data_sources.py:34–44,52–61 يفرق فرع التنزيل عن تحميل اللقطة، وvalidate.py:5–14 يرفض القيم المطلوبة غير المنتهية.",
+    "correction": "وُضح اختلاف تنزيل جديد عن التحقق من اللقطة الموجودة.",
+    "remaining_uncertainty": "الحذف لا يضمن انتظام الجلسات أو توفر البيانات وقتياً."
+  },
+  {
+    "number": 33,
+    "question": "لماذا يعدل open وhigh وlow؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/features.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/features.py:14–21؛ artifacts/runs/full_20261021T040901084647Z/AAPL/data_audit.json",
+    "finding": "تعدل الأسعار اليومية بنسبة adj_close/close ويطبق log1p على الحجم دون تعديل الحجم نفسه؛ السؤال 4 عن SMA.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "اللقطة المعدلة بأثر رجعي ليست بيانات point-in-time."
+  },
+  {
+    "number": 34,
+    "question": "كيف يعالج RSI القسمة على صفر؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/features.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/features.py:5–11",
+    "finding": "الخسائر الصفرية تُستبدل مؤقتاً ثم تعالج حالتا gains>0 وgains=0 بالقيم 100 و50، باستخدام EWM alpha=1/14.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "لا يلزم تطابق طريقة التهيئة مع كل تعريف RSI آخر."
+  },
+  {
+    "number": 35,
+    "question": "ما معنى MACD في الكود؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/features.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/features.py:14–28؛ validation/audit.py:14–19",
+    "finding": "MACD هو EMA12 ناقص EMA26 وإشارته EMA span=9 بحد أدنى؛ السؤال 4 يخص المتوسط البسيط.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "عدم استعمال المستقبل في المعادلة لا يثبت تاريخ إتاحة بيانات معدلة."
+  },
+  {
+    "number": 36,
+    "question": "ما معنى ddof=0 في Bollinger؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/features.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/features.py:22–23,29–31",
+    "finding": "انحراف 20 رصداً يستخدم ddof=0، والنطاقان SMA20 ±2σ؛ السؤال 35 يخص MACD.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "اختيار قاسم النافذة ليس تصريحاً بتوزيع طبيعي للعوائد."
+  },
+  {
+    "number": 37,
+    "question": "ما ترتيب السمات اليومية في النافذة المسطحة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/data/windows.py",
+      "../../artifacts/runs/full_20261021T040901084647Z/AAPL/data_audit.json"
+    ],
+    "inspected_evidence": "src/xai_finance/data/windows.py:20–26؛ artifacts/runs/full_20261021T040901084647Z/AAPL/data_audit.json",
+    "finding": "ترتيب السمات لكل خطوة يبدأ close/open/high/low/log_volume وفق السجل، من lag الأقدم حتى lag_0. السؤال 29 عن خاصية property. إعادة فحص 2026-11-05: windows.py:20–26 يحدد ترتيب flatten وlag، وAAPL/data_audit.json يسجل أول خمس سمات المذكورة بالترتيب.",
+    "correction": "أضيف مثال ترتيب فعلي ومرجع السجل لتقليل التداخل الدلالي.",
+    "remaining_uncertainty": "الترتيب المحدد مأخوذ من AAPL ولا يُفترض لجدول شهري آخر."
+  },
+  {
+    "number": 38,
+    "question": "لماذا هدف اليوم التالي ليس بالضرورة غداً تقويمياً؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/audit.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/windows.py:29–37؛ validation/audit.py:22–30؛ artifacts/scientific_validation/validation_20261021T055002439194Z/original_audit.json",
+    "finding": "الهدف الصف التالي في جدول السمات؛ تقرير التدقيق المحفوظ يسجل مطابقة الرصد الخام التالي للأصول الستة في لقطاته. السؤال 2 عن تعريف الهدف و38 عن الفواصل التقويمية. إعادة فحص 2026-11-05: windows.py:29–37 يحدد الصف التالي للسمات، وvalidation/audit.py:22–30 يفحصه مقابل الخام؛ الاختلاف التقويمي والحذف لا يثبتان تاريخ الإتاحة.",
+    "correction": "صُححت الإجابة المختصرة لعدم ضمان تتابع الخام من فهرس جدول السمات وحده.",
+    "remaining_uncertainty": "الفحص المحفوظ لا يثبت إطلاقاً تطابق جميع مجموعات البيانات المستقبلية."
+  },
+  {
+    "number": 39,
+    "question": "ما مثال AAPL موثق على المحاذاة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "03_DATA_PIPELINE_AR.md"
+    ],
+    "inspected_evidence": "data/raw/AAPL.csv؛ artifacts/runs/full_20261021T040901084647Z/AAPL/features.csv وdata_audit.json؛ 03_DATA_PIPELINE_AR.md:11–15",
+    "finding": "قراءة السجلين أظهرت adjusted close 235.620101929 في 2024-11-29 و237.863830566 في 2024-12-02؛ السؤال 5 عن شكل جميع النوافذ.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الأرقام لقطة معدلة بأثر رجعي وليست ضمان إتاحة آنية."
+  },
+  {
+    "number": 40,
+    "question": "كيف تتحقق من عدم استعمال هدف اختبار لتقدير scaler؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../tests/test_temporal_integrity.py"
+    ],
+    "inspected_evidence": "src/xai_finance/data/preprocess.py:24–27؛ tests/test_temporal_integrity.py:45–53؛ artifacts/tests/final.xml",
+    "finding": "اختبار الطفرة يغير نوافذ وأهداف التحقق والاختبار ويفحص بقاء المتوسطين؛ يظهر نجاحه في XML المحفوظ. السؤال 8 عن طريقة الملاءمة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الاختبار المحدد لا يثبت وقت إتاحة النسخ المعدلة أو جميع أوجه التسرب."
+  },
+  {
+    "number": 41,
+    "question": "ما وظيفة validation مقارنة بالاختبار؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/pipelines/train.py",
+      "../../src/xai_finance/models/sklearn_models.py",
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:24–38؛ models/lstm_model.py:140–164؛ pipelines/train.py:89–100",
+    "finding": "التحقق يختار المرشح والعصر والاختبار لاحق لهذه القرارات؛ السؤال 7 عن حدود التقسيم العددية و48 عن refit. إعادة فحص 2026-11-05: sklearn_models.py:24–38 وlstm_model.py:140–164 يفصلان الاختيار على التحقق عن evaluate_asset للاختبار؛ الروابط المضافة تسند كلا المسارين.",
+    "correction": "أضيف مرجعا اختيار sklearn وLSTM إلى الدليل.",
+    "remaining_uncertainty": "تكرار القرار البشري وفق الاختبار يفسد استقلال تقييم لاحق."
+  },
+  {
+    "number": 42,
+    "question": "كيف يعالج النموذج بيانات HOUSING؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../configs/full_experiment.yaml"
+    ],
+    "inspected_evidence": "configs/datasets.yaml:37–43؛ configs/full_experiment.yaml؛ src/xai_finance/data/features.py:14–16؛ artifacts/runs/full_20261021T040901084647Z/HOUSING/data_audit.json",
+    "finding": "الإسكان تجربة شهرية بإغلاق close ونافذة 12 في التشغيل الكامل، واللقطة منقحة؛ السؤال 3 عن الإتاحة و42 عن معالجة السلسلة. إعادة فحص 2026-11-05: configs/datasets.yaml:37–43 وfull_experiment.yaml:5 يحددان التردد والنافذة، وتؤكد HOUSING/data_audit.json أن اللقطة منقحة.",
+    "correction": "التصحيح السابق استبدل لفظ استقلال قد يوحي باستقلال إحصائي بلفظ تجربة منفصلة.",
+    "remaining_uncertainty": "فصل التجربة لا يثبت استقلالاً إحصائياً أو معرفة تاريخ إصدار كل قيمة."
+  },
+  {
+    "number": 43,
+    "question": "ما وظيفة LinearRegression داخل Pipeline؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/sklearn_models.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:14–21,24–30؛ models/linear_preprocess.py:12–22",
+    "finding": "Pipeline تلائم StandardScaler ثم اختيار QR ثم LinearRegression على التدريب؛ السؤال 9 يركز على اختيار الرتبة و44 على تصدير المعاملات.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "خطية النموذج لا تعني علاقات سببية في بيانات مترابطة."
+  },
+  {
+    "number": 44,
+    "question": "ما سبب تحويل معاملات الانحدار عند التصدير؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/pipelines/report.py"
+    ],
+    "inspected_evidence": "src/xai_finance/pipelines/report.py:87–95؛ models/sklearn_models.py:21",
+    "finding": "معامل الأصل w_j/scale_j والثابت intercept−dot(coefficients,mean)، وتوضع أصفار في أعمدة مستبعدة عددياً؛ السؤال 43 عن pipeline نفسها.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الصفر الناتج عن الاختيار لا يعني انعدام أثر اقتصادي أو سببي."
+  },
+  {
+    "number": 45,
+    "question": "ما فكرة RandomForest في المشروع؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/sklearn_models.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:14–20,24–38؛ configs/full_experiment.yaml؛ AAPL/training.json",
+    "finding": "الغابة مرشحا عمق مع min_samples_leaf=3 ويختارها تحقق RMSE، ثم n_jobs=1؛ السؤال 11 عن حد استقراء المتوسط.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "مواصفات المرشح ونتيجته مرتبطة بإعداد التشغيل وسجله."
+  },
+  {
+    "number": 46,
+    "question": "ما فكرة GradientBoosting هنا؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/sklearn_models.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:14–20,24–34؛ configs/full_experiment.yaml",
+    "finding": "GradientBoostingRegressor يستخدم عمقاً ومعدل تعلم من مرشحين بحسب search ويختار على التحقق؛ السؤال 45 عن متوسط الغابة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تفوقه ليس مضموناً ولا تُعمم عليه حدود متوسط الغابة."
+  },
+  {
+    "number": 47,
+    "question": "ما الفرق بين خطأ السعر وخطأ الهدف المحول؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/statistics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/design.py:8–23؛ validation/experiments.py:31–39؛ validation/statistics.py:23–30",
+    "finding": "خطأ العائد بلا وحدة، لكن خطأ فرق السعر وخطأ مستوى السعر بوحدة الأصل؛ في صيغة الفرق تتطابق الأخطاء عند استخدام السعر الحالي نفسه. السؤال 50 يعرف الهدفين. إعادة فحص 2026-11-05: validation/design.py:8–23 يثبت الوحدات ومساواة أخطاء التغير جبرياً؛ أضيف قيد احتمال اختلاف التقريب العددي في إعادة التركيب.",
+    "correction": "صُححت عبارة أوحت باختلاف الوحدات دائماً، وأضيفت مساواة أخطاء الفرق عند إعادة البناء.",
+    "remaining_uncertainty": "لا تتطابق أخطاء العائد والسعر عموماً، والنتيجة مشروطة بالمحاذاة والسعر الحالي نفسه."
+  },
+  {
+    "number": 48,
+    "question": "ما أثر غياب إعادة الملاءمة النهائية؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/sklearn_models.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/sklearn_models.py:24–38؛ models/lstm_model.py:140–164",
+    "finding": "يختار sklearn مرشحاً مدرباً دون refit ويستخدم LSTM التحقق للتوقف؛ قد تطول الفجوة مع الاختبار. السؤال 10 عن خطوات الاختيار.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "أثر الفجوة على دقة أي أصل فرضية تحتاج تجربة مستقلة ولا يثبته الكود وحده."
+  },
+  {
+    "number": 49,
+    "question": "كيف تُبنى نافذة walk-forward؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/design.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/design.py:30–41؛ validation/experiments.py:78–89",
+    "finding": "تقسم فهارس الاختبار كتلًا، وكتلة التحقق تسبقها والتدريب قبلها، ويقارن آخر هدف تحقق بأصل الاختبار؛ السؤال 7 عن تقسيم ثابت.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تاريخ الرصد لا يكفي لإثبات الإتاحة الحقيقية للنسخ المنقحة، ولا يفحص هذا النص كل افتراضات السلسلة."
+  },
+  {
+    "number": 50,
+    "question": "ما الفرق بين هدف تغير السعر والعائد؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/design.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/design.py:8–23؛ validation/experiments.py:31–39",
+    "finding": "التغير y−current بوحدة السعر والعائد y/current−1 بلا وحدة، وتُعاد الأسعار بجمع التغير أو ضرب 1+العائد؛ السؤال 47 يقارن مقاييس الأخطاء.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الكود يشترط أسعاراً موجبة للعائد البسيط؛ هذا لا يثبت صلاحية اقتصادية عامة للبيانات."
+  },
+  {
+    "number": 51,
+    "question": "لماذا يستبعد النفط من بروتوكول العائد؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/start_scientific_validation.py"
+    ],
+    "inspected_evidence": "scripts/start_scientific_validation.py:20–27؛ src/xai_finance/validation/design.py:8–14؛ data/raw/OIL.csv:2020-04-20",
+    "finding": "البروتوكول يستبعد OIL من simple_return ويحتفظ به في price_change؛ سجل اللقطة يتضمن سعراً معدلاً سالباً −37.6300010681. السؤال 50 يعرف الهدفين.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الشرط مفروض على الأسعار في البيانات المستخدمة كلها؛ هذا قرار بروتوكول لا استحالة رياضية عامة لكل صياغة عائد."
+  },
+  {
+    "number": 52,
+    "question": "كيف يستخدم آخر تغير معلوم كمرجع؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/design.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/design.py:44–54",
+    "finding": "يستخدم transformed[test−1] بعد assert يقيّد تاريخ الهدف السابق بأصل الاختبار؛ السؤال 79 عن Zero.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "ترتيب تواريخ الرصد لا يثبت زمن نشر السلسلة المنقحة."
+  },
+  {
+    "number": 53,
+    "question": "ما وظيفة direction_coverage؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/statistics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/statistics.py:6–10",
+    "finding": "التغطية متوسط sign(predicted_change)!=0 والدقة المشروطة None إذا لا توجد حالات نشطة؛ السؤال 20 عن مصفوفة الصعود.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "التنبؤ الصفري ليس برهاناً على امتناع تشغيلي أو تداول فعلي."
+  },
+  {
+    "number": 54,
+    "question": "ما دلالة R² السالب؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/evaluate/metrics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/evaluate/metrics.py:5–14؛ docs/RECONSTRUCTED_RESULTS.md:7–14",
+    "finding": "R² السالب يعني SSE أكبر من SST لمتوسط أهداف الاختبار؛ الكود يعيد None للهدف الثابت أو عينة واحدة. السؤال 18 عن MAE وRMSE.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "متوسط الاختبار مرجع وصفي يستخدم أهداف الفترة ولا يمثل نموذجاً متاحاً مسبقاً."
+  },
+  {
+    "number": 55,
+    "question": "كيف يتغير تفسير الخطأ عند أسعار مختلفة الوحدات؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../RECONSTRUCTED_RESULTS.md"
+    ],
+    "inspected_evidence": "docs/RECONSTRUCTED_RESULTS.md:5–8,16–19,39–42؛ src/xai_finance/evaluate/metrics.py:5–14",
+    "finding": "MAE وRMSE بوحدة الهدف؛ تختلف وحدات AAPL والمؤشرات والعقود. السؤال 47 يقارن هدف الفرق والعائد.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تطبيع مقترح لا يزيل بالضرورة اختلاف المخاطر أو ظروف السوق."
+  },
+  {
+    "number": 56,
+    "question": "ما معنى اختبار additivity في SHAP؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/explain/shap_explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/shap_explain.py:24–28؛ pipelines/explain.py:55–61",
+    "finding": "يفحص assert_allclose مجموع base والسمات بتسامحي rtol=1e−4 وatol=1e−3؛ السؤال 21 عن معنى الإسهام المحلي.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "النجاح عددي ولا يثبت صحة التفسير السببي أو خلفية واقعية."
+  },
+  {
+    "number": 57,
+    "question": "كيف يتعامل SHAP الخطي مع الأعمدة المحذوفة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/explain/shap_explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/shap_explain.py:5–13؛ models/linear_preprocess.py:12–22",
+    "finding": "يعيد القيم على مساحة المدخل بأصفار للسمات غير المحتفظ بها؛ السؤال 9 عن اختيار الأعمدة قبل الانحدار.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الصفر يعكس اختيار أساس النموذج ولا يثبت غياب قيمة اقتصادية."
+  },
+  {
+    "number": 58,
+    "question": "لماذا لا تختبر خلفية SHAP على بيانات الاختبار؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/pipelines/explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/pipelines/explain.py:18–19,35–45؛ configs/full_experiment.yaml",
+    "finding": "تُختار الخلفية من التدريب وتُحدد مشاهدات التفسير من الاختبار؛ السؤال 57 عن الأعمدة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "عدد الخلفية المحدود واختيارها لا يضمنان تمثيل التوزيع أو منع جميع أشكال التسرب."
+  },
+  {
+    "number": 59,
+    "question": "ما حدود فحص ثبات بذرة SHAP؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/explain/quality.py"
+    ],
+    "inspected_evidence": "src/xai_finance/pipelines/explain.py:50–67؛ explain/quality.py:5–10",
+    "finding": "تُعاد أول مشاهدة ببذرة +1 ويحسب overlap وSpearman للقيم المطلقة، أو None عند ثباتها؛ السؤال 56 يفحص الإضافة لا الثبات.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تغيير البذرة لمشاهدة واحدة لا يختبر جميع اضطرابات السوق أو ثقة البشر."
+  },
+  {
+    "number": 60,
+    "question": "كيف يعرض النظام أهمية السمات عبر التأخيرات؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/reports/plots.py"
+    ],
+    "inspected_evidence": "src/xai_finance/reports/plots.py:92–108؛ pipelines/explain.py:67–73",
+    "finding": "تُجمع القيم المطلقة عبر التأخيرات ثم يوسّط عبر العينات، فيما خريطة العينة الأولى تحتفظ بالإشارة؛ السؤال 57 عن الأعمدة المحذوفة. إعادة فحص 2026-11-05: reports/plots.py:92–108 يجمع abs عبر الزمن ثم mean عبر العينات، بينما heatmap تعرض مساهمات موقعة للعينة الأولى.",
+    "correction": "صُححت صياغة عربية ملتبسة عن اتجاه الإسهام.",
+    "remaining_uncertainty": "الترتيب متوسط مجموعة التفسير المختارة وليس دليلاً سببياً أو تمثيلاً عالمياً لكل البيانات."
+  },
+  {
+    "number": 61,
+    "question": "هل تولد لوحة Streamlit تفسير LIME جديداً؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../dashboard/app.py"
+    ],
+    "inspected_evidence": "dashboard/app.py:95–124",
+    "finding": "تقرأ الواجهة quality.json وshap.npz وlime_<index>.json دون استدعاء مفسر جديد؛ السؤال 86 عن أثر الغياب.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "غياب quality يظهر رسالة؛ غياب ملفات فرعية أخرى لا يضمن المسار ذاته."
+  },
+  {
+    "number": 62,
+    "question": "ما المدخلات التي يغيرها المستخدم في الواجهة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../dashboard/app.py"
+    ],
+    "inspected_evidence": "dashboard/app.py:70–72,85–103,137–157,179–202",
+    "finding": "selectbox تختار التشغيل والأصل ونماذج ومقياس وتاريخاً وسجل تحقق محفوظ؛ السؤال 85 يخص تبويب المقارنة. إعادة فحص 2026-11-05: dashboard/app.py:70–103,148–151,192–194 يؤكد اختيارات العرض وسجل التحقق عند وجوده.",
+    "correction": "أضيف اختيار سجل التحقق العلمي عند وجوده.",
+    "remaining_uncertainty": "اختيارات العرض لا تثبت تشغيل model.predict أو تدريب جديد."
+  },
+  {
+    "number": 63,
+    "question": "لماذا تعرض الواجهة تحذيراً للإسكان؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../dashboard/app.py"
+    ],
+    "inspected_evidence": "dashboard/app.py:192–199؛ src/xai_finance/io/data_sources.py:23–31",
+    "finding": "الشرط تردد شهري ويشرح عدم معرفة إصدارات النشر؛ في الإعداد الحالي يمثل الإسكان تجربة مؤشر شهرية. السؤال 3 يشرح القيد العلمي.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الشرط مطبق على أي أصل شهري لا اسم HOUSING حصراً."
+  },
+  {
+    "number": 64,
+    "question": "ما وظيفة إعداد CUBLAS_WORKSPACE_CONFIG؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/seed.py"
+    ],
+    "inspected_evidence": "src/xai_finance/cli.py:1–6؛ seed.py:1–18",
+    "finding": "يستخدم setdefault قبل استيرادات CUDA المعتادة ويضبط deterministic وبذوراً؛ السؤال 99 عن حدود إعادة التدريب.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "قد تُحدد القيمة مسبقاً، ولا تضمن البذور تطابقاً بتياً بين البيئات."
+  },
+  {
+    "number": 65,
+    "question": "ماذا تحفظ checkpoints بجانب الأوزان؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:136–156,199–205؛ pipelines/train.py:80–82",
+    "finding": "الحفظ يضم الحالة والمحسن وAMP وRNG والتقدم؛ تحميل الاستدلال يعيد بناء الأوزان ويستقبل scalers منفصلة. السؤال 67 عن best وlast. إعادة فحص 2026-11-05: lstm_model.py:136–164,199–205 يحفظ حالات متعددة لكنه يعيد للعرض state_dict فقط ويستقبل scalers منفصلة؛ لا يثبت مسار استئناف.",
+    "correction": "أزيل إيحاء أن حفظ الحالة يثبت تنفيذ استئناف التدريب.",
+    "remaining_uncertainty": "لم يثبت وجود مسار resume يقرأ المحسن وحالات RNG ويواصل الحلقة."
+  },
+  {
+    "number": 66,
+    "question": "كيف تُحمل شبكة LSTM على CPU؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:199–205؛ seed.py:22–36؛ pipelines/train.py:110–114",
+    "finding": "عند طلب cpu يستخدم map_location ويعيد بناء الشبكة من checkpoint ويستقبل scaler محفوظاً؛ السؤال 90 عن اختبار إعادة التحميل.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "map_location لا يوفر ملف scalers ولا يثبت تطابقاً بتياً عبر العتاد."
+  },
+  {
+    "number": 67,
+    "question": "ما الفرق بين best.pt وlast.pt؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:140–164,199–205",
+    "finding": "last يكتب كل عصر وbest عند تحسن التحقق، ثم تعاد أفضل حالة ويقرأ load_lstm ملف best؛ السؤال 65 عن محتويات checkpoint.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "عدم تحسن العصر لا يعني حفظه في best."
+  },
+  {
+    "number": 68,
+    "question": "ما أثر dropout عند العرض؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:16–25,36–45؛ .demo_venv/Lib/site-packages/torch/nn/modules/dropout.py",
+    "finding": "eval يعطل dropout، وno_grad منفصل عن وضع الشبكة؛ السؤال 12 يصف بنية الطبقات.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تظل فروق العتاد والمكتبات ممكنة ولا يضمن eval التطابق البتي."
+  },
+  {
+    "number": 69,
+    "question": "لماذا تقص تدرجات LSTM؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:117–131",
+    "finding": "بعد backward يفك المقياس ثم يقص معيار التدرج إلى 1 مع error_if_nonfinite قبل step؛ السؤال 13 عن بوابة النسيان.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "القص يحد المعيار ولا يضمن جودة أو استقرار التعلم كلياً."
+  },
+  {
+    "number": 70,
+    "question": "ما طبيعة FP32 وBF16 في التجربة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../artifacts/runs/full_20261021T040901084647Z/AAPL/training.json"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:48–65,175–182؛ artifacts/runs/full_20261021T040901084647Z/AAPL/training.json",
+    "finding": "FP32 وBF16 دقتان؛ سجل AAPL يحفظ effective_precision=torch.bfloat16؛ السؤال 15 يشرح شرط الفحص.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الاختيار يعتمد الجهاز والفحص ولا يمثل ضماناً لكل تشغيل."
+  },
+  {
+    "number": 71,
+    "question": "كيف تختار الشيفرة حجم دفعة CPU؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:75–97,167–178",
+    "finding": "CPU يعيد min(32,len(inputs)) وCUDA يختار أكبر المرشحين المقبولين؛ السؤال 70 عن الدقة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "لا يختار CUDA الأسرع بالضرورة، وحجم fixture محدود بعينة التدريب."
+  },
+  {
+    "number": 72,
+    "question": "ما أثر عدم خلط دفعات التدريب؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/models/lstm_model.py"
+    ],
+    "inspected_evidence": "src/xai_finance/models/lstm_model.py:117–133,189–195",
+    "finding": "تسير الحلقة على شرائح مرتبة دون shuffle، وnetwork يستدعى بلا حالات مخفية مرحّلة بين الدفعات؛ السؤال 14 عن اختيار epoch.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الترتيب وحده لا يثبت جودة أعلى أو تعميماً أفضل."
+  },
+  {
+    "number": 73,
+    "question": "ما المقصود بحد خرج LSTM المحفوظ؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/diagnostics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/diagnostics.py:22–29؛ models/lstm_model.py:16–25,36–45؛ .demo_venv/Lib/site-packages/torch/nn/modules/rnn.py:800–815",
+    "finding": "عند eval كل h محصور ويحد الرأس b±sum(abs(w))، ثم تعكس قيمة الهدف؛ السؤال 11 عن حد الغابة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الحد محافظ للنموذج المحدد وليس بالضرورة قابلاً للبلوغ ولا يعمم رقمياً على نماذج أخرى."
+  },
+  {
+    "number": 74,
+    "question": "ما أثر تغيير هدف LSTM إلى فرق السعر؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/experiments.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/design.py:8–23,26–27؛ validation/experiments.py:49–67",
+    "finding": "يستبدل الهدف بـy−current مع النوافذ نفسها وتضاف النتيجة للسعر الحالي؛ السؤال 50 يعرّف الفرق والعائد.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تغيير الهدف يستلزم تدريباً جديداً في التجربة المحفوظة لكنه لا يثبت تنبؤاً أفضل مستقبلاً."
+  },
+  {
+    "number": 75,
+    "question": "كيف يختبر المشروع حساسية دقة إعادة تركيب السعر؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/audit_reconstruction_precision.py"
+    ],
+    "inspected_evidence": "scripts/audit_reconstruction_precision.py:13–32؛ artifacts/scientific_validation/validation_20261021T055002439194Z/reconstruction_precision_provenance.json",
+    "finding": "يقرأ التوقعات المحفوظة ويحولها إلى FP64 في إعادة التركيب ويكتب نتائج منفصلة؛ السؤال 70 عن نوع الدقة أثناء التدريب.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "هذا وصف إجراء قديم مسجل؛ لم يُشغّل السكربت في جلسة التوثيق الحالية."
+  },
+  {
+    "number": 76,
+    "question": "لماذا تقارن أخطاء النموذج وPersistence على التواريخ نفسها؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/statistics.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/statistics.py:13–20,23–28",
+    "finding": "فرق مربعي الأخطاء يحسب مقترناً قبل سحب الكتل، بخلاف السؤال 25 الذي يصف إعداد bootstrap ككل. إعادة فحص 2026-11-05: validation/statistics.py:13–20,23–27 يحسب فرق مربعي الأخطاء المقترن قبل أخذ فهارس الكتل؛ تحفظ الاستقلال وعدم يقين إعادة التدريب باقٍ.",
+    "correction": "ثبت التصحيح السابق الذي يركز على الاقتران.",
+    "remaining_uncertainty": "لا يثبت الاقتران استقلال الأصول أو تضمين عدم يقين إعادة التدريب."
+  },
+  {
+    "number": 77,
+    "question": "هل فاصل bootstrap تصحيح لتعدد الاختبارات؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/report.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/statistics.py:13–20؛ validation/report.py:62–69؛ scripts/start_scientific_validation.py:23–35",
+    "finding": "الفواصل مئينية وموسومة استكشافية وغير معدلة ولا تتضمن تصحيح التعدد؛ السؤال 25 عن طريقة السحب.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "فاصل واحد غير معدل لا يثبت فرضية تأكيدية عبر مقارنات متعددة."
+  },
+  {
+    "number": 78,
+    "question": "لماذا ليس الاختبار المعروف تأكيداً مستقلاً؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/start_scientific_validation.py"
+    ],
+    "inspected_evidence": "scripts/start_scientific_validation.py:20–35؛ docs/SCIENTIFIC_VALIDATION_REPORT.md قسم القيود",
+    "finding": "البروتوكول يسجل اطلاعاً سابقاً على اختبار الأصل ويصف التحليل استكشافياً؛ السؤال 17 عن اختلاف الجدول التاريخي.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "استقلال مجموعة لاحقة يتطلب بيانات وتصميماً لم يتحققا هنا."
+  },
+  {
+    "number": 79,
+    "question": "ما معنى Zero في تجارب التغير؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/validation/design.py"
+    ],
+    "inspected_evidence": "src/xai_finance/validation/design.py:8–23,44–54",
+    "finding": "Zero يتنبأ صفراً في فضاء التغير أو العائد ويعيد current في فضاء السعر؛ السؤال 16 يعرف baseline في تجربة المستوى.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "المعادلة لا تثبت براعة اتجاهية أو ربحاً."
+  },
+  {
+    "number": 80,
+    "question": "كيف يعرف النظام حالة السوق؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/evaluate/regimes.py"
+    ],
+    "inspected_evidence": "src/xai_finance/evaluate/regimes.py:7–8؛ data/features.py:42؛ configs/full_experiment.yaml",
+    "finding": "bull أكبر من العتبة وbear أصغر من سالبها والتساوي ضمن sideways؛ السؤال 81 عن حدود استخدام الفئات.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "التصنيف وصفي ويعتمد العائد المتأخر والعتبة المحددة لا معلومات مستقبلية."
+  },
+  {
+    "number": 81,
+    "question": "لماذا لا تثبت نتائج الأنظمة السوقية فاعلية تداول؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/evaluate/regimes.py"
+    ],
+    "inspected_evidence": "src/xai_finance/evaluate/regimes.py:11–15؛ evaluate/metrics.py:5–14",
+    "finding": "تجمع المقاييس حسب النموذج والحالة ولا تنفذ تداولاً أو تحسب تكاليفه؛ السؤال 80 عن تعريف الحالة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "التصنيف وفروق الأخطاء لا تثبت عائداً استثمارياً."
+  },
+  {
+    "number": 82,
+    "question": "كيف تحفظ آثار التفسير؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/pipelines/explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/pipelines/explain.py:50–73,76–95",
+    "finding": "يحفظ shap.npz وquality وlime_<index>.json مع تاريخ الهدف والأصل؛ السؤال 61 عن قراءتها في الواجهة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "وجود الملفات لا يكفل وفاء التفسير أو سببيته."
+  },
+  {
+    "number": 83,
+    "question": "ماذا يعني weighted_neighborhood_r2 في LIME؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/explain/lime_explain.py"
+    ],
+    "inspected_evidence": "src/xai_finance/explain/lime_explain.py:5–10؛ .demo_venv/Lib/site-packages/lime/lime_base.py:180–198؛ artifacts/runs/full_20261021T040901084647Z/run.json؛ artifacts/deployment/wheels_build.log:386",
+    "finding": "الكود يسجل explanation.score؛ النسخة المحلية التي تطابق ملفاتها عجلة موثقة لاحقاً تحسب score موزوناً، مع تطابق الإصدار فقط مع تشغيل البحث. إعادة فحص 2026-11-05: lime_explain.py:8–10 وlime_base.py المحلي:180–198 يسندان تفسير النسخة المحلية لدرجة score، لا بصمة التثبيت التاريخي.",
+    "correction": "أضيف قيد صريح بأن وصف R² مستند للنسخة المحلية وأن بصمة تثبيت التشغيل غير مثبتة.",
+    "remaining_uncertainty": "لا يثبت التطابق المحلي هوية التثبيت التاريخي أو إعادة إنتاج النتائج عددياً."
+  },
+  {
+    "number": 84,
+    "question": "ما فضاء السمات الذي يستخدمه LIME عند شرح OLS؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/pipelines/explain.py",
+      "../../src/xai_finance/models/sklearn_models.py",
+      "06_SHAP_LIME_EXPLANATION_AR.md"
+    ],
+    "inspected_evidence": "src/xai_finance/pipelines/explain.py:35–45,76–83؛ models/sklearn_models.py:14–21؛ explain/lime_explain.py:5–10؛ 06_SHAP_LIME_EXPLANATION_AR.md",
+    "finding": "ينقل windows.flat إلى LIME ويمر predictor عبر StandardScaler وIndependentColumns؛ السؤال 23 عن وحدة خطأ الحالة و84 عن فضاء المدخل. إعادة فحص 2026-11-05: explain.py:35–45,76–83 وsklearn_models.py:21 وlime_tabular.py المحلي:337–354 يؤكدون مسار flat والـpipeline وpredict_fn(inverse) محلياً؛ التثبيت التاريخي غير مثبت.",
+    "correction": "ثبت التصحيح السابق الذي يميز تقييس نموذج OLS من تمثيل جوار LIME.",
+    "remaining_uncertainty": "تفاصيل جوار النسخة المحلية موصوفة بتحفظ لأن تطابق بصمة المكتبة التاريخية غير مثبت."
+  },
+  {
+    "number": 85,
+    "question": "ما الذي يعرضه تبويب مقارنة النماذج؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../dashboard/app.py"
+    ],
+    "inspected_evidence": "dashboard/app.py:85–92",
+    "finding": "يقرأ metrics وtraining ويعرض جدولا ورسماً لمعيار مختار مع تحفظ استثماري؛ السؤال 62 يحصر خيارات الواجهة عموماً.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "fillna(0) لزمن Persistence لا يثبت زمن تدريب مقاساً."
+  },
+  {
+    "number": 86,
+    "question": "ما الذي يحدث عند غياب تفسير محفوظ؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../dashboard/app.py"
+    ],
+    "inspected_evidence": "dashboard/app.py:95–100",
+    "finding": "عند غياب quality.json تحديداً تعرض الدالة رسالة وتعود؛ السؤال 61 عن قراءة التفسير عند وجوده.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "لا يعني ذلك معالجة غياب كل الملفات الفرعية بالأسلوب نفسه."
+  },
+  {
+    "number": 87,
+    "question": "ما استخدام AppTest في الاختبارات؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../tests/test_dashboard.py"
+    ],
+    "inspected_evidence": "tests/test_dashboard.py:7–15؛ artifacts/tests/final.xml",
+    "finding": "AppTest يشغل نسخة ملف واجهة مؤقتة ويفحص رسالة وغياب استثناء؛ تظهر النتيجة في XML المحفوظ.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الاختبار ليس معاينة متصفح بصرية، ولم يُشغّل في هذه الجلسة."
+  },
+  {
+    "number": 88,
+    "question": "كيف يتحقق اختبار SHAP من عدم تغيير التنبؤ؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../tests/test_explain_consistency.py"
+    ],
+    "inspected_evidence": "tests/test_explain_consistency.py:9–19؛ artifacts/tests/final.xml",
+    "finding": "الاختبار يلائم ثلاثة نماذج جدولية على fixture ويقارن التوقع قبل وبعد ويفحص إعادة بناء SHAP؛ السؤال 56 عن معيار الجمع.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الاختبار لا يشمل جميع النماذج أو يثبت السببية؛ لم يُعَد تشغيله."
+  },
+  {
+    "number": 89,
+    "question": "لماذا لا يكفي SHA-256 منفرداً لإثبات صحة بحث؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/storage.py"
+    ],
+    "inspected_evidence": "src/xai_finance/storage.py؛ io/data_sources.py:52–56",
+    "finding": "الهاش يقارن البايتات بمرجع ولا يثبت مصدر البيانات أو صحة المنهج؛ السؤال 30 عن تحقق snapshot المحدد.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "تعتمد المطابقة على الثقة في البيان المرجعي."
+  },
+  {
+    "number": 90,
+    "question": "كيف يعمل تحقق إعادة تحميل CPU؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/verify_artifacts.py"
+    ],
+    "inspected_evidence": "scripts/verify_artifacts.py:17–55؛ src/xai_finance/pipelines/train.py:110–114",
+    "finding": "verify_asset يحمل CPU ويقارن التنبؤات بسماحات ويفحص المقاييس والتواريخ والتفسير؛ السؤال 66 عن load_lstm.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "هذا وصف السكربت وليس تنفيذاً جديداً؛ لا يثبت تطابقاً بتياً على كل عتاد."
+  },
+  {
+    "number": 91,
+    "question": "لماذا تختلف سماحات LSTM بين CPU وCUDA؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/verify_scientific_validation.py"
+    ],
+    "inspected_evidence": "scripts/verify_scientific_validation.py:18–41؛ docs/SCIENTIFIC_VALIDATION_REPORT.md قسم verification",
+    "finding": "سماح LSTM المطلق يساوي 8×epsilon(float32)×scale التدريب مع rtol=0؛ السؤال 70 عن أنواع الدقة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "السماح سياسة تحقق محددة وليست ضماناً لكل عتاد أو لكل تجربة."
+  },
+  {
+    "number": 92,
+    "question": "هل يعني تشغيل verify_cpu_replay عدم كتابة أي ملف؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/verify_cpu_replay.py"
+    ],
+    "inspected_evidence": "scripts/verify_cpu_replay.py:18–20,57–86",
+    "finding": "ينفذ probes ويكتب إيصالاً افتراضياً تحت artifacts/deployment؛ السؤال 90 عن verify_asset.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "السكربت يكتب تقريراً عند تشغيله ولم يُشغّل في جلسة التدقيق."
+  },
+  {
+    "number": 93,
+    "question": "ما دور SETUP_DEMO.bat؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../SETUP_DEMO.bat"
+    ],
+    "inspected_evidence": "SETUP_DEMO.bat؛ scripts/bootstrap_cpu.py؛ scripts/demo_wizard.py setup",
+    "finding": "يفضل بيئات محلية ثم يبحث عن Python ويستدعي المعالج، ويرجع رمز النتيجة؛ السؤال 95 عن CUDA.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "يتطلب Python مناسباً، والحزمة لا تتضمن مثبت Python."
+  },
+  {
+    "number": 94,
+    "question": "كيف يمنع المعالج إيقاف عملية أخرى؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/demo_wizard.py"
+    ],
+    "inspected_evidence": "scripts/demo_wizard.py:101–131,134–172,202–225",
+    "finding": "يفحص root وPID وطابع الإنشاء ويعيد الفحص قبل الإنهاء؛ لا يقتل خدمة لمجرد شغل المنفذ. السؤال 96 عن الشبكة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الفحص إجراء احترازي تنفيذي ولا يثبت غياب كل حالات السباق أو فشل النظام."
+  },
+  {
+    "number": 95,
+    "question": "هل العرض المحلي يحتاج CUDA؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/demo_wizard.py"
+    ],
+    "inspected_evidence": "scripts/demo_wizard.py:96–98,202–228؛ dashboard/app.py:95–124",
+    "finding": "يفحص runtime نسخة CPU وتقرأ الواجهة نتائج محفوظة؛ التدريب التاريخي قد يختلف. السؤال 66 عن تحميل الشبكة.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "عدم الحاجة إلى CUDA لا يعني عدم الحاجة إلى Python واعتماداته."
+  },
+  {
+    "number": 96,
+    "question": "ما قيود اختبار الاتصال دون شبكة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/offline_guard/sitecustomize.py"
+    ],
+    "inspected_evidence": "scripts/offline_guard/sitecustomize.py؛ scripts/browser_smoke_cpu.py:3,58",
+    "finding": "الحارس يعترض دوال socket محددة، والمتصفح يستعمل وكيلاً مغلقاً مع استثناء المحلي؛ السؤال 92 عن كتابة الإيصال.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "هذه اختبارات نطاقية وليست جدار حماية يغطي كل بروتوكول أو عملية."
+  },
+  {
+    "number": 97,
+    "question": "ما الفرق بين CRC وSHA-256 في الحزمة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/package_cpu_defense.py"
+    ],
+    "inspected_evidence": "scripts/package_cpu_defense.py اختبار testzip وhashlib.sha256 وسجل package.json",
+    "finding": "يفحص CRC للأرشيف وبصمات أعضاء manifest ثم يحسب بصمة ZIP؛ السؤال 89 عن حدود الهاش العلمية.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "التحقق من الفهرس مشروط بموثوقيته؛ CRC ليس توقيعاً موثقاً."
+  },
+  {
+    "number": 98,
+    "question": "لماذا توثق نسخة المصدر وبصمتها؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../src/xai_finance/pipelines/report.py"
+    ],
+    "inspected_evidence": "src/xai_finance/pipelines/report.py:17–28؛ manifests التوثيق؛ docs/RESULTS_AUDIT.md",
+    "finding": "يحسب generate_report بصمات source وlock عند إعداد التقرير، لا يثبت هذا الوقت وحده نسخة لحظة التدريب. السؤال 89 عن حدود البصمة. إعادة فحص 2026-11-05: pipelines/report.py:17–28 يحسب بصمات src والقفل وقت generate_report؛ لا يثبت ذلك وحده تطابق ملفات لحظة التدريب.",
+    "correction": "قُيدت عبارة ربط نسخة المصدر بزمن إنشاء التقرير وبالحاجة لدليل إضافي عن وقت التدريب.",
+    "remaining_uncertainty": "قد توجد أدلة حماية زمنية إضافية لكنها لم تفحص لكل ملف في هذا السؤال."
+  },
+  {
+    "number": 99,
+    "question": "ما حدود استقرار إعادة التدريب؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../../scripts/replicate_validation_lstm.py"
+    ],
+    "inspected_evidence": "scripts/replicate_validation_lstm.py؛ artifacts/scientific_validation/validation_20261021T055002439194Z/determinism_replication/verification.json",
+    "finding": "السجل يقرر تطابق الخسائر والتنبؤات لتكرار LSTM واحد على AAPL وبالبيئة نفسها؛ السؤال 64 عن إعداد الحتمية.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "لا يمثل دراسة بذور أو بيئات متعددة، ولم تُعَد التجربة الآن."
+  },
+  {
+    "number": 100,
+    "question": "ما أهم نتيجة يجب عرضها أمام اللجنة؟",
+    "status": "PASS",
+    "evidence_links": [
+      "../RESULTS_AUDIT.md"
+    ],
+    "inspected_evidence": "docs/RESULTS_AUDIT.md:3–15,27–29؛ docs/RECONSTRUCTED_RESULTS.md:5–64؛ docs/thesis_reported_reference.json",
+    "finding": "Persistence أدنى RMSE للخمسة اليومية في نتائج التشغيل المجمد والجدول التاريخي منفصل؛ السؤال 17 عن سبب غياب تطابق الترتيب.",
+    "correction": "لا يوجد.",
+    "remaining_uncertainty": "الترتيب وصفي للقطات وفترة واحدة ولا يثبت فائزاً عاماً أو جدوى تداول."
+  }
+]

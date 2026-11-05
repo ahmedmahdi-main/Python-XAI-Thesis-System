@@ -1,0 +1,3160 @@
+{
+  "summary": {
+    "pdf": "ARABIC_TECHNICAL_BOOK_FIGURES_REVIEW_V5.pdf",
+    "sha256": "154f4c96e38c7b1dca761a8db982a5ba1304e673543b0ee9a20e41dd2cf31e5e",
+    "pages": 283,
+    "footer_number_missing": [],
+    "low_text_pages": [],
+    "under_60_word_candidates": [
+      1,
+      5,
+      8,
+      21,
+      26,
+      28,
+      83,
+      84,
+      86,
+      108,
+      110,
+      139,
+      148,
+      161,
+      169,
+      173,
+      174,
+      185,
+      187,
+      188,
+      192,
+      195,
+      198,
+      203,
+      217,
+      232,
+      233,
+      241,
+      242,
+      274,
+      283
+    ],
+    "outside_word_pages": [],
+    "contact_sheets": 15,
+    "limitations": "word boxes and text extraction cannot establish visual clipping, reading order, shape, vector diagram completeness or semantic correctness; low text can be intentional."
+  },
+  "pages": [
+    {
+      "page": 1,
+      "word_count": 39,
+      "text_characters": 248,
+      "footer_numbers": [
+        "1"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 2,
+      "word_count": 82,
+      "text_characters": 472,
+      "footer_numbers": [
+        "2"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 3,
+      "word_count": 141,
+      "text_characters": 874,
+      "footer_numbers": [
+        "3"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 4,
+      "word_count": 91,
+      "text_characters": 549,
+      "footer_numbers": [
+        "4"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 5,
+      "word_count": 54,
+      "text_characters": 213,
+      "footer_numbers": [
+        "5"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 6,
+      "word_count": 85,
+      "text_characters": 367,
+      "footer_numbers": [
+        "6"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 7,
+      "word_count": 81,
+      "text_characters": 249,
+      "footer_numbers": [
+        "7"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 8,
+      "word_count": 51,
+      "text_characters": 212,
+      "footer_numbers": [
+        "8"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 9,
+      "word_count": 68,
+      "text_characters": 258,
+      "footer_numbers": [
+        "9"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 10,
+      "word_count": 114,
+      "text_characters": 388,
+      "footer_numbers": [
+        "10"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 11,
+      "word_count": 72,
+      "text_characters": 327,
+      "footer_numbers": [
+        "11"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 12,
+      "word_count": 85,
+      "text_characters": 370,
+      "footer_numbers": [
+        "12"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 13,
+      "word_count": 67,
+      "text_characters": 332,
+      "footer_numbers": [
+        "13"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 14,
+      "word_count": 318,
+      "text_characters": 1983,
+      "footer_numbers": [
+        "14"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 15,
+      "word_count": 149,
+      "text_characters": 921,
+      "footer_numbers": [
+        "15"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 16,
+      "word_count": 286,
+      "text_characters": 1715,
+      "footer_numbers": [
+        "16"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 17,
+      "word_count": 352,
+      "text_characters": 1885,
+      "footer_numbers": [
+        "17"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 18,
+      "word_count": 308,
+      "text_characters": 1832,
+      "footer_numbers": [
+        "18"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 19,
+      "word_count": 280,
+      "text_characters": 1882,
+      "footer_numbers": [
+        "19"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 20,
+      "word_count": 352,
+      "text_characters": 2302,
+      "footer_numbers": [
+        "20"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 21,
+      "word_count": 34,
+      "text_characters": 176,
+      "footer_numbers": [
+        "21"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 22,
+      "word_count": 327,
+      "text_characters": 2014,
+      "footer_numbers": [
+        "22"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 23,
+      "word_count": 131,
+      "text_characters": 729,
+      "footer_numbers": [
+        "23"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 24,
+      "word_count": 379,
+      "text_characters": 2324,
+      "footer_numbers": [
+        "24"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 25,
+      "word_count": 262,
+      "text_characters": 1673,
+      "footer_numbers": [
+        "25"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 26,
+      "word_count": 43,
+      "text_characters": 250,
+      "footer_numbers": [
+        "26"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 27,
+      "word_count": 262,
+      "text_characters": 1655,
+      "footer_numbers": [
+        "27"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 28,
+      "word_count": 36,
+      "text_characters": 211,
+      "footer_numbers": [
+        "28"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 29,
+      "word_count": 220,
+      "text_characters": 1353,
+      "footer_numbers": [
+        "29"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 30,
+      "word_count": 225,
+      "text_characters": 1222,
+      "footer_numbers": [
+        "30"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 31,
+      "word_count": 214,
+      "text_characters": 1340,
+      "footer_numbers": [
+        "31"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 32,
+      "word_count": 248,
+      "text_characters": 1474,
+      "footer_numbers": [
+        "32"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 33,
+      "word_count": 247,
+      "text_characters": 1416,
+      "footer_numbers": [
+        "33"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 34,
+      "word_count": 246,
+      "text_characters": 1474,
+      "footer_numbers": [
+        "34"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 35,
+      "word_count": 242,
+      "text_characters": 1388,
+      "footer_numbers": [
+        "35"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 36,
+      "word_count": 257,
+      "text_characters": 1550,
+      "footer_numbers": [
+        "36"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 37,
+      "word_count": 242,
+      "text_characters": 1371,
+      "footer_numbers": [
+        "37"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 38,
+      "word_count": 218,
+      "text_characters": 1265,
+      "footer_numbers": [
+        "38"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 39,
+      "word_count": 201,
+      "text_characters": 1216,
+      "footer_numbers": [
+        "39"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 40,
+      "word_count": 215,
+      "text_characters": 1198,
+      "footer_numbers": [
+        "40"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 41,
+      "word_count": 199,
+      "text_characters": 1152,
+      "footer_numbers": [
+        "41"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 42,
+      "word_count": 194,
+      "text_characters": 1173,
+      "footer_numbers": [
+        "42"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 43,
+      "word_count": 188,
+      "text_characters": 1200,
+      "footer_numbers": [
+        "43"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 44,
+      "word_count": 195,
+      "text_characters": 1226,
+      "footer_numbers": [
+        "44"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 45,
+      "word_count": 197,
+      "text_characters": 1226,
+      "footer_numbers": [
+        "45"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 46,
+      "word_count": 199,
+      "text_characters": 1215,
+      "footer_numbers": [
+        "46"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 47,
+      "word_count": 201,
+      "text_characters": 1162,
+      "footer_numbers": [
+        "47"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 48,
+      "word_count": 202,
+      "text_characters": 1202,
+      "footer_numbers": [
+        "48"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 49,
+      "word_count": 193,
+      "text_characters": 1167,
+      "footer_numbers": [
+        "49"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 50,
+      "word_count": 191,
+      "text_characters": 1176,
+      "footer_numbers": [
+        "50"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 51,
+      "word_count": 191,
+      "text_characters": 1130,
+      "footer_numbers": [
+        "51"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 52,
+      "word_count": 197,
+      "text_characters": 1171,
+      "footer_numbers": [
+        "52"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 53,
+      "word_count": 214,
+      "text_characters": 1216,
+      "footer_numbers": [
+        "53"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 54,
+      "word_count": 222,
+      "text_characters": 1343,
+      "footer_numbers": [
+        "54"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 55,
+      "word_count": 184,
+      "text_characters": 1134,
+      "footer_numbers": [
+        "55"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 56,
+      "word_count": 182,
+      "text_characters": 1159,
+      "footer_numbers": [
+        "56"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 57,
+      "word_count": 236,
+      "text_characters": 1373,
+      "footer_numbers": [
+        "57"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 58,
+      "word_count": 203,
+      "text_characters": 1185,
+      "footer_numbers": [
+        "58"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 59,
+      "word_count": 208,
+      "text_characters": 1234,
+      "footer_numbers": [
+        "59"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 60,
+      "word_count": 189,
+      "text_characters": 1097,
+      "footer_numbers": [
+        "60"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 61,
+      "word_count": 196,
+      "text_characters": 1171,
+      "footer_numbers": [
+        "61"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 62,
+      "word_count": 131,
+      "text_characters": 798,
+      "footer_numbers": [
+        "62"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 63,
+      "word_count": 168,
+      "text_characters": 1210,
+      "footer_numbers": [
+        "63"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 64,
+      "word_count": 142,
+      "text_characters": 1281,
+      "footer_numbers": [
+        "64"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 65,
+      "word_count": 111,
+      "text_characters": 822,
+      "footer_numbers": [
+        "65"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 66,
+      "word_count": 104,
+      "text_characters": 836,
+      "footer_numbers": [
+        "66"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 67,
+      "word_count": 133,
+      "text_characters": 1304,
+      "footer_numbers": [
+        "67"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 68,
+      "word_count": 97,
+      "text_characters": 793,
+      "footer_numbers": [
+        "68"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 69,
+      "word_count": 94,
+      "text_characters": 705,
+      "footer_numbers": [
+        "69"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 70,
+      "word_count": 82,
+      "text_characters": 569,
+      "footer_numbers": [
+        "70"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 71,
+      "word_count": 89,
+      "text_characters": 627,
+      "footer_numbers": [
+        "71"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 72,
+      "word_count": 147,
+      "text_characters": 1716,
+      "footer_numbers": [
+        "72"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 73,
+      "word_count": 125,
+      "text_characters": 1267,
+      "footer_numbers": [
+        "73"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 74,
+      "word_count": 124,
+      "text_characters": 1441,
+      "footer_numbers": [
+        "74"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 75,
+      "word_count": 127,
+      "text_characters": 1500,
+      "footer_numbers": [
+        "75"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 76,
+      "word_count": 103,
+      "text_characters": 1623,
+      "footer_numbers": [
+        "76"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 77,
+      "word_count": 96,
+      "text_characters": 954,
+      "footer_numbers": [
+        "77"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 78,
+      "word_count": 364,
+      "text_characters": 2157,
+      "footer_numbers": [
+        "78"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 79,
+      "word_count": 369,
+      "text_characters": 2032,
+      "footer_numbers": [
+        "79"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 80,
+      "word_count": 408,
+      "text_characters": 2360,
+      "footer_numbers": [
+        "80"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 81,
+      "word_count": 155,
+      "text_characters": 940,
+      "footer_numbers": [
+        "81"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 82,
+      "word_count": 178,
+      "text_characters": 1361,
+      "footer_numbers": [
+        "82"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 83,
+      "word_count": 34,
+      "text_characters": 1067,
+      "footer_numbers": [
+        "83"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 84,
+      "word_count": 31,
+      "text_characters": 1050,
+      "footer_numbers": [
+        "84"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 85,
+      "word_count": 121,
+      "text_characters": 772,
+      "footer_numbers": [
+        "85"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 86,
+      "word_count": 21,
+      "text_characters": 130,
+      "footer_numbers": [
+        "86"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 87,
+      "word_count": 168,
+      "text_characters": 1672,
+      "footer_numbers": [
+        "87"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 88,
+      "word_count": 156,
+      "text_characters": 1553,
+      "footer_numbers": [
+        "88"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 89,
+      "word_count": 230,
+      "text_characters": 2354,
+      "footer_numbers": [
+        "89"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 90,
+      "word_count": 177,
+      "text_characters": 1162,
+      "footer_numbers": [
+        "90"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 91,
+      "word_count": 181,
+      "text_characters": 1527,
+      "footer_numbers": [
+        "91"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 92,
+      "word_count": 280,
+      "text_characters": 2390,
+      "footer_numbers": [
+        "92"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 93,
+      "word_count": 259,
+      "text_characters": 2500,
+      "footer_numbers": [
+        "93"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 94,
+      "word_count": 251,
+      "text_characters": 2317,
+      "footer_numbers": [
+        "94"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 95,
+      "word_count": 260,
+      "text_characters": 2536,
+      "footer_numbers": [
+        "95"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 96,
+      "word_count": 243,
+      "text_characters": 2225,
+      "footer_numbers": [
+        "96"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 97,
+      "word_count": 261,
+      "text_characters": 2751,
+      "footer_numbers": [
+        "97"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 98,
+      "word_count": 258,
+      "text_characters": 2312,
+      "footer_numbers": [
+        "98"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 99,
+      "word_count": 227,
+      "text_characters": 1915,
+      "footer_numbers": [
+        "99"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 100,
+      "word_count": 185,
+      "text_characters": 1192,
+      "footer_numbers": [
+        "100"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 101,
+      "word_count": 136,
+      "text_characters": 1514,
+      "footer_numbers": [
+        "101"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 102,
+      "word_count": 191,
+      "text_characters": 2131,
+      "footer_numbers": [
+        "102"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 103,
+      "word_count": 151,
+      "text_characters": 1557,
+      "footer_numbers": [
+        "103"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 104,
+      "word_count": 73,
+      "text_characters": 513,
+      "footer_numbers": [
+        "104"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 105,
+      "word_count": 163,
+      "text_characters": 1522,
+      "footer_numbers": [
+        "105"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 106,
+      "word_count": 226,
+      "text_characters": 2728,
+      "footer_numbers": [
+        "106"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 107,
+      "word_count": 216,
+      "text_characters": 3015,
+      "footer_numbers": [
+        "107"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 108,
+      "word_count": 53,
+      "text_characters": 498,
+      "footer_numbers": [
+        "108"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 109,
+      "word_count": 171,
+      "text_characters": 2146,
+      "footer_numbers": [
+        "109"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 110,
+      "word_count": 54,
+      "text_characters": 324,
+      "footer_numbers": [
+        "110"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 111,
+      "word_count": 143,
+      "text_characters": 1441,
+      "footer_numbers": [
+        "111"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 112,
+      "word_count": 216,
+      "text_characters": 2348,
+      "footer_numbers": [
+        "112"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 113,
+      "word_count": 163,
+      "text_characters": 1174,
+      "footer_numbers": [
+        "113"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 114,
+      "word_count": 242,
+      "text_characters": 1934,
+      "footer_numbers": [
+        "114"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 115,
+      "word_count": 312,
+      "text_characters": 2998,
+      "footer_numbers": [
+        "115"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 116,
+      "word_count": 222,
+      "text_characters": 2168,
+      "footer_numbers": [
+        "116"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 117,
+      "word_count": 221,
+      "text_characters": 2345,
+      "footer_numbers": [
+        "117"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 118,
+      "word_count": 231,
+      "text_characters": 1954,
+      "footer_numbers": [
+        "118"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 119,
+      "word_count": 200,
+      "text_characters": 1795,
+      "footer_numbers": [
+        "119"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 120,
+      "word_count": 263,
+      "text_characters": 2581,
+      "footer_numbers": [
+        "120"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 121,
+      "word_count": 275,
+      "text_characters": 2232,
+      "footer_numbers": [
+        "121"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 122,
+      "word_count": 281,
+      "text_characters": 2397,
+      "footer_numbers": [
+        "122"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 123,
+      "word_count": 224,
+      "text_characters": 2338,
+      "footer_numbers": [
+        "123"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 124,
+      "word_count": 88,
+      "text_characters": 635,
+      "footer_numbers": [
+        "124"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 125,
+      "word_count": 141,
+      "text_characters": 1489,
+      "footer_numbers": [
+        "125"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 126,
+      "word_count": 116,
+      "text_characters": 1168,
+      "footer_numbers": [
+        "126"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 127,
+      "word_count": 63,
+      "text_characters": 550,
+      "footer_numbers": [
+        "127"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 128,
+      "word_count": 203,
+      "text_characters": 1991,
+      "footer_numbers": [
+        "128"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 129,
+      "word_count": 212,
+      "text_characters": 2013,
+      "footer_numbers": [
+        "129"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 130,
+      "word_count": 82,
+      "text_characters": 720,
+      "footer_numbers": [
+        "130"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 131,
+      "word_count": 97,
+      "text_characters": 807,
+      "footer_numbers": [
+        "131"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 132,
+      "word_count": 129,
+      "text_characters": 1130,
+      "footer_numbers": [
+        "132"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 133,
+      "word_count": 72,
+      "text_characters": 637,
+      "footer_numbers": [
+        "133"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 134,
+      "word_count": 169,
+      "text_characters": 1531,
+      "footer_numbers": [
+        "134"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 135,
+      "word_count": 136,
+      "text_characters": 1355,
+      "footer_numbers": [
+        "135"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 136,
+      "word_count": 172,
+      "text_characters": 1733,
+      "footer_numbers": [
+        "136"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 137,
+      "word_count": 304,
+      "text_characters": 2940,
+      "footer_numbers": [
+        "137"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 138,
+      "word_count": 278,
+      "text_characters": 3164,
+      "footer_numbers": [
+        "138"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 139,
+      "word_count": 36,
+      "text_characters": 230,
+      "footer_numbers": [
+        "139"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 140,
+      "word_count": 134,
+      "text_characters": 1223,
+      "footer_numbers": [
+        "140"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 141,
+      "word_count": 279,
+      "text_characters": 2881,
+      "footer_numbers": [
+        "141"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 142,
+      "word_count": 87,
+      "text_characters": 809,
+      "footer_numbers": [
+        "142"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 143,
+      "word_count": 161,
+      "text_characters": 1570,
+      "footer_numbers": [
+        "143"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 144,
+      "word_count": 215,
+      "text_characters": 2154,
+      "footer_numbers": [
+        "144"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 145,
+      "word_count": 89,
+      "text_characters": 740,
+      "footer_numbers": [
+        "145"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 146,
+      "word_count": 100,
+      "text_characters": 798,
+      "footer_numbers": [
+        "146"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 147,
+      "word_count": 145,
+      "text_characters": 1490,
+      "footer_numbers": [
+        "147"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 148,
+      "word_count": 39,
+      "text_characters": 228,
+      "footer_numbers": [
+        "148"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 149,
+      "word_count": 77,
+      "text_characters": 641,
+      "footer_numbers": [
+        "149"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 150,
+      "word_count": 170,
+      "text_characters": 1560,
+      "footer_numbers": [
+        "150"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 151,
+      "word_count": 306,
+      "text_characters": 2865,
+      "footer_numbers": [
+        "151"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 152,
+      "word_count": 161,
+      "text_characters": 1670,
+      "footer_numbers": [
+        "152"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 153,
+      "word_count": 241,
+      "text_characters": 2579,
+      "footer_numbers": [
+        "153"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 154,
+      "word_count": 126,
+      "text_characters": 1310,
+      "footer_numbers": [
+        "154"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 155,
+      "word_count": 176,
+      "text_characters": 1933,
+      "footer_numbers": [
+        "155"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 156,
+      "word_count": 241,
+      "text_characters": 2610,
+      "footer_numbers": [
+        "156"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 157,
+      "word_count": 135,
+      "text_characters": 1273,
+      "footer_numbers": [
+        "157"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 158,
+      "word_count": 158,
+      "text_characters": 1495,
+      "footer_numbers": [
+        "158"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 159,
+      "word_count": 242,
+      "text_characters": 2525,
+      "footer_numbers": [
+        "159"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 160,
+      "word_count": 172,
+      "text_characters": 1808,
+      "footer_numbers": [
+        "160"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 161,
+      "word_count": 49,
+      "text_characters": 399,
+      "footer_numbers": [
+        "161"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 162,
+      "word_count": 160,
+      "text_characters": 1379,
+      "footer_numbers": [
+        "162"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 163,
+      "word_count": 69,
+      "text_characters": 739,
+      "footer_numbers": [
+        "163"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 164,
+      "word_count": 188,
+      "text_characters": 1851,
+      "footer_numbers": [
+        "164"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 165,
+      "word_count": 248,
+      "text_characters": 2923,
+      "footer_numbers": [
+        "165"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 166,
+      "word_count": 210,
+      "text_characters": 2155,
+      "footer_numbers": [
+        "166"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 167,
+      "word_count": 144,
+      "text_characters": 1004,
+      "footer_numbers": [
+        "167"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 168,
+      "word_count": 127,
+      "text_characters": 781,
+      "footer_numbers": [
+        "168"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 169,
+      "word_count": 57,
+      "text_characters": 446,
+      "footer_numbers": [
+        "169"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 170,
+      "word_count": 147,
+      "text_characters": 1394,
+      "footer_numbers": [
+        "170"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 171,
+      "word_count": 153,
+      "text_characters": 1324,
+      "footer_numbers": [
+        "171"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 172,
+      "word_count": 145,
+      "text_characters": 1279,
+      "footer_numbers": [
+        "172"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 173,
+      "word_count": 30,
+      "text_characters": 173,
+      "footer_numbers": [
+        "173"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 174,
+      "word_count": 34,
+      "text_characters": 280,
+      "footer_numbers": [
+        "174"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 175,
+      "word_count": 199,
+      "text_characters": 1332,
+      "footer_numbers": [
+        "175"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 176,
+      "word_count": 209,
+      "text_characters": 1705,
+      "footer_numbers": [
+        "176"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 177,
+      "word_count": 171,
+      "text_characters": 1434,
+      "footer_numbers": [
+        "177"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 178,
+      "word_count": 146,
+      "text_characters": 1335,
+      "footer_numbers": [
+        "178"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 179,
+      "word_count": 88,
+      "text_characters": 858,
+      "footer_numbers": [
+        "179"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 180,
+      "word_count": 244,
+      "text_characters": 1582,
+      "footer_numbers": [
+        "180"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 181,
+      "word_count": 183,
+      "text_characters": 1554,
+      "footer_numbers": [
+        "181"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 182,
+      "word_count": 175,
+      "text_characters": 1163,
+      "footer_numbers": [
+        "182"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 183,
+      "word_count": 163,
+      "text_characters": 1271,
+      "footer_numbers": [
+        "183"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 184,
+      "word_count": 231,
+      "text_characters": 1730,
+      "footer_numbers": [
+        "184"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 185,
+      "word_count": 37,
+      "text_characters": 231,
+      "footer_numbers": [
+        "185"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 186,
+      "word_count": 174,
+      "text_characters": 1725,
+      "footer_numbers": [
+        "186"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 187,
+      "word_count": 21,
+      "text_characters": 135,
+      "footer_numbers": [
+        "187"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 188,
+      "word_count": 34,
+      "text_characters": 284,
+      "footer_numbers": [
+        "188"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 189,
+      "word_count": 196,
+      "text_characters": 1706,
+      "footer_numbers": [
+        "189"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 190,
+      "word_count": 121,
+      "text_characters": 951,
+      "footer_numbers": [
+        "190"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 191,
+      "word_count": 151,
+      "text_characters": 1285,
+      "footer_numbers": [
+        "191"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 192,
+      "word_count": 34,
+      "text_characters": 283,
+      "footer_numbers": [
+        "192"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 193,
+      "word_count": 175,
+      "text_characters": 1728,
+      "footer_numbers": [
+        "193"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 194,
+      "word_count": 202,
+      "text_characters": 1618,
+      "footer_numbers": [
+        "194"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 195,
+      "word_count": 40,
+      "text_characters": 231,
+      "footer_numbers": [
+        "195"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 196,
+      "word_count": 144,
+      "text_characters": 1418,
+      "footer_numbers": [
+        "196"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 197,
+      "word_count": 207,
+      "text_characters": 1929,
+      "footer_numbers": [
+        "197"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 198,
+      "word_count": 34,
+      "text_characters": 278,
+      "footer_numbers": [
+        "198"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 199,
+      "word_count": 175,
+      "text_characters": 1463,
+      "footer_numbers": [
+        "199"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 200,
+      "word_count": 267,
+      "text_characters": 2561,
+      "footer_numbers": [
+        "200"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 201,
+      "word_count": 250,
+      "text_characters": 2437,
+      "footer_numbers": [
+        "201"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 202,
+      "word_count": 75,
+      "text_characters": 591,
+      "footer_numbers": [
+        "202"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 203,
+      "word_count": 34,
+      "text_characters": 282,
+      "footer_numbers": [
+        "203"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 204,
+      "word_count": 129,
+      "text_characters": 857,
+      "footer_numbers": [
+        "204"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 205,
+      "word_count": 180,
+      "text_characters": 1419,
+      "footer_numbers": [
+        "205"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 206,
+      "word_count": 117,
+      "text_characters": 805,
+      "footer_numbers": [
+        "206"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 207,
+      "word_count": 176,
+      "text_characters": 1550,
+      "footer_numbers": [
+        "207"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 208,
+      "word_count": 219,
+      "text_characters": 1863,
+      "footer_numbers": [
+        "208"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 209,
+      "word_count": 268,
+      "text_characters": 2313,
+      "footer_numbers": [
+        "209"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 210,
+      "word_count": 210,
+      "text_characters": 2053,
+      "footer_numbers": [
+        "210"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 211,
+      "word_count": 228,
+      "text_characters": 2223,
+      "footer_numbers": [
+        "211"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 212,
+      "word_count": 254,
+      "text_characters": 2627,
+      "footer_numbers": [
+        "212"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 213,
+      "word_count": 248,
+      "text_characters": 2680,
+      "footer_numbers": [
+        "213"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 214,
+      "word_count": 113,
+      "text_characters": 1181,
+      "footer_numbers": [
+        "214"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 215,
+      "word_count": 161,
+      "text_characters": 1700,
+      "footer_numbers": [
+        "215"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 216,
+      "word_count": 231,
+      "text_characters": 2123,
+      "footer_numbers": [
+        "216"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 217,
+      "word_count": 34,
+      "text_characters": 285,
+      "footer_numbers": [
+        "217"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 218,
+      "word_count": 168,
+      "text_characters": 1426,
+      "footer_numbers": [
+        "218"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 219,
+      "word_count": 234,
+      "text_characters": 2402,
+      "footer_numbers": [
+        "219"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 220,
+      "word_count": 276,
+      "text_characters": 3331,
+      "footer_numbers": [
+        "220"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 221,
+      "word_count": 230,
+      "text_characters": 2546,
+      "footer_numbers": [
+        "221"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 222,
+      "word_count": 88,
+      "text_characters": 767,
+      "footer_numbers": [
+        "222"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 223,
+      "word_count": 194,
+      "text_characters": 2004,
+      "footer_numbers": [
+        "223"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 224,
+      "word_count": 276,
+      "text_characters": 3128,
+      "footer_numbers": [
+        "224"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 225,
+      "word_count": 357,
+      "text_characters": 3484,
+      "footer_numbers": [
+        "225"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 226,
+      "word_count": 265,
+      "text_characters": 2209,
+      "footer_numbers": [
+        "226"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 227,
+      "word_count": 197,
+      "text_characters": 1904,
+      "footer_numbers": [
+        "227"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 228,
+      "word_count": 238,
+      "text_characters": 2385,
+      "footer_numbers": [
+        "228"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 229,
+      "word_count": 256,
+      "text_characters": 2857,
+      "footer_numbers": [
+        "229"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 230,
+      "word_count": 232,
+      "text_characters": 2355,
+      "footer_numbers": [
+        "230"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 231,
+      "word_count": 245,
+      "text_characters": 2435,
+      "footer_numbers": [
+        "231"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 232,
+      "word_count": 27,
+      "text_characters": 172,
+      "footer_numbers": [
+        "232"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 233,
+      "word_count": 34,
+      "text_characters": 283,
+      "footer_numbers": [
+        "233"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 234,
+      "word_count": 172,
+      "text_characters": 1760,
+      "footer_numbers": [
+        "234"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 235,
+      "word_count": 263,
+      "text_characters": 2523,
+      "footer_numbers": [
+        "235"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 236,
+      "word_count": 284,
+      "text_characters": 2991,
+      "footer_numbers": [
+        "236"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 237,
+      "word_count": 102,
+      "text_characters": 845,
+      "footer_numbers": [
+        "237"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 238,
+      "word_count": 152,
+      "text_characters": 1435,
+      "footer_numbers": [
+        "238"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 239,
+      "word_count": 95,
+      "text_characters": 685,
+      "footer_numbers": [
+        "239"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 240,
+      "word_count": 150,
+      "text_characters": 1308,
+      "footer_numbers": [
+        "240"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 241,
+      "word_count": 49,
+      "text_characters": 329,
+      "footer_numbers": [
+        "241"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 242,
+      "word_count": 42,
+      "text_characters": 373,
+      "footer_numbers": [
+        "242"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 243,
+      "word_count": 184,
+      "text_characters": 1904,
+      "footer_numbers": [
+        "243"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 244,
+      "word_count": 270,
+      "text_characters": 3061,
+      "footer_numbers": [
+        "244"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 245,
+      "word_count": 275,
+      "text_characters": 2838,
+      "footer_numbers": [
+        "245"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 246,
+      "word_count": 181,
+      "text_characters": 1508,
+      "footer_numbers": [
+        "246"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 247,
+      "word_count": 273,
+      "text_characters": 2471,
+      "footer_numbers": [
+        "247"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 248,
+      "word_count": 156,
+      "text_characters": 1507,
+      "footer_numbers": [
+        "248"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 249,
+      "word_count": 314,
+      "text_characters": 3116,
+      "footer_numbers": [
+        "249"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 250,
+      "word_count": 97,
+      "text_characters": 1065,
+      "footer_numbers": [
+        "250"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 251,
+      "word_count": 185,
+      "text_characters": 1786,
+      "footer_numbers": [
+        "251"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 252,
+      "word_count": 245,
+      "text_characters": 2743,
+      "footer_numbers": [
+        "252"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 253,
+      "word_count": 266,
+      "text_characters": 3031,
+      "footer_numbers": [
+        "253"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 254,
+      "word_count": 92,
+      "text_characters": 1010,
+      "footer_numbers": [
+        "254"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 255,
+      "word_count": 161,
+      "text_characters": 1314,
+      "footer_numbers": [
+        "255"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 256,
+      "word_count": 288,
+      "text_characters": 3198,
+      "footer_numbers": [
+        "256"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 257,
+      "word_count": 281,
+      "text_characters": 2934,
+      "footer_numbers": [
+        "257"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 258,
+      "word_count": 191,
+      "text_characters": 2030,
+      "footer_numbers": [
+        "258"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 259,
+      "word_count": 206,
+      "text_characters": 1776,
+      "footer_numbers": [
+        "259"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 260,
+      "word_count": 235,
+      "text_characters": 3058,
+      "footer_numbers": [
+        "260"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 261,
+      "word_count": 391,
+      "text_characters": 3486,
+      "footer_numbers": [
+        "261"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 262,
+      "word_count": 647,
+      "text_characters": 4965,
+      "footer_numbers": [
+        "262"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 263,
+      "word_count": 596,
+      "text_characters": 4612,
+      "footer_numbers": [
+        "263"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 264,
+      "word_count": 582,
+      "text_characters": 4599,
+      "footer_numbers": [
+        "264"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 265,
+      "word_count": 442,
+      "text_characters": 3835,
+      "footer_numbers": [
+        "265"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 266,
+      "word_count": 577,
+      "text_characters": 4869,
+      "footer_numbers": [
+        "266"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 267,
+      "word_count": 383,
+      "text_characters": 3033,
+      "footer_numbers": [
+        "267"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 268,
+      "word_count": 200,
+      "text_characters": 2095,
+      "footer_numbers": [
+        "268"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 269,
+      "word_count": 167,
+      "text_characters": 1425,
+      "footer_numbers": [
+        "269"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 270,
+      "word_count": 157,
+      "text_characters": 1138,
+      "footer_numbers": [
+        "270"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 271,
+      "word_count": 147,
+      "text_characters": 1227,
+      "footer_numbers": [
+        "271"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 272,
+      "word_count": 106,
+      "text_characters": 966,
+      "footer_numbers": [
+        "272"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 273,
+      "word_count": 183,
+      "text_characters": 2366,
+      "footer_numbers": [
+        "273"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 274,
+      "word_count": 34,
+      "text_characters": 188,
+      "footer_numbers": [
+        "274"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 275,
+      "word_count": 205,
+      "text_characters": 2092,
+      "footer_numbers": [
+        "275"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 276,
+      "word_count": 164,
+      "text_characters": 1487,
+      "footer_numbers": [
+        "276"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 277,
+      "word_count": 166,
+      "text_characters": 1876,
+      "footer_numbers": [
+        "277"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 278,
+      "word_count": 170,
+      "text_characters": 1778,
+      "footer_numbers": [
+        "278"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 279,
+      "word_count": 139,
+      "text_characters": 1803,
+      "footer_numbers": [
+        "279"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 280,
+      "word_count": 201,
+      "text_characters": 2415,
+      "footer_numbers": [
+        "280"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 281,
+      "word_count": 151,
+      "text_characters": 1882,
+      "footer_numbers": [
+        "281"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 282,
+      "word_count": 203,
+      "text_characters": 2514,
+      "footer_numbers": [
+        "282"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    },
+    {
+      "page": 283,
+      "word_count": 47,
+      "text_characters": 459,
+      "footer_numbers": [
+        "283"
+      ],
+      "footer_expected_found": true,
+      "outside_words": [],
+      "low_text": false
+    }
+  ]
+}

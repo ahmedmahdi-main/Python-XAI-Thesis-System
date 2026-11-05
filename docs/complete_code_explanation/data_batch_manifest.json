@@ -1,0 +1,130 @@
+{
+  "src/xai_finance/data/features.py": {
+    "document": "line_by_line/src_xai_finance_data_features.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        17,
+        21
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        24,
+        26
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        29,
+        31
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        39
+      ],
+      [
+        40,
+        43
+      ]
+    ],
+    "sha256": "dca14d81cf7b8d7bf7702e5507934a37b6a92113c9ea4447829d9e5bcbd2110a",
+    "review": "مراجعة يدوية للمصدر، لم تراجع مراجعة مستقلة",
+    "quote_verification": "تطابق آلي مع المصدر"
+  },
+  "src/xai_finance/data/windows.py": {
+    "document": "line_by_line/src_xai_finance_data_windows.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        18
+      ],
+      [
+        20,
+        22
+      ],
+      [
+        24,
+        26
+      ],
+      [
+        29,
+        31
+      ],
+      [
+        32,
+        34
+      ],
+      [
+        35,
+        36
+      ],
+      [
+        37,
+        37
+      ]
+    ],
+    "sha256": "5a2dd67bb06590ee870e77dff8787faeb89027f2de566095b50b6295d5728743",
+    "review": "مراجعة يدوية للمصدر، لم تراجع مراجعة مستقلة",
+    "quote_verification": "تطابق آلي مع المصدر"
+  },
+  "src/xai_finance/data/preprocess.py": {
+    "document": "line_by_line/src_xai_finance_data_preprocess.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        24,
+        28
+      ]
+    ],
+    "sha256": "795123aca48a8ee72b305571c46707aa19428e248927ddc162a2a28ca46ff2b0",
+    "review": "مراجعة يدوية للمصدر، لم تراجع مراجعة مستقلة",
+    "quote_verification": "تطابق آلي مع المصدر"
+  }
+}

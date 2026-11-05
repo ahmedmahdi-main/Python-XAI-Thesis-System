@@ -1,0 +1,122 @@
+{
+  "scripts/check_dashboard_cpu.py": {
+    "document": "line_by_line/scripts_check_dashboard_cpu.py.md",
+    "ranges": [
+      [
+        1,
+        10
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        24,
+        33
+      ],
+      [
+        34,
+        43
+      ],
+      [
+        44,
+        58
+      ],
+      [
+        59,
+        64
+      ]
+    ],
+    "sha256": "afa1fe0e9083bf26367b03833f8ce2b16ca09a3e5d6174d2fea7520257e9997b",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/browser_smoke_cpu.py": {
+    "document": "line_by_line/scripts_browser_smoke_cpu.py.md",
+    "ranges": [
+      [
+        1,
+        16
+      ],
+      [
+        19,
+        23
+      ],
+      [
+        25,
+        36
+      ],
+      [
+        38,
+        42
+      ],
+      [
+        45,
+        58
+      ],
+      [
+        59,
+        77
+      ],
+      [
+        78,
+        92
+      ],
+      [
+        93,
+        105
+      ],
+      [
+        106,
+        114
+      ],
+      [
+        117,
+        118
+      ]
+    ],
+    "sha256": "feb83a0e6fd44b841d381d7b8d6142612cf60dc6db4345819fadf560ab71bdba",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/test_deployment_cpu.py": {
+    "document": "line_by_line/scripts_test_deployment_cpu.py.md",
+    "ranges": [
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        26,
+        34
+      ],
+      [
+        36,
+        41
+      ],
+      [
+        42,
+        54
+      ],
+      [
+        55,
+        66
+      ],
+      [
+        67,
+        78
+      ],
+      [
+        81,
+        82
+      ]
+    ],
+    "sha256": "8977f5c0b9b2b5fd3700e68e8241b96001df6f873845ead021085ff3c51c2693",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

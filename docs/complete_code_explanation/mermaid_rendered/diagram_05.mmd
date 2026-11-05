@@ -1,0 +1,7 @@
+flowchart TD
+    X["المدخل<br/>B × T × F"] --> L["طبقة واحدة<br/>LSTM, H"]
+    L --> S["خرج السلسلة<br/>B × T × H"]
+    S --> LAST[آخر خطوة زمنية]
+    LAST --> D[Dropout]
+    D --> O[Linear إلى قيمة واحدة]
+    O --> Y["عكس معيار الهدف<br/>predict"]

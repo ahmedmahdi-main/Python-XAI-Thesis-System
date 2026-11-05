@@ -1,0 +1,122 @@
+{
+  "scripts/audit_reconstruction_precision.py": {
+    "document": "line_by_line/scripts_audit_reconstruction_precision.py.md",
+    "ranges": [
+      [
+        1,
+        10
+      ],
+      [
+        13,
+        18
+      ],
+      [
+        19,
+        24
+      ],
+      [
+        25,
+        28
+      ],
+      [
+        29,
+        33
+      ],
+      [
+        36,
+        37
+      ]
+    ],
+    "sha256": "de19a61fb8a087653e0a96164a00d338734e7a9f5ebedecce00b58ca97dde810",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/diagnose_validation_replay.py": {
+    "document": "line_by_line/scripts_diagnose_validation_replay.py.md",
+    "ranges": [
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        21,
+        28
+      ],
+      [
+        29,
+        34
+      ],
+      [
+        37,
+        38
+      ]
+    ],
+    "sha256": "85b81348e6c1526984648cf03650f24589fca23b5af0d388fcbccf951bd50ce1",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/offline_smoke.py": {
+    "document": "line_by_line/scripts_offline_smoke.py.md",
+    "ranges": [
+      [
+        1,
+        10
+      ],
+      [
+        13,
+        16
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        27,
+        35
+      ],
+      [
+        36,
+        38
+      ]
+    ],
+    "sha256": "b8fc7ee98de68c6d372cf9ca5c55ebbb3eb8df494be57f8fc7f1120f54a348ce",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/replicate_validation_lstm.py": {
+    "document": "line_by_line/scripts_replicate_validation_lstm.py.md",
+    "ranges": [
+      [
+        1,
+        14
+      ],
+      [
+        17,
+        28
+      ],
+      [
+        29,
+        35
+      ],
+      [
+        36,
+        45
+      ],
+      [
+        46,
+        47
+      ],
+      [
+        50,
+        51
+      ]
+    ],
+    "sha256": "d95bd5ef5cb381409e38ba355d9822eff275869dcd1b989803a3cd7317eae2c3",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

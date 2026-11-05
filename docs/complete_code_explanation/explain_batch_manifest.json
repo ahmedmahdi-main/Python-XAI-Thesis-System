@@ -1,0 +1,82 @@
+{
+  "src/xai_finance/explain/shap_explain.py": {
+    "document": "line_by_line/src_xai_finance_explain_shap_explain.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        19,
+        21
+      ],
+      [
+        24,
+        28
+      ]
+    ],
+    "sha256": "3bf26cc8a78f1c0b257e489739d5712edfa200af961aaebe10003bad5ded3e6b",
+    "review": "مراجعة يدوية؛ غير مستقلة",
+    "quote_verification": "تطابق آلي مع المصدر"
+  },
+  "src/xai_finance/explain/lime_explain.py": {
+    "document": "line_by_line/src_xai_finance_explain_lime_explain.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        11
+      ]
+    ],
+    "sha256": "3ec646ba008e1fc255ebc9b8bb0eeaecefb9be679f3df4471c2ef658692f5bc3",
+    "review": "مراجعة يدوية؛ غير مستقلة",
+    "quote_verification": "تطابق آلي مع المصدر"
+  },
+  "src/xai_finance/explain/quality.py": {
+    "document": "line_by_line/src_xai_finance_explain_quality.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        13,
+        17
+      ]
+    ],
+    "sha256": "e1f89e524a7473a6dfbc2a05c0cf41cf94302e77201d3c0f98a949b5b3349072",
+    "review": "مراجعة يدوية؛ غير مستقلة",
+    "quote_verification": "تطابق آلي مع المصدر"
+  }
+}

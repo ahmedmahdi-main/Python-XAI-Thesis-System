@@ -1,0 +1,122 @@
+{
+  "scripts/generate_defense_package.py": {
+    "document": "line_by_line/scripts_generate_defense_package.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        24,
+        31
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        39,
+        50
+      ],
+      [
+        53,
+        54
+      ]
+    ],
+    "sha256": "4f8457037544d7d5e285652c9a8844a8b0921d836db77e8ea901252821b95b5e",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/package_cpu_defense.py": {
+    "document": "line_by_line/scripts_package_cpu_defense.py.md",
+    "ranges": [
+      [
+        1,
+        16
+      ],
+      [
+        19,
+        28
+      ],
+      [
+        29,
+        37
+      ],
+      [
+        38,
+        50
+      ],
+      [
+        51,
+        63
+      ],
+      [
+        64,
+        71
+      ],
+      [
+        72,
+        80
+      ],
+      [
+        81,
+        86
+      ],
+      [
+        87,
+        93
+      ],
+      [
+        96,
+        97
+      ]
+    ],
+    "sha256": "631f1680abb55b54d04c551386248d9e7dc89e93c90eac85a6d8f55394b2025b",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/package_scientific_validation.py": {
+    "document": "line_by_line/scripts_package_scientific_validation.py.md",
+    "ranges": [
+      [
+        1,
+        13
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        26,
+        36
+      ],
+      [
+        39,
+        47
+      ],
+      [
+        50,
+        57
+      ],
+      [
+        58,
+        66
+      ],
+      [
+        69,
+        75
+      ],
+      [
+        78,
+        79
+      ]
+    ],
+    "sha256": "cdb47baf5c2eb739f2706f87e58840ca2cd36c58aff9cf870d92d0e893220e39",
+    "review": "يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "SETUP_DEMO.bat": {
+    "document": "line_by_line/SETUP_DEMO.bat.md",
+    "ranges": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        13,
+        20
+      ],
+      [
+        21,
+        27
+      ],
+      [
+        28,
+        32
+      ]
+    ],
+    "sha256": "19ef858e28246181b180df9b96ccb071f96e2133338f99266f67316c218813db"
+  },
+  "START_DEMO.bat": {
+    "document": "line_by_line/START_DEMO.bat.md",
+    "ranges": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        15,
+        18
+      ]
+    ],
+    "sha256": "f129e483d502a52bc8a7996397051670c7bf3c33ccdfd8b96750f37fc5f8f9d6"
+  }
+}

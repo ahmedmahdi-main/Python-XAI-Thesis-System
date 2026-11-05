@@ -1,0 +1,2018 @@
+{
+  "pdf": "ARABIC_TECHNICAL_BOOK_CARD_REVIEW_V2.pdf",
+  "sha256": "dc2e9ebee8b694f9fe31dce860736e7a8334e36eaeff7b4df3a1419815df38b9",
+  "pages": 282,
+  "index_paths": 77,
+  "missing_index_paths": [],
+  "under_60": [
+    1,
+    5,
+    8,
+    21,
+    26,
+    28,
+    82,
+    83,
+    85,
+    107,
+    109,
+    138,
+    147,
+    160,
+    168,
+    172,
+    173,
+    184,
+    186,
+    187,
+    191,
+    194,
+    197,
+    202,
+    216,
+    231,
+    232,
+    240,
+    241,
+    273,
+    282
+  ],
+  "missing_footer": [],
+  "outside": [],
+  "pages_data": [
+    {
+      "page": 1,
+      "words": 39,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_01_AR.md"
+    },
+    {
+      "page": 2,
+      "words": 82,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 3,
+      "words": 141,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 4,
+      "words": 91,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 5,
+      "words": 54,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_01_AR.md"
+    },
+    {
+      "page": 6,
+      "words": 85,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 7,
+      "words": 81,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 8,
+      "words": 51,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_01_AR.md"
+    },
+    {
+      "page": 9,
+      "words": 68,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 10,
+      "words": 114,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 11,
+      "words": 72,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 12,
+      "words": 85,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 13,
+      "words": 67,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 14,
+      "words": 318,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 15,
+      "words": 149,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 16,
+      "words": 286,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 17,
+      "words": 352,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 18,
+      "words": 308,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 19,
+      "words": 280,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; findings in PAGE_QUALITY_CARD_REVIEW_V2_AR.md"
+    },
+    {
+      "page": 20,
+      "words": 352,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 21,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_01_AR.md"
+    },
+    {
+      "page": 22,
+      "words": 327,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 23,
+      "words": 131,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 24,
+      "words": 379,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 25,
+      "words": 262,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 26,
+      "words": 43,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_01_AR.md"
+    },
+    {
+      "page": 27,
+      "words": 262,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 28,
+      "words": 36,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_01_AR.md"
+    },
+    {
+      "page": 29,
+      "words": 220,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 30,
+      "words": 225,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 31,
+      "words": 214,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 32,
+      "words": 248,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 33,
+      "words": 247,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 34,
+      "words": 246,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 35,
+      "words": 242,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 36,
+      "words": 257,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 37,
+      "words": 242,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 38,
+      "words": 218,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 39,
+      "words": 201,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 40,
+      "words": 215,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 41,
+      "words": 199,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 42,
+      "words": 194,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 43,
+      "words": 188,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 44,
+      "words": 195,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 45,
+      "words": 197,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 46,
+      "words": 199,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 47,
+      "words": 201,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 48,
+      "words": 202,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 49,
+      "words": 193,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 50,
+      "words": 191,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 51,
+      "words": 191,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 52,
+      "words": 197,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 53,
+      "words": 214,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 54,
+      "words": 222,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 55,
+      "words": 184,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 56,
+      "words": 182,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 57,
+      "words": 236,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 58,
+      "words": 203,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 59,
+      "words": 208,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 60,
+      "words": 189,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 61,
+      "words": 196,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 62,
+      "words": 131,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 63,
+      "words": 207,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; findings in PAGE_QUALITY_CARD_REVIEW_V2_AR.md"
+    },
+    {
+      "page": 64,
+      "words": 189,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; findings in PAGE_QUALITY_CARD_REVIEW_V2_AR.md"
+    },
+    {
+      "page": 65,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; findings in PAGE_QUALITY_CARD_REVIEW_V2_AR.md"
+    },
+    {
+      "page": 66,
+      "words": 154,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 67,
+      "words": 181,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 68,
+      "words": 167,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 69,
+      "words": 165,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 70,
+      "words": 164,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 71,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 72,
+      "words": 198,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 73,
+      "words": 187,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 74,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 75,
+      "words": 170,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 76,
+      "words": 364,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 77,
+      "words": 369,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 78,
+      "words": 408,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 79,
+      "words": 330,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 80,
+      "words": 323,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 81,
+      "words": 178,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 82,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_02_AR.md"
+    },
+    {
+      "page": 83,
+      "words": 31,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_02_AR.md"
+    },
+    {
+      "page": 84,
+      "words": 121,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 85,
+      "words": 21,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_02_AR.md"
+    },
+    {
+      "page": 86,
+      "words": 168,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 87,
+      "words": 156,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 88,
+      "words": 230,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 89,
+      "words": 177,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 90,
+      "words": 181,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 91,
+      "words": 280,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 92,
+      "words": 259,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 93,
+      "words": 251,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 94,
+      "words": 260,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 95,
+      "words": 243,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 96,
+      "words": 261,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 97,
+      "words": 258,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 98,
+      "words": 227,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 99,
+      "words": 185,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 100,
+      "words": 136,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 101,
+      "words": 191,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 102,
+      "words": 151,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 103,
+      "words": 73,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 104,
+      "words": 163,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 105,
+      "words": 226,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 106,
+      "words": 216,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 107,
+      "words": 53,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_02_AR.md"
+    },
+    {
+      "page": 108,
+      "words": 171,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 109,
+      "words": 54,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_02_AR.md"
+    },
+    {
+      "page": 110,
+      "words": 143,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 111,
+      "words": 216,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 112,
+      "words": 163,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 113,
+      "words": 242,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 114,
+      "words": 312,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 115,
+      "words": 222,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 116,
+      "words": 221,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 117,
+      "words": 231,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 118,
+      "words": 200,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 119,
+      "words": 263,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 120,
+      "words": 275,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 121,
+      "words": 281,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 122,
+      "words": 224,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 123,
+      "words": 88,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 124,
+      "words": 141,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 125,
+      "words": 116,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 126,
+      "words": 63,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 127,
+      "words": 203,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 128,
+      "words": 212,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 129,
+      "words": 82,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 130,
+      "words": 97,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 131,
+      "words": 129,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 132,
+      "words": 72,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 133,
+      "words": 169,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 134,
+      "words": 136,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 135,
+      "words": 172,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 136,
+      "words": 304,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 137,
+      "words": 278,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 138,
+      "words": 36,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_02_AR.md"
+    },
+    {
+      "page": 139,
+      "words": 134,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 140,
+      "words": 279,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 141,
+      "words": 87,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 142,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 143,
+      "words": 215,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 144,
+      "words": 89,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 145,
+      "words": 100,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 146,
+      "words": 145,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 147,
+      "words": 39,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_03_AR.md"
+    },
+    {
+      "page": 148,
+      "words": 77,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 149,
+      "words": 170,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 150,
+      "words": 306,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 151,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 152,
+      "words": 241,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 153,
+      "words": 126,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 154,
+      "words": 176,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 155,
+      "words": 241,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 156,
+      "words": 135,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 157,
+      "words": 158,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 158,
+      "words": 242,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 159,
+      "words": 172,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 160,
+      "words": 49,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_03_AR.md"
+    },
+    {
+      "page": 161,
+      "words": 160,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 162,
+      "words": 69,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 163,
+      "words": 188,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 164,
+      "words": 248,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 165,
+      "words": 210,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 166,
+      "words": 144,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 167,
+      "words": 127,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 168,
+      "words": 57,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_03_AR.md"
+    },
+    {
+      "page": 169,
+      "words": 147,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 170,
+      "words": 153,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 171,
+      "words": 145,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 172,
+      "words": 30,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_03_AR.md"
+    },
+    {
+      "page": 173,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_03_AR.md"
+    },
+    {
+      "page": 174,
+      "words": 199,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 175,
+      "words": 209,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 176,
+      "words": 171,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 177,
+      "words": 146,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 178,
+      "words": 88,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 179,
+      "words": 244,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 180,
+      "words": 183,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 181,
+      "words": 175,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 182,
+      "words": 163,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 183,
+      "words": 231,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 184,
+      "words": 37,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_03_AR.md"
+    },
+    {
+      "page": 185,
+      "words": 174,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 186,
+      "words": 21,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_04_AR.md"
+    },
+    {
+      "page": 187,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_04_AR.md"
+    },
+    {
+      "page": 188,
+      "words": 196,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 189,
+      "words": 121,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 190,
+      "words": 151,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 191,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_04_AR.md"
+    },
+    {
+      "page": 192,
+      "words": 175,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 193,
+      "words": 202,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 194,
+      "words": 40,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_04_AR.md"
+    },
+    {
+      "page": 195,
+      "words": 144,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 196,
+      "words": 207,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 197,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_04_AR.md"
+    },
+    {
+      "page": 198,
+      "words": 175,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 199,
+      "words": 267,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 200,
+      "words": 250,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 201,
+      "words": 75,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 202,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_04_AR.md"
+    },
+    {
+      "page": 203,
+      "words": 129,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 204,
+      "words": 180,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 205,
+      "words": 117,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 206,
+      "words": 176,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 207,
+      "words": 219,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 208,
+      "words": 268,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 209,
+      "words": 210,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 210,
+      "words": 228,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 211,
+      "words": 254,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 212,
+      "words": 248,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 213,
+      "words": 113,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 214,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 215,
+      "words": 231,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 216,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_05_AR.md"
+    },
+    {
+      "page": 217,
+      "words": 168,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 218,
+      "words": 234,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 219,
+      "words": 276,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 220,
+      "words": 230,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 221,
+      "words": 88,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 222,
+      "words": 194,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 223,
+      "words": 276,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 224,
+      "words": 357,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 225,
+      "words": 265,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 226,
+      "words": 197,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 227,
+      "words": 238,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 228,
+      "words": 256,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 229,
+      "words": 232,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 230,
+      "words": 245,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 231,
+      "words": 27,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_05_AR.md"
+    },
+    {
+      "page": 232,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_05_AR.md"
+    },
+    {
+      "page": 233,
+      "words": 172,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 234,
+      "words": 263,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 235,
+      "words": 284,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 236,
+      "words": 102,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 237,
+      "words": 152,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 238,
+      "words": 95,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 239,
+      "words": 150,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 240,
+      "words": 49,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_05_AR.md"
+    },
+    {
+      "page": 241,
+      "words": 42,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_05_AR.md"
+    },
+    {
+      "page": 242,
+      "words": 184,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 243,
+      "words": 270,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 244,
+      "words": 275,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 245,
+      "words": 181,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 246,
+      "words": 273,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 247,
+      "words": 156,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 248,
+      "words": 314,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 249,
+      "words": 97,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 250,
+      "words": 185,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 251,
+      "words": 245,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 252,
+      "words": 266,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 253,
+      "words": 92,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 254,
+      "words": 161,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 255,
+      "words": 288,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 256,
+      "words": 281,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 257,
+      "words": 191,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 258,
+      "words": 206,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 259,
+      "words": 235,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 260,
+      "words": 391,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 261,
+      "words": 647,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 262,
+      "words": 596,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 263,
+      "words": 582,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 264,
+      "words": 442,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 265,
+      "words": 577,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 266,
+      "words": 383,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 267,
+      "words": 200,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 268,
+      "words": 167,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 269,
+      "words": 157,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 270,
+      "words": 147,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 271,
+      "words": 106,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 272,
+      "words": 183,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 273,
+      "words": 34,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; see PAGE_VISUAL_BATCH_05_AR.md"
+    },
+    {
+      "page": 274,
+      "words": 205,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 275,
+      "words": 164,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 276,
+      "words": 166,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 277,
+      "words": 170,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 278,
+      "words": 139,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 279,
+      "words": 201,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 280,
+      "words": 151,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 281,
+      "words": 203,
+      "footer": true,
+      "outside": [],
+      "visual": "not individually inspected"
+    },
+    {
+      "page": 282,
+      "words": 47,
+      "footer": true,
+      "outside": [],
+      "visual": "inspected at readable size; findings in PAGE_QUALITY_CARD_REVIEW_V2_AR.md"
+    }
+  ]
+}

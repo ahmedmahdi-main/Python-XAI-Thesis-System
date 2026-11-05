@@ -1,0 +1,10 @@
+﻿from pathlib import Path
+p=Path('docs/complete_code_explanation/02_PROJECT_ARCHITECTURE_AR.md');s=p.read_text(encoding='utf8')
+s=s.replace('V --> S[اختيار RMSE أو خسارة تحقق]','V --> S["اختيار بالتحقق<br/>RMSE / MSE"]')
+s=s.replace('X[مدخل B في T في F] --> L[طبقة LSTM واحدة بحجم H]','X["المدخل<br/>B × T × F"] --> L["طبقة واحدة<br/>LSTM, H"]')
+s=s.replace('L --> S[خرج B في T في H]','L --> S["خرج السلسلة<br/>B × T × H"]')
+s=s.replace('O --> Y[عكس معيار الهدف في predict]','O --> Y["عكس معيار الهدف<br/>predict"]')
+s=s.replace('F --> V[تقسيم ثابت أو walk-forward]','F --> V["تقسيم ثابت أو<br/>Walk-forward"]')
+s=s.replace('P --> B[مقاييس و bootstrap مزدوج]','P --> B["مقاييس وعدم يقين<br/>Block bootstrap"]')
+p.write_text(s,encoding='utf8')
+p=Path('docs/complete_code_explanation/11_DEFENSE_QUESTIONS_AND_ANSWERS_AR.md');s=p.read_text(encoding='utf8');s=s.replace('# أسئلة الدفاع وإجاباتها: دفعة أولى','# أسئلة الدفاع وإجاباتها');p.write_text(s,encoding='utf8')

@@ -1,0 +1,202 @@
+{
+  "tests/conftest.py": {
+    "document": "line_by_line/tests_conftest.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        17,
+        19
+      ]
+    ],
+    "sha256": "41ee4b27c2f77914a6efc6a25cb5452bd277dcd104e953578b05f7d9e9cf6b08",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_dashboard.py": {
+    "document": "line_by_line/tests_test_dashboard.py.md",
+    "ranges": [
+      [
+        1,
+        4
+      ],
+      [
+        7,
+        15
+      ]
+    ],
+    "sha256": "3f0c02101dd582654eb007414d60de23a2dfc0e6d48bad229bf2d8defe5767dd",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_explain_consistency.py": {
+    "document": "line_by_line/tests_test_explain_consistency.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        22,
+        30
+      ]
+    ],
+    "sha256": "1f5cfcbbdfcc19a8085cf5345073b26973612b89c41d0b379bff0cac53d48065",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_lstm_training.py": {
+    "document": "line_by_line/tests_test_lstm_training.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        17
+      ],
+      [
+        20,
+        28
+      ]
+    ],
+    "sha256": "d4768f11fab72c7d225aea64631e1b32b7673b1706f89e6542d6546447720941",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_metrics_and_models.py": {
+    "document": "line_by_line/tests_test_metrics_and_models.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        20,
+        24
+      ],
+      [
+        27,
+        29
+      ],
+      [
+        32,
+        38
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        45,
+        54
+      ]
+    ],
+    "sha256": "f7c3adb98439eb45660323b411d58d89c754c28ca89bc487061eb4e0bbfc5e01",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_provider_integration.py": {
+    "document": "line_by_line/tests_test_provider_integration.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        22
+      ]
+    ],
+    "sha256": "b53ad6c2aa4b7d61ed4a0280cad3b641e7e797970c3ad5eea9bb5573a9b7548c",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_scientific_validation.py": {
+    "document": "line_by_line/tests_test_scientific_validation.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        19
+      ],
+      [
+        22,
+        28
+      ],
+      [
+        31,
+        38
+      ],
+      [
+        41,
+        52
+      ],
+      [
+        55,
+        60
+      ]
+    ],
+    "sha256": "f4be0f78d9bcfde0e8d6a2af62da9621e9eeb5fcce6020f6ded0c11b21fde65a",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "tests/test_temporal_integrity.py": {
+    "document": "line_by_line/tests_test_temporal_integrity.py.md",
+    "ranges": [
+      [
+        1,
+        9
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        23,
+        31
+      ],
+      [
+        34,
+        42
+      ],
+      [
+        45,
+        53
+      ],
+      [
+        56,
+        59
+      ],
+      [
+        62,
+        73
+      ],
+      [
+        76,
+        78
+      ]
+    ],
+    "sha256": "956f8288c073dc7938f6cc1202e9165bab37409a23827cab7fa7b0cf9eea7142",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

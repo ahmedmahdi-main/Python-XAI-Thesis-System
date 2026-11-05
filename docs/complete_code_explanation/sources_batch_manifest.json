@@ -1,0 +1,98 @@
+{
+  "src/xai_finance/data/validate.py": {
+    "document": "line_by_line/src_xai_finance_data_validate.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        13,
+        16
+      ],
+      [
+        17,
+        19
+      ],
+      [
+        22,
+        26
+      ],
+      [
+        27,
+        28
+      ]
+    ],
+    "sha256": "454cd1ccd21e3d8437714df3ae9b95df7b2f8762935e8a13173a3058c1bc0488",
+    "review": "مراجعة يدوية، لم تراجع مستقلاً",
+    "quote_verification": "تطابق آلي مع المصدر"
+  },
+  "src/xai_finance/io/data_sources.py": {
+    "document": "line_by_line/src_xai_finance_io_data_sources.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        13,
+        17
+      ],
+      [
+        18,
+        20
+      ],
+      [
+        23,
+        28
+      ],
+      [
+        29,
+        31
+      ],
+      [
+        34,
+        39
+      ],
+      [
+        40,
+        44
+      ],
+      [
+        45,
+        49
+      ],
+      [
+        52,
+        56
+      ],
+      [
+        57,
+        61
+      ],
+      [
+        64,
+        66
+      ]
+    ],
+    "sha256": "c2092e3c5dd9173fccedf3879ad4743640e7c905b4a85e8fb075c9ffadb7a042",
+    "review": "مراجعة يدوية، لم تراجع مستقلاً",
+    "quote_verification": "تطابق آلي مع المصدر"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "src/xai_finance/reports/plots.py": {
+    "document": "line_by_line/src_xai_finance_reports_plots.py.md",
+    "ranges": [
+      [
+        1,
+        13
+      ],
+      [
+        16,
+        21
+      ],
+      [
+        24,
+        36
+      ],
+      [
+        39,
+        46
+      ],
+      [
+        49,
+        57
+      ],
+      [
+        60,
+        72
+      ],
+      [
+        75,
+        80
+      ],
+      [
+        81,
+        89
+      ],
+      [
+        92,
+        101
+      ],
+      [
+        102,
+        108
+      ]
+    ],
+    "sha256": "fa28fbe115d210004bf0c43ee0e2e09d8accea28c1917e8a976ab4c5d61386fe",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/start_scientific_validation.py": {
+    "document": "line_by_line/scripts_start_scientific_validation.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        14,
+        19
+      ],
+      [
+        20,
+        37
+      ],
+      [
+        38,
+        44
+      ]
+    ],
+    "sha256": "b9a5b7a82b8ba6c25aa1dabba2d18bfa24ec8491df5b19bd17d55bca21903924",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/run_scientific_validation.py": {
+    "document": "line_by_line/scripts_run_scientific_validation.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        18
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        28,
+        29
+      ]
+    ],
+    "sha256": "9d8bd2280e9ea79bc236f77c96d0db1ef051b5c6959e8fa8ada72518f76e3741",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/build_validation_report.py": {
+    "document": "line_by_line/scripts_build_validation_report.py.md",
+    "ranges": [
+      [
+        1,
+        7
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        19,
+        24
+      ],
+      [
+        27,
+        28
+      ]
+    ],
+    "sha256": "6359790f490bf1d13a23bfe3df70dff0c33b589ab3a1f483255f8d4249e98d32",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/download_data.py": {
+    "document": "line_by_line/scripts_download_data.py.md",
+    "ranges": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "sha256": "ba95c0c7f7ffc4743e4e23751218a222ea3ed59e79dcc658e2f838226bf9b3eb",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}

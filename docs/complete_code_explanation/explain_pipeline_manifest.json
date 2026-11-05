@@ -1,0 +1,66 @@
+{
+  "src/xai_finance/pipelines/explain.py": {
+    "document": "line_by_line/src_xai_finance_pipelines_explain.py.md",
+    "ranges": [
+      [
+        1,
+        7
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        22,
+        32
+      ],
+      [
+        35,
+        40
+      ],
+      [
+        41,
+        47
+      ],
+      [
+        50,
+        60
+      ],
+      [
+        61,
+        66
+      ],
+      [
+        67,
+        73
+      ],
+      [
+        76,
+        83
+      ],
+      [
+        84,
+        92
+      ],
+      [
+        93,
+        95
+      ],
+      [
+        98,
+        103
+      ],
+      [
+        104,
+        108
+      ]
+    ],
+    "sha256": "62a6194d317aeac61fb9d69d7f99c26754c1a6bfb68f36a9855763bc07253ab1",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "تطابق آلي"
+  }
+}

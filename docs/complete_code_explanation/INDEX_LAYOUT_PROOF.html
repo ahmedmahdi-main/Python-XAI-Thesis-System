@@ -1,0 +1,61 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style> @page{size:A4;margin:18mm 16mm;@bottom-center{content:counter(page)}} body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:#172331;line-height:1.8;max-width:1050px;margin:auto}h1,h2,h3{color:#174564;line-height:1.35;break-after:avoid}.cover{min-height:80vh;display:flex;flex-direction:column;justify-content:center;text-align:center;break-after:page}.warning{border:2px solid #a44;padding:1em;background:#fff4ef}.chapter{break-before:page}pre{direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f5f7;padding:.6em;border:1px solid #ddd;font:9pt Consolas,monospace;unicode-bidi:embed}code{direction:ltr;unicode-bidi:isolate;font-family:Consolas,monospace;overflow-wrap:anywhere;word-break:break-word}table{border-collapse:collapse;width:100%;font-size:9pt}th,td{border:1px solid #aaa;padding:.25em;vertical-align:top;overflow-wrap:anywhere}tr{break-inside:avoid}a{color:#124f7b}.source{direction:ltr;text-align:left;font-size:9pt;overflow-wrap:anywhere}.architecture-figure{break-inside:avoid;page-break-inside:avoid;text-align:center;margin:12mm auto;max-width:100%}.architecture-figure img{display:block;max-width:100%;max-height:170mm;width:auto;height:auto;margin:auto;object-fit:contain}.architecture-figure figcaption{margin-top:4mm;font-weight:bold;direction:rtl;break-inside:avoid}@media print{body{max-width:none}a{color:inherit;text-decoration:none}pre{font-size:8pt}}#chapter-11 table{table-layout:fixed}#chapter-11 th:nth-child(1),#chapter-11 td:nth-child(1){width:23%}#chapter-11 th:nth-child(2),#chapter-11 td:nth-child(2),#chapter-11 th:nth-child(3),#chapter-11 td:nth-child(3){width:8%}#chapter-11 th:nth-child(4),#chapter-11 td:nth-child(4){width:31%}#chapter-11 th:nth-child(5),#chapter-11 td:nth-child(5){width:30%}</style></head><body><section id="chapter-11"><p class="source">12_CODE_INDEX_AR.md</p><h1>فهرس آلي أولي للشيفرة</h1>
+<p>يشمل main.py ومجلدات dashboard وsrc وscripts وtests. تستبعد نسخ artifacts المحفوظة ومخرجات البناء والبيئات. هذا جرد نحوي آلي وليس دليلاً على اكتمال الشرح. عدد الأسطر القابلة للتنفيذ تقريبي من أرقام أسطر bytecode وقد يتغير حسب إصدار Python. الأسطر ذات الرموز تحتسب بداية الرمز فقط ولا تكفي وحدها لإثبات التغطية.</p>
+<table>
+<thead>
+<tr>
+<th>المسار</th>
+<th style="text-align:right">الأسطر الفعلية</th>
+<th style="text-align:right">تنفيذية تقريبية</th>
+<th>الأصناف والدوال (الاسم:السطر)</th>
+<th>الواردات</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>main.py</code></td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">5</td>
+<td>—</td>
+<td>pathlib, runpy</td>
+</tr><tr>
+<td><code>dashboard/app.py</code></td>
+<td style="text-align:right">209</td>
+<td style="text-align:right">173</td>
+<td>read_json:22, load_table:27, csv_table:31, saved_image:35, overview:42, preprocessing:54, forecasting:70, comparison:85, explanations:95, regimes:127, reproducibility:137, thesis_alignment:162, main:179</td>
+<td>json, numpy, pandas, pathlib, plotly.express, plotly.graph_objects, streamlit</td>
+</tr><tr>
+<td><code>scripts/audit_reconstruction_precision.py</code></td>
+<td style="text-align:right">37</td>
+<td style="text-align:right">31</td>
+<td>main:13</td>
+<td>argparse, numpy, pandas, pathlib, xai_finance.storage, xai_finance.validation.design, xai_finance.validation.statistics</td>
+</tr><tr>
+<td><code>scripts/bootstrap_cpu.py</code></td>
+<td style="text-align:right">23</td>
+<td style="text-align:right">21</td>
+<td>—</td>
+<td>os, pathlib, subprocess, sys</td>
+</tr><tr>
+<td><code>scripts/browser_smoke_cpu.py</code></td>
+<td style="text-align:right">118</td>
+<td style="text-align:right">101</td>
+<td>CDP:19, <strong>init</strong>:20, call:25, evaluate:38, main:45</td>
+<td>argparse, base64, json, pathlib, subprocess, time, urllib.request, websockets.sync.client</td>
+</tr><tr>
+<td><code>scripts/build_validation_report.py</code></td>
+<td style="text-align:right">28</td>
+<td style="text-align:right">23</td>
+<td>main:10</td>
+<td>argparse, base64, html, pathlib, xai_finance.storage, xai_finance.validation.report</td>
+</tr><tr>
+<td><code>scripts/check_dashboard_cpu.py</code></td>
+<td style="text-align:right">64</td>
+<td style="text-align:right">53</td>
+<td>main:13, check:20, connect:24, connect_ex:28</td>
+<td>argparse, json, pathlib, socket, streamlit.testing.v1</td>
+</tr><tr>
+<td><code>scripts/demo_wizard.py</code></td>
+<td style="text-align:right">350</td>
+<td style="text-align:right">298</td>
+<td>say:30, environment:37, run:42, sha256:51, verify_manifest:59, verify_artifacts:74, runtime_check:96, process_stamp:101, owned_state:124, terminate_owned_tree:134, Entry:139, healthy:175, launch_lock:184, start:202, stop:253, setup:275, main:315</td>
+<td>argparse, contextlib, ctypes, datetime, hashlib, json, msvcrt, os, pathlib, platform, signal, socket, struct, subprocess, sys, time, urllib.request, venv, webbrowser</td>
+</tr></tbody></table></section></body></html>

@@ -1,0 +1,187 @@
+{
+  "src/xai_finance/cli.py": {
+    "document": "line_by_line/src_xai_finance_cli.py.md",
+    "ranges": [
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        18,
+        20
+      ],
+      [
+        22,
+        30
+      ],
+      [
+        31,
+        38
+      ],
+      [
+        41,
+        42
+      ]
+    ],
+    "sha256": "1cbd6e8586f7f1830766661cd594ece259adb489650bc9b141e09724f13c2aed",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/seed.py": {
+    "document": "line_by_line/src_xai_finance_seed.py.md",
+    "ranges": [
+      [
+        1,
+        7
+      ],
+      [
+        10,
+        19
+      ],
+      [
+        22,
+        30
+      ],
+      [
+        31,
+        37
+      ]
+    ],
+    "sha256": "6cc9044fc7eae48d3cfb6580a0cc677faf6143a26fcc4b1c8053df684059710b",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/environment.py": {
+    "document": "line_by_line/src_xai_finance_environment.py.md",
+    "ranges": [
+      [
+        1,
+        8
+      ],
+      [
+        11,
+        19
+      ],
+      [
+        20,
+        24
+      ]
+    ],
+    "sha256": "e2a6e042ad20127ec074dc8c2d05d30daa074c2d0f0e4f1d809ea8ca156879ed",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/run_quick.py": {
+    "document": "line_by_line/scripts_run_quick.py.md",
+    "ranges": [
+      [
+        1,
+        4
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "sha256": "363667f99ecbd1269c19f654f69fa87971cd41d6c4053cd7d17fa0a6fc30fdca",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "scripts/run_full.py": {
+    "document": "line_by_line/scripts_run_full.py.md",
+    "ranges": [
+      [
+        1,
+        4
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "sha256": "92057d2f60510454413260b8774ac73016f435ce3f25dfebdd3fd59c71460be6",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/__init__.py": {
+    "document": "line_by_line/src_xai_finance___init__.py.md",
+    "ranges": [
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "sha256": "993af911465c69e69eebd4127a7592e8c6718b32d326755fd8b11b3322f815d5",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/validation/__init__.py": {
+    "document": "line_by_line/src_xai_finance_validation___init__.py.md",
+    "ranges": [
+      [
+        1,
+        1
+      ]
+    ],
+    "sha256": "b6b8bdcbbe1b5169ac671fe743f351fda10b4d54beaeb8443a0f7af288022b80",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/data/__init__.py": {
+    "document": "line_by_line/src_xai_finance_data___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/evaluate/__init__.py": {
+    "document": "line_by_line/src_xai_finance_evaluate___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/explain/__init__.py": {
+    "document": "line_by_line/src_xai_finance_explain___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/io/__init__.py": {
+    "document": "line_by_line/src_xai_finance_io___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/models/__init__.py": {
+    "document": "line_by_line/src_xai_finance_models___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/pipelines/__init__.py": {
+    "document": "line_by_line/src_xai_finance_pipelines___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  },
+  "src/xai_finance/reports/__init__.py": {
+    "document": "line_by_line/src_xai_finance_reports___init__.py.md",
+    "ranges": [],
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review": "مراجعة يدوية غير مستقلة",
+    "quote_verification": "آلي"
+  }
+}
