@@ -11,3 +11,13 @@ __pycache__/
 defense_package/
 defense_package*.zip
 wheelhouse/
+.demo_venv/
+.demo_runtime/
+wheelhouse-cpu/
+dist/
+Mohammad_XAI_Defense_CPU.zip
+
+# Local deployment and browser test artifacts
+/artifacts/deployment/
+/Mohammad_VSCode_Demonstrations.zip
+/Mohammad_XAI_Defense_CPU.zip

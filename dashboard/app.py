@@ -53,6 +53,12 @@ def overview(metadata: dict, audit: dict) -> None:
 
 def preprocessing(folder: Path, audit: dict) -> None:
     st.subheader("What the model could know")
+    snapshot = ROOT / "data/raw" / f"{folder.name}.csv"
+    if snapshot.exists():
+        history = csv_table(snapshot)
+        price = "adj_close" if audit["snapshot"]["frequency"] == "daily" else "close"
+        st.plotly_chart(px.line(history, x="date", y=price, title="Historical dataset snapshot"), use_container_width=True)
+        st.caption("Saved provider snapshot in original units; no live data request.")
     st.dataframe(pd.DataFrame(audit["split"]).T, use_container_width=True)
     saved_image(folder / "plots/temporal_split.png", "Target dates remain chronological; validation and test transformations are frozen.")
     st.write("Every model receives the same complete historical window. Tabular models flatten it; LSTM preserves its time axis.")
@@ -62,6 +68,7 @@ def preprocessing(folder: Path, audit: dict) -> None:
 
 
 def forecasting(predictions: pd.DataFrame, folder: Path) -> None:
+    st.info("Saved prediction replay: these forecasts were produced by the recorded experiment. Viewing this chart does not run live inference.")
     model = st.selectbox("Forecast model", sorted(predictions.model.unique()), key="forecast_model")
     selected = predictions[predictions.model == model]
     figure = go.Figure()
@@ -138,6 +145,17 @@ def reproducibility(metadata: dict, folder: Path) -> None:
     tests = ROOT / "artifacts/tests/summary.json"
     if tests.exists():
         st.json(read_json(tests))
+    validations = sorted((ROOT / "artifacts/scientific_validation").glob("*/protocol.json"))
+    if validations:
+        with st.expander("Saved scientific validation results"):
+            selected = st.selectbox("Scientific validation", validations, format_func=lambda path: path.parent.name, key="scientific_validation")
+            validation = selected.parent
+            protocol = read_json(selected)
+            st.write(protocol["status"])
+            st.caption(f"Original experiment: {protocol['original_run']}. Results below retain the recorded model rankings and limitations.")
+            st.dataframe(csv_table(validation / "new_metrics.csv"), use_container_width=True, hide_index=True)
+            st.download_button("Download scientific validation report", (validation / "SCIENTIFIC_VALIDATION_REPORT.md").read_bytes(), "SCIENTIFIC_VALIDATION_REPORT.md")
+            st.download_button("Download standalone offline validation page", (validation / "offline_validation.html").read_bytes(), "offline_validation.html", mime="text/html")
     st.caption("Trusted locally generated joblib/checkpoint files only. Viewing this dashboard does not deserialize model files.")
 
 
